@@ -1,0 +1,517 @@
+MN School Database v2 Directory Structure
+=========================================
+
+├── .babelrc
+├── .env
+├── .env.test
+├── .gitignore
+├── babel.config.js
+├── coverage/
+│   ├── clover.xml
+│   ├── coverage-final.json
+│   ├── lcov-report/
+│   │   ├── base.css
+│   │   ├── block-navigation.js
+│   │   ├── favicon.png
+│   │   ├── index.html
+│   │   ├── prettify.css
+│   │   ├── prettify.js
+│   │   ├── sort-arrow-sprite.png
+│   │   ├── sorter.js
+│   │   └── src/
+│   │       ├── common/
+│   │       │   └── utils/
+│   │       │       └── logging/
+│   │       │           ├── index.html
+│   │       │           └── logger.ts.html
+│   │       ├── config/
+│   │       │   ├── app.ts.html
+│   │       │   ├── base.ts.html
+│   │       │   ├── env.ts.html
+│   │       │   ├── index.html
+│   │       │   └── index.ts.html
+│   │       ├── features/
+│   │       │   ├── auth/
+│   │       │   │   ├── index.html
+│   │       │   │   ├── routes.ts.html
+│   │       │   │   └── schema.ts.html
+│   │       │   └── shared/
+│   │       │       ├── common.model.ts.html
+│   │       │       └── index.html
+│   │       ├── index.html
+│   │       ├── register-aliases.ts.html
+│   │       ├── routes/
+│   │       │   ├── index.html
+│   │       │   └── index.ts.html
+│   │       └── shared/
+│   │           └── tests/
+│   │               ├── global.test.ts.html
+│   │               ├── index.html
+│   │               └── setup.ts.html
+│   └── lcov.info
+├── docs/
+│   ├── block-api.md
+│   ├── classroom-api.md
+│   ├── school-physical-hierarchy.md
+│   └── school-structure.md
+├── folder-structure.txt
+├── getFolderStructure.ts
+├── jest.config.js
+├── jest.config.ts
+├── jest.setup.js
+├── package-lock.json
+├── package.json
+├── README.md
+├── src/
+│   ├── common/
+│   │   ├── logs/
+│   │   │   ├── combined.log
+│   │   │   ├── error.log
+│   │   │   ├── exceptions.log
+│   │   │   └── rejections.log
+│   │   ├── utils/
+│   │   │   ├── auth/
+│   │   │   │   └── jwt.ts
+│   │   │   ├── cache/
+│   │   │   │   └── cacheUtil.ts
+│   │   │   ├── date/
+│   │   │   │   └── dateTimeUtil.ts
+│   │   │   ├── db/
+│   │   │   │   ├── AssociationRegistry.ts
+│   │   │   │   └── dbConnect.ts
+│   │   │   ├── docs/
+│   │   │   │   └── swagger.ts
+│   │   │   ├── email/
+│   │   │   │   └── emailUtil.ts
+│   │   │   ├── errors/
+│   │   │   │   ├── errorCodes.ts
+│   │   │   │   └── errorUtils.ts
+│   │   │   ├── file/
+│   │   │   │   └── fileUploadUtil.ts
+│   │   │   ├── logging/
+│   │   │   │   └── logger.ts
+│   │   │   ├── responses/
+│   │   │   │   └── responseUtil.ts
+│   │   │   ├── security/
+│   │   │   │   └── encryptionUtil.ts
+│   │   │   └── system/
+│   │   │       ├── diagnosticsUtil.ts
+│   │   │       └── systemLoadUtil.ts
+│   │   └── validators/
+│   │       └── validationUtil.ts
+│   ├── config/
+│   │   ├── app.ts
+│   │   ├── base.ts
+│   │   ├── database.ts
+│   │   ├── env.ts
+│   │   ├── index.ts
+│   │   ├── redis.ts
+│   │   ├── s3Client.ts
+│   │   └── sequelize.ts
+│   ├── features/
+│   │   ├── accounts/
+│   │   │   ├── index.ts
+│   │   │   ├── students/
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── interfaces/
+│   │   │   │   │   ├── interfaces.ts
+│   │   │   │   │   └── services.ts
+│   │   │   │   ├── model-associations.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   └── validation.ts
+│   │   │   └── teachers/
+│   │   │       └── index.ts
+│   │   ├── address/
+│   │   │   ├── address-link.model.ts
+│   │   │   ├── controller.ts
+│   │   │   ├── dto.ts
+│   │   │   ├── index.ts
+│   │   │   ├── interfaces/
+│   │   │   │   ├── interfaces.ts
+│   │   │   │   └── services.ts
+│   │   │   ├── model-associations.ts
+│   │   │   ├── model.ts
+│   │   │   ├── repository.ts
+│   │   │   ├── routes.ts
+│   │   │   ├── service.ts
+│   │   │   └── validation.ts
+│   │   ├── association-loader.ts
+│   │   ├── associations.ts
+│   │   ├── auth/
+│   │   │   ├── controller.ts
+│   │   │   ├── dto.ts
+│   │   │   ├── interfaces/
+│   │   │   │   └── services.ts
+│   │   │   ├── repository.ts
+│   │   │   ├── routes.ts
+│   │   │   ├── schema.ts
+│   │   │   └── service.ts
+│   │   ├── behavior/
+│   │   │   ├── behaviors/
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── interfaces/
+│   │   │   │   │   ├── interfaces.ts
+│   │   │   │   │   └── services.ts
+│   │   │   │   ├── model-associations.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   └── validation.ts
+│   │   │   ├── behavior_types/
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── interfaces/
+│   │   │   │   │   ├── interfaces.ts
+│   │   │   │   │   └── services.ts
+│   │   │   │   ├── model-associations.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   └── validation.ts
+│   │   │   └── index.ts
+│   │   ├── library/
+│   │   │   ├── books/
+│   │   │   │   ├── book-review.model.ts
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   └── validation.ts
+│   │   │   ├── interfaces/
+│   │   │   │   ├── interfaces.ts
+│   │   │   │   └── services.ts
+│   │   │   ├── loans/
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   └── validation.ts
+│   │   │   ├── model-associations.ts
+│   │   │   └── rules/
+│   │   │       ├── controller.ts
+│   │   │       ├── dto.ts
+│   │   │       ├── index.ts
+│   │   │       ├── model.ts
+│   │   │       ├── repository.ts
+│   │   │       ├── routes.ts
+│   │   │       ├── service.ts
+│   │   │       └── validation.ts
+│   │   ├── payment/
+│   │   ├── projects/
+│   │   │   ├── controller.ts
+│   │   │   ├── controllers/
+│   │   │   │   ├── project-feedback.controller.ts
+│   │   │   │   ├── project-file.controller.ts
+│   │   │   │   └── project-grade.controller.ts
+│   │   │   ├── dto.ts
+│   │   │   ├── interfaces/
+│   │   │   │   ├── interfaces.ts
+│   │   │   │   └── services.ts
+│   │   │   ├── model-associations.ts
+│   │   │   ├── model.ts
+│   │   │   ├── models/
+│   │   │   │   ├── project-feedback.model.ts
+│   │   │   │   ├── project-file.model.ts
+│   │   │   │   └── project-grade.model.ts
+│   │   │   ├── repositories/
+│   │   │   │   ├── project-feedback.repository.ts
+│   │   │   │   ├── project-file.repository.ts
+│   │   │   │   └── project-grade.repository.ts
+│   │   │   ├── repository.ts
+│   │   │   ├── routes.ts
+│   │   │   ├── service.ts
+│   │   │   ├── services/
+│   │   │   │   ├── project-feedback.service.ts
+│   │   │   │   ├── project-file.service.ts
+│   │   │   │   └── project-grade.service.ts
+│   │   │   └── validation.ts
+│   │   ├── rbac/
+│   │   │   ├── constants/
+│   │   │   ├── controllers/
+│   │   │   │   └── roles.controller.ts
+│   │   │   ├── dto/
+│   │   │   │   └── roles.dto.ts
+│   │   │   ├── interfaces/
+│   │   │   │   └── roles.interface.ts
+│   │   │   ├── middleware/
+│   │   │   │   └── school-context.middleware.ts
+│   │   │   ├── models/
+│   │   │   │   ├── model-associations.ts
+│   │   │   │   ├── permissions.model.ts
+│   │   │   │   ├── role-permission.model.ts
+│   │   │   │   └── roles.model.ts
+│   │   │   ├── repository/
+│   │   │   │   └── roles.repository.ts
+│   │   │   ├── routes/
+│   │   │   │   └── roles.route.ts
+│   │   │   ├── schema/
+│   │   │   │   └── roles.schema.ts
+│   │   │   └── services/
+│   │   │       ├── permission.service.ts
+│   │   │       └── roles.service.ts
+│   │   ├── schools/
+│   │   │   ├── controller.ts
+│   │   │   ├── dto.ts
+│   │   │   ├── index.ts
+│   │   │   ├── interfaces/
+│   │   │   │   ├── interfaces.ts
+│   │   │   │   └── services.ts
+│   │   │   ├── model-associations.ts
+│   │   │   ├── model.ts
+│   │   │   ├── repository.ts
+│   │   │   ├── routes.ts
+│   │   │   ├── service.ts
+│   │   │   └── validation.ts
+│   │   ├── school_config/
+│   │   │   ├── blocks/
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── interfaces/
+│   │   │   │   │   ├── interfaces.ts
+│   │   │   │   │   └── services.ts
+│   │   │   │   ├── model-associations.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   └── validation.ts
+│   │   │   ├── categories/
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── interfaces/
+│   │   │   │   │   ├── interfaces.ts
+│   │   │   │   │   └── services.ts
+│   │   │   │   ├── model-associations.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   └── validation.ts
+│   │   │   ├── classes/
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── interfaces/
+│   │   │   │   │   ├── interfaces.ts
+│   │   │   │   │   └── services.ts
+│   │   │   │   ├── model-associations.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   └── validation.ts
+│   │   │   ├── classrooms/
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── interfaces/
+│   │   │   │   │   ├── interfaces.ts
+│   │   │   │   │   └── services.ts
+│   │   │   │   ├── model-associations.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   └── validation.ts
+│   │   │   ├── departments/
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── interfaces/
+│   │   │   │   │   ├── interfaces.ts
+│   │   │   │   │   └── services.ts
+│   │   │   │   ├── model-associations.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   ├── swagger.ts
+│   │   │   │   └── validation.ts
+│   │   │   ├── grades/
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── interfaces/
+│   │   │   │   │   ├── interfaces.ts
+│   │   │   │   │   └── services.ts
+│   │   │   │   ├── model-associations.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   └── validation.ts
+│   │   │   ├── school_years/
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── interfaces/
+│   │   │   │   │   ├── interfaces.ts
+│   │   │   │   │   └── services.ts
+│   │   │   │   ├── model-associations.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   └── validation.ts
+│   │   │   ├── sections/
+│   │   │   │   ├── controller.ts
+│   │   │   │   ├── dto.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── interfaces/
+│   │   │   │   │   ├── interfaces.ts
+│   │   │   │   │   └── services.ts
+│   │   │   │   ├── model-associations.ts
+│   │   │   │   ├── model.ts
+│   │   │   │   ├── repository.ts
+│   │   │   │   ├── routes.ts
+│   │   │   │   ├── service.ts
+│   │   │   │   └── validation.ts
+│   │   │   └── subjects/
+│   │   │       ├── controller.ts
+│   │   │       ├── dto.ts
+│   │   │       ├── index.ts
+│   │   │       ├── interfaces/
+│   │   │       │   ├── interfaces.ts
+│   │   │       │   └── services.ts
+│   │   │       ├── model-associations.ts
+│   │   │       ├── model.ts
+│   │   │       ├── repository.ts
+│   │   │       ├── routes.ts
+│   │   │       ├── service.ts
+│   │   │       └── validation.ts
+│   │   ├── search/
+│   │   │   ├── controller.ts
+│   │   │   ├── dto.ts
+│   │   │   ├── index.ts
+│   │   │   ├── interfaces/
+│   │   │   │   └── services.ts
+│   │   │   ├── repository.ts
+│   │   │   ├── routes.ts
+│   │   │   ├── service.ts
+│   │   │   └── validation.ts
+│   │   ├── shared/
+│   │   │   └── common.model.ts
+│   │   ├── students/
+│   │   │   └── controllers/
+│   │   │       └── studentController.ts
+│   │   ├── teachers/
+│   │   │   ├── controller.ts
+│   │   │   ├── dto.ts
+│   │   │   ├── index.ts
+│   │   │   ├── interfaces/
+│   │   │   │   ├── interfaces.ts
+│   │   │   │   └── services.ts
+│   │   │   ├── model-associations.ts
+│   │   │   ├── model.ts
+│   │   │   ├── repository.ts
+│   │   │   ├── routes.ts
+│   │   │   ├── service.ts
+│   │   │   └── validation.ts
+│   │   └── users/
+│   │       ├── controller.ts
+│   │       ├── dto.ts
+│   │       ├── interfaces/
+│   │       │   └── services.ts
+│   │       ├── interfaces.ts
+│   │       ├── model-associations.ts
+│   │       ├── model.ts
+│   │       ├── repository.ts
+│   │       ├── routes.ts
+│   │       ├── service.ts
+│   │       ├── user-role.model.ts
+│   │       └── validation.ts
+│   ├── interfaces/
+│   │   └── index.d.ts
+│   ├── migrations/
+│   │   └── 20240227000000_create_students_table.js
+│   ├── register-aliases.ts
+│   ├── routes/
+│   │   ├── index.ts
+│   │   └── v1/
+│   │       └── index.ts
+│   ├── seeders/
+│   │   ├── index.ts
+│   │   ├── rbac.seeder.ts
+│   │   └── school-years.seeder.ts
+│   ├── server.ts
+│   ├── shared/
+│   │   ├── middleware/
+│   │   │   ├── auth.ts
+│   │   │   ├── compression.ts
+│   │   │   ├── cors.ts
+│   │   │   ├── errorHandler.ts
+│   │   │   ├── helmet.ts
+│   │   │   ├── multer.ts
+│   │   │   ├── permission.ts
+│   │   │   ├── rateLimiter.ts
+│   │   │   └── requestLogger.ts
+│   │   └── tests/
+│   │       ├── global.test.ts
+│   │       └── setup.ts
+│   ├── templates/
+│   │   └── email/
+│   │       ├── password-change.hbs
+│   │       ├── password-reset-notification.hbs
+│   │       ├── password-reset.hbs
+│   │       └── welcome.hbs
+│   ├── types/
+│   │   ├── express/
+│   │   │   └── index.d.ts
+│   │   ├── express-list-endpoints.d.ts
+│   │   └── swagger-jsdoc.d.ts
+│   └── __tests__/
+│       ├── e2e/
+│       │   ├── app.e2e.test.ts
+│       │   ├── auth.e2e.test.ts
+│       │   └── users.e2e.test.ts
+│       ├── helpers/
+│       │   ├── auth-test-helpers.ts
+│       │   └── test-utils.ts
+│       ├── integration/
+│       │   ├── auth/
+│       │   │   ├── auth.integration.test.ts
+│       │   │   └── auth.repository.integration.test.ts
+│       │   └── users.integration.test.ts
+│       ├── mocks/
+│       │   ├── config-redis.mock.ts
+│       │   ├── models.mock.ts
+│       │   ├── redis.mock.ts
+│       │   └── sequelize.mock.ts
+│       ├── setup.ts
+│       └── unit/
+│           ├── auth/
+│           │   ├── controller.test.ts
+│           │   ├── interfaces.test.ts
+│           │   ├── repository.test.ts
+│           │   ├── schema.test.ts
+│           │   └── service.test.ts
+│           ├── users/
+│           │   ├── controller.test.ts
+│           │   ├── dto.test.ts
+│           │   ├── repository.test.ts
+│           │   ├── service.test.ts
+│           │   └── validation.test.ts
+│           └── utils.test.ts
+├── temp/
+│   └── uploads/
+├── tsconfig.json
+├── tsconfig.node.json
+└── us-east-1-bundle.pem
