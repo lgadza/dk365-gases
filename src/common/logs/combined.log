@@ -12074,3 +12074,136 @@
 2025-05-13T05:39:26.235Z info: Email sent successfully
 2025-05-13T05:44:36.312Z info: REQUEST POST /api/v1/auth/login
 2025-05-13T05:44:36.664Z info: RESPONSE 200 POST /login [351.28ms]
+2025-05-13T15:35:30.476Z info: Database configuration:
+2025-05-13T15:37:41.395Z info: Database configuration:
+2025-05-13T15:38:19.110Z info: Database configuration:
+2025-05-13T15:38:38.602Z info: Database configuration:
+2025-05-13T15:40:50.692Z info: Database configuration:
+2025-05-13T15:41:47.603Z info: Database configuration:
+2025-05-13T15:45:22.106Z info: Database configuration:
+2025-05-13T15:45:22.297Z info: Connecting to Redis:
+2025-05-13T15:45:25.772Z info: Redis rate limiter initialized
+2025-05-13T15:45:26.565Z info: Cache utility initialized
+2025-05-13T15:45:29.684Z info: Configuring CORS middleware
+2025-05-13T15:45:29.685Z info: Configuring compression middleware
+2025-05-13T15:45:29.692Z info: Redis rate limiter initialized
+2025-05-13T15:45:29.693Z info: Redis rate limiter initialized
+2025-05-13T15:45:29.694Z info: Checking database connection...
+2025-05-13T15:45:30.025Z info: Redis connected successfully
+2025-05-13T15:45:30.190Z info: Sequelize connection has been established successfully.
+2025-05-13T15:45:30.247Z info: Database connection successful
+2025-05-13T15:45:30.248Z info: Setting up model associations...
+2025-05-13T15:45:30.249Z info: Setting up model associations...
+2025-05-13T15:45:30.264Z info: Loading all model associations...
+2025-05-13T15:45:42.520Z info: Applied 11 of 11 model associations
+2025-05-13T15:45:42.521Z info: Model associations loaded
+2025-05-13T15:45:42.521Z info: Model associations set up successfully
+2025-05-13T15:45:42.521Z info: Checking Redis connection...
+2025-05-13T15:45:42.530Z info: Redis client is ready
+2025-05-13T15:45:42.708Z info: Redis ping successful
+2025-05-13T15:45:42.709Z info: Redis connection successful
+2025-05-13T15:45:42.709Z info: Syncing database models...
+2025-05-13T15:45:42.709Z info: Setting up model associations before sync...
+2025-05-13T15:45:42.709Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-13T15:45:42.710Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-13T15:45:42.710Z info: Syncing model: Role
+2025-05-13T15:45:42.877Z info: Successfully synced model: Role
+2025-05-13T15:45:42.877Z info: Syncing model: Permission
+2025-05-13T15:45:42.936Z info: Successfully synced model: Permission
+2025-05-13T15:45:42.936Z info: Syncing model: User
+2025-05-13T15:45:42.993Z info: Successfully synced model: User
+2025-05-13T15:45:42.993Z info: Syncing model: Address
+2025-05-13T15:45:43.026Z info: Successfully synced model: Address
+2025-05-13T15:45:43.026Z info: Syncing model: RolePermission
+2025-05-13T15:45:43.057Z info: Successfully synced model: RolePermission
+2025-05-13T15:45:43.057Z info: Syncing model: UserRole
+2025-05-13T15:45:43.085Z info: Successfully synced model: UserRole
+2025-05-13T15:45:43.086Z info: Syncing model: AddressLink
+2025-05-13T15:45:43.145Z info: Successfully synced model: AddressLink
+2025-05-13T15:45:43.146Z info: All models synced successfully
+2025-05-13T15:45:43.146Z info: Database synced successfully
+2025-05-13T15:45:43.146Z info: Verifying database tables before seeding...
+2025-05-13T15:45:43.148Z info: Found database tables: , , , , , , 
+2025-05-13T15:45:43.148Z info: Running seeders...
+2025-05-13T15:45:43.149Z info: Starting database seeding...
+2025-05-13T15:45:44.165Z info: Starting RBAC seeding...
+2025-05-13T15:45:44.169Z info: Checking existing roles...
+2025-05-13T15:45:44.181Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-13T15:45:44.197Z info: Found 7 tables for permission generation
+2025-05-13T15:45:44.198Z info: No new permissions to create
+2025-05-13T15:45:44.211Z info: Checking for new permissions to assign to super_admin
+2025-05-13T15:45:44.211Z info: Checking for new permissions to assign to admin
+2025-05-13T15:45:44.212Z info: Checking for new permissions to assign to manager
+2025-05-13T15:45:44.213Z info: Checking for new permissions for driver
+2025-05-13T15:45:44.213Z info: No new role-permission mappings needed
+2025-05-13T15:45:44.213Z info: RBAC seeding completed successfully
+2025-05-13T15:45:44.214Z info: Database seeding completed
+2025-05-13T15:45:44.214Z info: Seeding completed successfully
+2025-05-13T15:45:44.220Z info: API Routes (105 total routes):
+2025-05-13T15:45:44.284Z info: Server running on port 3001
+2025-05-13T18:54:03.136Z info: Database configuration:
+2025-05-13T18:54:04.648Z info: Connecting to Redis:
+2025-05-13T18:54:41.253Z info: Redis rate limiter initialized
+2025-05-13T18:54:45.013Z info: Cache utility initialized
+2025-05-13T18:54:58.008Z info: Configuring CORS middleware
+2025-05-13T18:54:58.010Z info: Configuring compression middleware
+2025-05-13T18:54:58.020Z info: Redis rate limiter initialized
+2025-05-13T18:54:58.021Z info: Redis rate limiter initialized
+2025-05-13T18:54:58.025Z info: Checking database connection...
+2025-05-13T18:54:58.461Z info: Redis connected successfully
+2025-05-13T18:54:58.744Z info: Sequelize connection has been established successfully.
+2025-05-13T18:54:58.823Z info: Database connection successful
+2025-05-13T18:54:58.824Z info: Setting up model associations...
+2025-05-13T18:54:58.826Z info: Setting up model associations...
+2025-05-13T18:54:58.841Z info: Loading all model associations...
+2025-05-13T18:55:14.816Z info: Applied 11 of 11 model associations
+2025-05-13T18:55:14.817Z info: Model associations loaded
+2025-05-13T18:55:14.820Z info: Model associations set up successfully
+2025-05-13T18:55:14.821Z info: Checking Redis connection...
+2025-05-13T18:55:14.832Z info: Redis client is ready
+2025-05-13T18:55:14.998Z info: Redis ping successful
+2025-05-13T18:55:14.999Z info: Redis connection successful
+2025-05-13T18:55:14.999Z info: Syncing database models...
+2025-05-13T18:55:14.999Z info: Setting up model associations before sync...
+2025-05-13T18:55:15.000Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-13T18:55:15.000Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-13T18:55:15.001Z info: Syncing model: Role
+2025-05-13T18:55:15.143Z info: Successfully synced model: Role
+2025-05-13T18:55:15.144Z info: Syncing model: Permission
+2025-05-13T18:55:15.206Z info: Successfully synced model: Permission
+2025-05-13T18:55:15.207Z info: Syncing model: User
+2025-05-13T18:55:15.262Z info: Successfully synced model: User
+2025-05-13T18:55:15.263Z info: Syncing model: Address
+2025-05-13T18:55:15.298Z info: Successfully synced model: Address
+2025-05-13T18:55:15.299Z info: Syncing model: RolePermission
+2025-05-13T18:55:15.335Z info: Successfully synced model: RolePermission
+2025-05-13T18:55:15.335Z info: Syncing model: UserRole
+2025-05-13T18:55:15.366Z info: Successfully synced model: UserRole
+2025-05-13T18:55:15.367Z info: Syncing model: AddressLink
+2025-05-13T18:55:15.429Z info: Successfully synced model: AddressLink
+2025-05-13T18:55:15.429Z info: All models synced successfully
+2025-05-13T18:55:15.429Z info: Database synced successfully
+2025-05-13T18:55:15.430Z info: Verifying database tables before seeding...
+2025-05-13T18:55:15.432Z info: Found database tables: , , , , , , 
+2025-05-13T18:55:15.432Z info: Running seeders...
+2025-05-13T18:55:15.432Z info: Starting database seeding...
+2025-05-13T18:55:16.434Z info: Starting RBAC seeding...
+2025-05-13T18:55:16.439Z info: Checking existing roles...
+2025-05-13T18:55:16.454Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-13T18:55:16.476Z info: Found 7 tables for permission generation
+2025-05-13T18:55:16.477Z info: No new permissions to create
+2025-05-13T18:55:16.497Z info: Checking for new permissions to assign to super_admin
+2025-05-13T18:55:16.498Z info: Checking for new permissions to assign to admin
+2025-05-13T18:55:16.499Z info: Checking for new permissions to assign to manager
+2025-05-13T18:55:16.499Z info: Checking for new permissions for driver
+2025-05-13T18:55:16.500Z info: No new role-permission mappings needed
+2025-05-13T18:55:16.500Z info: RBAC seeding completed successfully
+2025-05-13T18:55:16.500Z info: Database seeding completed
+2025-05-13T18:55:16.501Z info: Seeding completed successfully
+2025-05-13T18:55:16.508Z info: API Routes (105 total routes):
+2025-05-13T18:55:16.702Z info: Server running on port 3001
+2025-05-13T20:19:17.034Z info: REQUEST POST /api/v1/addresses
+2025-05-13T20:19:17.249Z error: API Error: Token has expired
+2025-05-13T20:19:17.251Z warn: RESPONSE 401 POST / [216.68ms]
+2025-05-13T20:20:58.428Z info: REQUEST POST /api/v1/auth/login
+2025-05-13T20:20:58.987Z info: RESPONSE 200 POST /login [559.53ms]

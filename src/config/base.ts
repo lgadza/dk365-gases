@@ -16,6 +16,18 @@ const baseConfig = {
   rootDir: path.resolve(__dirname, "../../"),
   srcDir: path.resolve(__dirname, "../"),
 
+  //Company config
+
+  company: {
+    accountingEmail: "",
+    accountingPhone: "",
+    name: "DK365",
+    address: "",
+    email: "",
+    phone: "",
+    website: "",
+  },
+
   // CORS configuration
   cors: {
     allowedOrigins: env.ALLOWED_ORIGINS.split(","),

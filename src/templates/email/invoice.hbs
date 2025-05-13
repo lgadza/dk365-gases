@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice {{invoiceNumber}}</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+    .header {
+      background-color: #10b2bf;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    .logo-container {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .main-logo {
+      width: 120px;
+      height: auto;
+    }
+    .name-logo {
+      width: 180px;
+      height: auto;
+      margin-top: 10px;
+    }
+    .content {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+    }
+    .invoice-summary {
+      background-color: #e9f7f8;
+      padding: 15px;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+    .invoice-details {
+      margin-bottom: 20px;
+    }
+    .invoice-details table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .invoice-details th, 
+    .invoice-details td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+    .invoice-details th {
+      background-color: #f2f2f2;
+    }
+    .amount-due {
+      font-size: 18px;
+      font-weight: bold;
+      color: #d9534f;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 20px 0;
+      background-color: #10b2bf;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+    }
+    .payment-instructions {
+      border-left: 4px solid #10b2bf;
+      padding-left: 15px;
+      margin: 20px 0;
+    }
+    .items-summary {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-container">
+        <img src="https://makronexus.com/assets/md_logo_small2-CMnD-u5x.png" alt="Company Logo" class="main-logo">
+        <br>
+        <img src="https://makronexus.com/assets/md_logo_small4-Ci-XwfWu.png" alt="Company Name" class="name-logo">
+      </div>
+      <h1>Invoice {{invoiceNumber}}</h1>
+    </div>
+    <div class="content">
+      <p>Dear {{customerName}},</p>
+      
+      <p>Please find attached your invoice <strong>#{{invoiceNumber}}</strong> dated <strong>{{issueDate}}</strong>.</p>
+      
+      <div class="invoice-summary">
+        <p><strong>Invoice Summary:</strong></p>
+        <p>Invoice Number: {{invoiceNumber}}</p>
+        <p>Issue Date: {{issueDate}}</p>
+        <p>Due Date: {{dueDate}}</p>
+        <p class="amount-due">Amount Due: {{currency}} {{totalAmount}}</p>
+      </div>
+      
+      {{#if itemsSummary}}
+      <div class="items-summary">
+        <p>This invoice includes: {{itemsSummary}}</p>
+      </div>
+      {{/if}}
+      
+      <div class="payment-instructions">
+        <p><strong>Payment Instructions:</strong></p>
+        <p>Please make payment by the due date to avoid late fees.</p>
+        <p>Payment Terms: {{paymentTerms}}</p>
+        {{#if paymentMethod}}
+        <p>Preferred Payment Method: {{paymentMethod}}</p>
+        {{/if}}
+      </div>
+      
+      <p>You can view the full invoice details in the attached PDF document.</p>
+      
+      <div style="text-align: center;">
+        {{#if portalLink}}
+        <a href="{{portalLink}}" class="button">View in Customer Portal</a>
+        {{/if}}
+      </div>
+      
+      <p>If you have any questions about this invoice, please contact our accounting department at {{accountingEmail}} or call {{accountingPhone}}.</p>
+      
+      <p>Thank you for your business!</p>
+    </div>
+    <div class="footer">
+      <p>
+        {{companyName}}<br>
+        {{companyAddress}}<br>
+        {{companyPhone}} | {{companyEmail}}<br>
+        {{companyWebsite}}
+      </p>
+      <p>&copy; {{year}} {{companyName}}. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
