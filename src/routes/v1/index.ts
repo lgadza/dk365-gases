@@ -8,6 +8,7 @@ import addressRouter from "../../features/address/routes";
 import searchRouter from "../../features/search/routes";
 import rbacRouter from "../../features/rbac/routes/roles.route";
 import invoiceRouter from "../../features/invoice/routes";
+import cylinderRouter from "../../features/cylinder/routes";
 
 const router: Router = express.Router();
 
@@ -22,6 +23,7 @@ router.get("/", (req, res) => {
       addresses: "/addresses",
       search: "/search",
       invoices: "/invoices",
+      cylinders: "/cylinders",
       // List available endpoints as they are implemented
       // roles: '/rbac/roles',
       demo: "/demo",
@@ -45,5 +47,6 @@ router.use("/addresses", addressRouter);
 router.use("/search", searchRouter);
 router.use("/rbac/roles", rbacRouter);
 router.use("/invoices", invoiceRouter);
+router.use("/cylinders", cylinderRouter);
 
 export default router;
