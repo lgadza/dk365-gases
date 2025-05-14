@@ -1,4 +1,4 @@
-import { UserInterface } from "@/features/users/interfaces";
+import { UserInterface } from "@/features/users/interfaces/interfaces";
 import { AuthResponseDTO, UserInfoDTO } from "../dto";
 
 export interface IAuthRepository {

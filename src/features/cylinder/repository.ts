@@ -141,15 +141,33 @@ export class CylinderRepository implements ICylinderRepository {
   }
 
   /**
-   * Get cylinder list
+   * Get cylinder list with filtering and pagination
    */
-  public async getCylinderList(
-    params: CylinderListQueryParams
-  ): Promise<{ cylinders: CylinderInterface[]; total: number }> {
+  public async getCylinderList(params: CylinderListQueryParams): Promise<{
+    cylinders: CylinderInterface[];
+    total: number;
+  }> {
     try {
       const {
         page = 1,
         limit = 10,
+        search,
+        sortBy = "serialNumber",
+        sortOrder = "asc",
+        status,
+        gasType,
+        location,
+        cylinderTypeId,
+        customerId,
+        isActive,
+        needsInspection,
+        needsMaintenance,
+      } = params;
+
+      // Log the processed parameters
+      logger.debug("Repository getCylinderList processing params:", {
+        page,
+        limit,
         search,
         sortBy,
         sortOrder,
@@ -161,94 +179,93 @@ export class CylinderRepository implements ICylinderRepository {
         isActive,
         needsInspection,
         needsMaintenance,
-      } = params;
+      });
 
-      // Calculate offset for pagination
       const offset = (page - 1) * limit;
+      const whereClause: any = {};
 
-      // Build where clause
-      const where: any = {};
-
-      // Apply filters
-      if (status) {
-        where.status = status;
-      }
-
-      if (gasType) {
-        where.currentGasType = gasType;
-      }
-
-      if (location) {
-        where.location = location;
-      }
-
-      if (cylinderTypeId) {
-        where.cylinderTypeId = cylinderTypeId;
-      }
-
-      if (customerId) {
-        where.assignedCustomerId = customerId;
-      }
-
-      if (isActive !== undefined) {
-        where.isActive = isActive;
-      }
-
-      if (needsInspection) {
-        const thirtyDaysFromNow = new Date();
-        thirtyDaysFromNow.setDate(thirtyDaysFromNow.getDate() + 30);
-        where.nextInspectionDate = {
-          [Op.not]: null,
-          [Op.lte]: thirtyDaysFromNow,
-        };
-      }
-
-      if (needsMaintenance) {
-        const thirtyDaysFromNow = new Date();
-        thirtyDaysFromNow.setDate(thirtyDaysFromNow.getDate() + 30);
-        where.maintenanceDueDate = {
-          [Op.not]: null,
-          [Op.lte]: thirtyDaysFromNow,
-        };
-      }
-
-      // Search across multiple fields
-      if (search) {
-        where[Op.or] = [
+      // Only add filters if they are provided AND have values
+      if (search && search.trim()) {
+        whereClause[Op.or] = [
           { serialNumber: { [Op.iLike]: `%${search}%` } },
-          { batchNumber: { [Op.iLike]: `%${search}%` } },
+          { manufacturerName: { [Op.iLike]: `%${search}%` } },
           { location: { [Op.iLike]: `%${search}%` } },
-          { assignedCustomerName: { [Op.iLike]: `%${search}%` } },
         ];
       }
 
-      // Determine sort order
-      const order: any = [];
-      if (sortBy && sortOrder) {
-        order.push([sortBy, sortOrder]);
-      } else {
-        order.push(["createdAt", "DESC"]);
+      if (status && status.trim()) {
+        whereClause.status = status;
       }
 
-      const { count, rows } = await Cylinder.findAndCountAll({
-        where,
+      if (cylinderTypeId && cylinderTypeId.trim()) {
+        whereClause.cylinderTypeId = cylinderTypeId;
+      }
+
+      if (customerId && customerId.trim()) {
+        whereClause.assignedCustomerId = customerId;
+      }
+
+      if (location && location.trim()) {
+        whereClause.location = { [Op.iLike]: `%${location}%` };
+      }
+
+      // Only use isActive filter if explicitly provided
+      if (isActive !== undefined) {
+        whereClause.isActive = isActive;
+      }
+
+      // For debugging, log the count of raw cylinders without filters
+      const totalCylinders = await Cylinder.count();
+      logger.debug(
+        `Total cylinders in database (no filters): ${totalCylinders}`
+      );
+
+      // Log the final where clause
+      logger.debug(
+        "Final where clause for cylinder query:",
+        JSON.stringify(whereClause)
+      );
+
+      // Execute query with all filters
+      const { rows, count } = await Cylinder.findAndCountAll({
+        where: whereClause,
+        order: [[sortBy, sortOrder.toUpperCase()]],
         limit,
         offset,
-        order,
-        include: [
-          {
-            model: CylinderType,
-            as: "type",
-          },
-        ],
       });
 
-      return { cylinders: rows, total: count };
+      // Add additional debugging if filters eliminated too many results
+      if (rows.length === 0 && totalCylinders > 0) {
+        logger.warn(
+          `Filters eliminated all ${totalCylinders} cylinders. Where clause: ${JSON.stringify(
+            whereClause
+          )}`
+        );
+
+        // Test each filter separately to identify which one is too restrictive
+        if (Object.keys(whereClause).length > 0) {
+          for (const [key, value] of Object.entries(whereClause)) {
+            const singleFilterCount = await Cylinder.count({
+              where: { [key]: value },
+            });
+            logger.debug(
+              `Filter ${key} alone returns ${singleFilterCount} cylinders`
+            );
+          }
+        }
+      }
+
+      logger.debug(
+        `Query returned ${rows.length} cylinders out of ${count} total`
+      );
+
+      return {
+        cylinders: rows,
+        total: count,
+      };
     } catch (error) {
-      logger.error("Error getting cylinder list:", error);
-      throw new DatabaseError("Database error while getting cylinder list", {
-        additionalInfo: { code: ErrorCode.DB_QUERY_FAILED },
-      });
+      logger.error("Error in getCylinderList repository:", error);
+      throw error;
     }
   }
 
@@ -527,64 +544,140 @@ export class CylinderRepository implements ICylinderRepository {
         page = 1,
         limit = 10,
         search,
-        sortBy,
-        sortOrder,
+        sortBy = "name",
+        sortOrder = "asc",
+        name,
+        description,
         gasType,
         material,
+        minCapacity,
+        maxCapacity,
+        valveType,
+        color,
+        minWeight,
+        maxWeight,
+        minHeight,
+        maxHeight,
+        minDiameter,
+        maxDiameter,
         isActive,
       } = params;
 
-      // Calculate offset for pagination
       const offset = (page - 1) * limit;
+      const whereClause: any = {};
 
-      // Build where clause
-      const where: any = {};
-
-      // Apply filters
-      if (gasType) {
-        where.gasType = gasType;
-      }
-
-      if (material) {
-        where.material = material;
-      }
-
-      if (isActive !== undefined) {
-        where.isActive = isActive;
-      }
-
-      // Search across multiple fields
+      // General search term (searches across multiple fields)
       if (search) {
-        where[Op.or] = [
+        whereClause[Op.or] = [
           { name: { [Op.iLike]: `%${search}%` } },
           { description: { [Op.iLike]: `%${search}%` } },
+          { gasType: { [Op.iLike]: `%${search}%` } },
+          { material: { [Op.iLike]: `%${search}%` } },
         ];
       }
 
-      // Determine sort order
-      const order: any = [];
-      if (sortBy && sortOrder) {
-        order.push([sortBy, sortOrder]);
-      } else {
-        order.push(["name", "ASC"]);
+      // Specific field filters
+      if (name) {
+        whereClause.name = { [Op.iLike]: `%${name}%` };
       }
 
-      const { count, rows } = await CylinderType.findAndCountAll({
-        where,
+      if (description) {
+        whereClause.description = { [Op.iLike]: `%${description}%` };
+      }
+
+      if (gasType) {
+        whereClause.gasType = { [Op.iLike]: `%${gasType}%` };
+      }
+
+      if (material) {
+        whereClause.material = { [Op.iLike]: `%${material}%` };
+      }
+
+      if (valveType) {
+        whereClause.valveType = { [Op.iLike]: `%${valveType}%` };
+      }
+
+      if (color) {
+        whereClause.color = { [Op.iLike]: `%${color}%` };
+      }
+
+      // Numeric range filters
+      if (minCapacity !== undefined) {
+        whereClause.capacity = {
+          ...whereClause.capacity,
+          [Op.gte]: minCapacity,
+        };
+      }
+
+      if (maxCapacity !== undefined) {
+        whereClause.capacity = {
+          ...whereClause.capacity,
+          [Op.lte]: maxCapacity,
+        };
+      }
+
+      if (minWeight !== undefined) {
+        whereClause.weight = {
+          ...whereClause.weight,
+          [Op.gte]: minWeight,
+        };
+      }
+
+      if (maxWeight !== undefined) {
+        whereClause.weight = {
+          ...whereClause.weight,
+          [Op.lte]: maxWeight,
+        };
+      }
+
+      if (minHeight !== undefined) {
+        whereClause.height = {
+          ...whereClause.height,
+          [Op.gte]: minHeight,
+        };
+      }
+
+      if (maxHeight !== undefined) {
+        whereClause.height = {
+          ...whereClause.height,
+          [Op.lte]: maxHeight,
+        };
+      }
+
+      if (minDiameter !== undefined) {
+        whereClause.diameter = {
+          ...whereClause.diameter,
+          [Op.gte]: minDiameter,
+        };
+      }
+
+      if (maxDiameter !== undefined) {
+        whereClause.diameter = {
+          ...whereClause.diameter,
+          [Op.lte]: maxDiameter,
+        };
+      }
+
+      // Active status filter
+      if (isActive !== undefined) {
+        whereClause.isActive = isActive;
+      }
+
+      // Execute query
+      const { rows, count } = await CylinderType.findAndCountAll({
+        where: whereClause,
+        order: [[sortBy, sortOrder.toUpperCase()]],
         limit,
         offset,
-        order,
       });
 
-      return { types: rows, total: count };
+      return {
+        types: rows,
+        total: count,
+      };
     } catch (error) {
-      logger.error("Error getting cylinder type list:", error);
-      throw new DatabaseError(
-        "Database error while getting cylinder type list",
-        {
-          additionalInfo: { code: ErrorCode.DB_QUERY_FAILED },
-        }
-      );
+      logger.error("Error in getCylinderTypeList repository:", error);
+      throw error;
     }
   }
 
@@ -788,6 +881,36 @@ export class CylinderRepository implements ICylinderRepository {
           additionalInfo: { code: ErrorCode.DB_QUERY_FAILED, id },
         }
       );
+    }
+  }
+
+  /**
+   * Debug utility function to check database access
+   * For development/testing purposes only
+   */
+  public async debugCheckDatabaseAccess(): Promise<{
+    cylinderCount: number;
+    typeCount: number;
+    sampleCylinder: any | null;
+  }> {
+    try {
+      const cylinderCount = await Cylinder.count();
+      const typeCount = await CylinderType.count();
+
+      // Get a sample cylinder (any one) with no filters
+      const sampleCylinder = await Cylinder.findOne({
+        attributes: ["id", "serialNumber", "status", "isActive"],
+        raw: true,
+      });
+
+      return {
+        cylinderCount,
+        typeCount,
+        sampleCylinder,
+      };
+    } catch (error) {
+      logger.error("Database access check failed:", error);
+      throw error;
     }
   }
 }

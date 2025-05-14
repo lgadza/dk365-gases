@@ -38,6 +38,8 @@ export interface CylinderBaseDTO {
   maintenanceDueDate: string | null;
   assignedCustomerId: string | null;
   assignedCustomerName: string | null;
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 /**
@@ -56,7 +58,7 @@ export interface CylinderDetailDTO extends CylinderBaseDTO {
 }
 
 /**
- * Simple cylinder DTO without type details
+ * Simple cylinder DTO with type and gas name
  */
 export interface CylinderSimpleDTO extends CylinderBaseDTO {
   typeName: string;
@@ -295,8 +297,22 @@ export interface CylinderTypeListQueryParams {
   search?: string;
   sortBy?: string;
   sortOrder?: "asc" | "desc";
+
+  // Enhanced search parameters
+  name?: string;
+  description?: string;
   gasType?: string;
   material?: string;
+  minCapacity?: number;
+  maxCapacity?: number;
+  valveType?: string;
+  color?: string;
+  minWeight?: number;
+  maxWeight?: number;
+  minHeight?: number;
+  maxHeight?: number;
+  minDiameter?: number;
+  maxDiameter?: number;
   isActive?: boolean;
 }
 
@@ -392,15 +408,9 @@ export class CylinderDTOMapper {
       cylinderTypeId: cylinder.cylinderTypeId,
       manufacturerId: cylinder.manufacturerId,
       manufacturerName: cylinder.manufacturerName,
-      manufacturingDate: cylinder.manufacturingDate
-        ? cylinder.manufacturingDate.toISOString().split("T")[0]
-        : null,
-      lastInspectionDate: cylinder.lastInspectionDate
-        ? cylinder.lastInspectionDate.toISOString().split("T")[0]
-        : null,
-      nextInspectionDate: cylinder.nextInspectionDate
-        ? cylinder.nextInspectionDate.toISOString().split("T")[0]
-        : null,
+      manufacturingDate: formatDateToISOString(cylinder.manufacturingDate),
+      lastInspectionDate: formatDateToISOString(cylinder.lastInspectionDate),
+      nextInspectionDate: formatDateToISOString(cylinder.nextInspectionDate),
       capacity: cylinder.capacity,
       color: cylinder.color,
       status: cylinder.status,
@@ -416,20 +426,14 @@ export class CylinderDTOMapper {
       barcode: cylinder.barcode,
       rfidTag: cylinder.rfidTag,
       isActive: cylinder.isActive,
-      lastFilled: cylinder.lastFilled
-        ? cylinder.lastFilled.toISOString()
-        : null,
-      lastLeakTest: cylinder.lastLeakTest
-        ? cylinder.lastLeakTest.toISOString().split("T")[0]
-        : null,
-      lastMaintenanceDate: cylinder.lastMaintenanceDate
-        ? cylinder.lastMaintenanceDate.toISOString().split("T")[0]
-        : null,
-      maintenanceDueDate: cylinder.maintenanceDueDate
-        ? cylinder.maintenanceDueDate.toISOString().split("T")[0]
-        : null,
+      lastFilled: formatDateToISOString(cylinder.lastFilled),
+      lastLeakTest: formatDateToISOString(cylinder.lastLeakTest),
+      lastMaintenanceDate: formatDateToISOString(cylinder.lastMaintenanceDate),
+      maintenanceDueDate: formatDateToISOString(cylinder.maintenanceDueDate),
       assignedCustomerId: cylinder.assignedCustomerId,
       assignedCustomerName: cylinder.assignedCustomerName,
+      createdAt: formatDateToISOString(cylinder.createdAt) || undefined,
+      updatedAt: formatDateToISOString(cylinder.updatedAt) || undefined,
     };
   }
 
@@ -537,3 +541,24 @@ export class CylinderDTOMapper {
     };
   }
 }
+
+/**
+ * Helper function to safely format a date to ISO string
+ * Handles both Date objects and string dates
+ */
+const formatDateToISOString = (date: Date | string | null): string | null => {
+  if (!date) return null;
+
+  try {
+    // If it's already a Date object, use toISOString directly
+    if (date instanceof Date) {
+      return date.toISOString();
+    }
+
+    // Otherwise, convert the string to a Date object first
+    return new Date(date).toISOString();
+  } catch (error) {
+    console.error(`Invalid date format: ${date}`, error);
+    return null;
+  }
+};

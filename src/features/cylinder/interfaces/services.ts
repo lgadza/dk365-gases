@@ -178,9 +178,25 @@ export interface ICylinderRepository {
     movements: CylinderMovementInterface[];
     total: number;
   }>;
+
+  /**
+   * Debug utility function to check database access
+   * For development/testing purposes only
+   */
+  debugCheckDatabaseAccess(): Promise<{
+    cylinderCount: number;
+    typeCount: number;
+    sampleCylinder: any | null;
+  }>;
 }
 
 export interface ICylinderService {
+  /**
+   * For development/debugging purposes only
+   * @internal
+   */
+  repository: ICylinderRepository;
+
   /**
    * Get cylinder by ID
    */

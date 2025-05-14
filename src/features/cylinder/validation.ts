@@ -454,6 +454,36 @@ export const cylinderValidationSchemas = {
   calculateCylinderStats: {
     query: Joi.object({}),
   },
+
+  /**
+   * Search cylinder types schema
+   */
+  searchCylinderTypes: {
+    body: Joi.object({
+      page: Joi.number().integer().min(1).optional(),
+      limit: Joi.number().integer().min(1).max(100).optional(),
+      search: Joi.string().optional(),
+      sortBy: Joi.string().optional(),
+      sortOrder: Joi.string().valid("asc", "desc").optional(),
+
+      // Enhanced search parameters
+      name: Joi.string().optional(),
+      description: Joi.string().optional(),
+      gasType: Joi.string().optional(),
+      material: Joi.string().optional(),
+      minCapacity: Joi.number().optional(),
+      maxCapacity: Joi.number().optional(),
+      valveType: Joi.string().optional(),
+      color: Joi.string().optional(),
+      minWeight: Joi.number().optional(),
+      maxWeight: Joi.number().optional(),
+      minHeight: Joi.number().optional(),
+      maxHeight: Joi.number().optional(),
+      minDiameter: Joi.number().optional(),
+      maxDiameter: Joi.number().optional(),
+      isActive: Joi.boolean().optional(),
+    }),
+  },
 };
 
 export default cylinderValidationSchemas;

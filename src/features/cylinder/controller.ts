@@ -7,6 +7,8 @@ import ResponseUtil, {
 import logger from "@/common/utils/logging/logger";
 import { AppError } from "@/common/utils/errors/errorUtils";
 import { ErrorCode } from "@/common/utils/errors/errorCodes";
+// Fix the import path - appConfig is exported from the main config index
+import { appConfig } from "@/config";
 
 export class CylinderController {
   private service: ICylinderService;
@@ -202,7 +204,11 @@ export class CylinderController {
         location: params.location as string,
         cylinderTypeId: params.cylinderTypeId as string,
         customerId: params.customerId as string,
-        isActive: params.isActive === "true",
+        // Only pass isActive if it was explicitly provided
+        isActive:
+          params.isActive !== undefined
+            ? params.isActive === "true"
+            : undefined,
         needsInspection: params.needsInspection === "true",
         needsMaintenance: params.needsMaintenance === "true",
       });
@@ -546,8 +552,38 @@ export class CylinderController {
         search: params.search as string,
         sortBy: params.sortBy as string,
         sortOrder: params.sortOrder as "asc" | "desc" | undefined,
+
+        // Enhanced search parameters
+        name: params.name as string,
+        description: params.description as string,
         gasType: params.gasType as string,
         material: params.material as string,
+        minCapacity: params.minCapacity
+          ? parseFloat(params.minCapacity as string)
+          : undefined,
+        maxCapacity: params.maxCapacity
+          ? parseFloat(params.maxCapacity as string)
+          : undefined,
+        valveType: params.valveType as string,
+        color: params.color as string,
+        minWeight: params.minWeight
+          ? parseFloat(params.minWeight as string)
+          : undefined,
+        maxWeight: params.maxWeight
+          ? parseFloat(params.maxWeight as string)
+          : undefined,
+        minHeight: params.minHeight
+          ? parseFloat(params.minHeight as string)
+          : undefined,
+        maxHeight: params.maxHeight
+          ? parseFloat(params.maxHeight as string)
+          : undefined,
+        minDiameter: params.minDiameter
+          ? parseFloat(params.minDiameter as string)
+          : undefined,
+        maxDiameter: params.maxDiameter
+          ? parseFloat(params.maxDiameter as string)
+          : undefined,
         isActive: params.isActive === "true",
       });
 
@@ -566,6 +602,65 @@ export class CylinderController {
         ResponseUtil.sendError(
           res,
           "Error retrieving cylinder types",
+          HttpStatus.INTERNAL_SERVER_ERROR,
+          { code: ErrorCode.GEN_INTERNAL_ERROR }
+        );
+      }
+    }
+  };
+
+  /**
+   * Advanced search for cylinder types - dedicated endpoint
+   */
+  public searchCylinderTypes = async (
+    req: Request,
+    res: Response
+  ): Promise<void> => {
+    try {
+      // Use the same implementation as getCylinderTypeList
+      // but with a more descriptive name for the dedicated search endpoint
+      const params = req.body; // Using body for more complex search criteria
+
+      const result = await this.service.getCylinderTypeList({
+        page: params.page || 1,
+        limit: params.limit || 10,
+        search: params.search,
+        sortBy: params.sortBy || "name",
+        sortOrder: params.sortOrder || "asc",
+
+        // All search parameters from body
+        name: params.name,
+        description: params.description,
+        gasType: params.gasType,
+        material: params.material,
+        minCapacity: params.minCapacity,
+        maxCapacity: params.maxCapacity,
+        valveType: params.valveType,
+        color: params.color,
+        minWeight: params.minWeight,
+        maxWeight: params.maxWeight,
+        minHeight: params.minHeight,
+        maxHeight: params.maxHeight,
+        minDiameter: params.minDiameter,
+        maxDiameter: params.maxDiameter,
+        isActive: params.isActive,
+      });
+
+      ResponseUtil.sendSuccess(
+        res,
+        result,
+        "Cylinder types search completed successfully"
+      );
+    } catch (error) {
+      logger.error("Error in searchCylinderTypes controller:", error);
+      if (error instanceof AppError) {
+        ResponseUtil.sendError(res, error.message, error.httpCode, {
+          code: error.metadata.code,
+        });
+      } else {
+        ResponseUtil.sendError(
+          res,
+          "Error searching cylinder types",
           HttpStatus.INTERNAL_SERVER_ERROR,
           { code: ErrorCode.GEN_INTERNAL_ERROR }
         );
@@ -1000,6 +1095,44 @@ export class CylinderController {
           { code: ErrorCode.GEN_INTERNAL_ERROR }
         );
       }
+    }
+  };
+
+  /**
+   * Debug endpoint to verify database access
+   * Only available in development mode
+   */
+  public debugDatabaseAccess = async (
+    req: Request,
+    res: Response
+  ): Promise<void> => {
+    try {
+      // Only allow in development mode
+      if (appConfig.env !== "development") {
+        return ResponseUtil.sendError(
+          res,
+          "Debug endpoint only available in development mode",
+          HttpStatus.FORBIDDEN
+        );
+      }
+
+      // Access repository directly to check database access
+      // @ts-ignore - accessing private property for debugging
+      const dbAccessInfo =
+        await this.service.repository.debugCheckDatabaseAccess();
+
+      ResponseUtil.sendSuccess(
+        res,
+        dbAccessInfo,
+        "Database access check completed"
+      );
+    } catch (error) {
+      logger.error("Error in debug database access endpoint:", error);
+      ResponseUtil.sendError(
+        res,
+        "Error checking database access",
+        HttpStatus.INTERNAL_SERVER_ERROR
+      );
     }
   };
 }

@@ -44,7 +44,8 @@ import CylinderMovement from "./cylinder-movement.model";
 import { Op } from "sequelize";
 
 export class CylinderService implements ICylinderService {
-  private repository: ICylinderRepository;
+  // Change from private to public for debugging purposes
+  public repository: ICylinderRepository;
   private readonly CACHE_PREFIX = "cylinder:";
   private readonly CACHE_TTL = 600; // 10 minutes
 
@@ -145,6 +146,66 @@ export class CylinderService implements ICylinderService {
       if (existingCylinder) {
         throw new ConflictError(
           `Cylinder with serial number ${cylinderData.serialNumber} already exists`
+        );
+      }
+
+      // Ensure dates are properly converted to Date objects
+      if (
+        cylinderData.manufacturingDate &&
+        !(cylinderData.manufacturingDate instanceof Date)
+      ) {
+        cylinderData.manufacturingDate = new Date(
+          cylinderData.manufacturingDate
+        );
+      }
+
+      if (
+        cylinderData.lastInspectionDate &&
+        !(cylinderData.lastInspectionDate instanceof Date)
+      ) {
+        cylinderData.lastInspectionDate = new Date(
+          cylinderData.lastInspectionDate
+        );
+      }
+
+      if (
+        cylinderData.nextInspectionDate &&
+        !(cylinderData.nextInspectionDate instanceof Date)
+      ) {
+        cylinderData.nextInspectionDate = new Date(
+          cylinderData.nextInspectionDate
+        );
+      }
+
+      if (
+        cylinderData.lastFilled &&
+        !(cylinderData.lastFilled instanceof Date)
+      ) {
+        cylinderData.lastFilled = new Date(cylinderData.lastFilled);
+      }
+
+      if (
+        cylinderData.lastLeakTest &&
+        !(cylinderData.lastLeakTest instanceof Date)
+      ) {
+        cylinderData.lastLeakTest = new Date(cylinderData.lastLeakTest);
+      }
+
+      if (
+        cylinderData.lastMaintenanceDate &&
+        !(cylinderData.lastMaintenanceDate instanceof Date)
+      ) {
+        cylinderData.lastMaintenanceDate = new Date(
+          cylinderData.lastMaintenanceDate
+        );
+      }
+
+      if (
+        cylinderData.maintenanceDueDate &&
+        !(cylinderData.maintenanceDueDate instanceof Date)
+      ) {
+        cylinderData.maintenanceDueDate = new Date(
+          cylinderData.maintenanceDueDate
         );
       }
 
@@ -278,9 +339,38 @@ export class CylinderService implements ICylinderService {
     params: CylinderListQueryParams
   ): Promise<PaginatedCylinderListDTO> {
     try {
+      // Log the incoming parameters for debugging
+      logger.debug(
+        "Getting cylinder list with params:",
+        JSON.stringify(params)
+      );
+
+      // Ensure isActive is not restricting results unless explicitly set
+      if (params.isActive === undefined) {
+        // Don't filter by active status by default
+        delete params.isActive;
+      }
+
       const { cylinders, total } = await this.repository.getCylinderList(
         params
       );
+
+      // Log the database query result counts
+      logger.debug(
+        `Cylinder database query returned ${cylinders.length} cylinders out of ${total} total`
+      );
+
+      if (cylinders.length === 0 && total === 0) {
+        // This is suspicious - check if there are any cylinders at all
+        const rawCount = await Cylinder.count();
+        logger.debug(`Raw cylinder count in database: ${rawCount}`);
+
+        if (rawCount > 0) {
+          logger.warn(
+            "Database has cylinders but query returned none. Check filters and permissions."
+          );
+        }
+      }
 
       // Get all type IDs for efficiency
       const typeIds = [

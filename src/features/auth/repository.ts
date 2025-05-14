@@ -1,4 +1,4 @@
-import { UserInterface } from "@/features/users/interfaces";
+import { UserInterface } from "@/features/users/interfaces/interfaces";
 import { IAuthRepository } from "./interfaces/services";
 import User from "@/features/users/model";
 import Role from "@/features/rbac/models/roles.model";

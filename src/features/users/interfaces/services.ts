@@ -1,4 +1,4 @@
-import { UserInterface, UserRoleInterface } from "../interfaces";
+import { UserInterface, UserRoleInterface } from "./interfaces";
 import {
   UserDetailDTO,
   UserListItemDTO,

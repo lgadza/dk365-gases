@@ -2410,3 +2410,770 @@
     at Module.load (node:internal/modules/cjs/loader:1119:32)
     at Function.Module._load (node:internal/modules/cjs/loader:960:12)
     at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T13:29:44.698Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/dto.ts[0m:[93m433[0m:[93m7[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'createdAt' does not exist in type 'CylinderBaseDTO'.
+
+[7m433[0m       createdAt: formatDateToISOString(cylinder.createdAt),
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T13:30:13.966Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/dto.ts[0m:[93m433[0m:[93m7[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'createdAt' does not exist in type 'CylinderBaseDTO'.
+
+[7m433[0m       createdAt: formatDateToISOString(cylinder.createdAt),
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T13:31:02.475Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/dto.ts[0m:[93m337[0m:[93m14[0m - [91merror[0m[90m TS2552: [0mCannot find name 'CylinderSimpleDTO'. Did you mean 'CylinderTypeDTO'?
+
+[7m337[0m   cylinders: CylinderSimpleDTO[];
+[7m   [0m [91m             ~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/dto.ts[0m:[93m433[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'string | null' is not assignable to type 'string | undefined'.
+  Type 'null' is not assignable to type 'string | undefined'.
+
+[7m433[0m       createdAt: formatDateToISOString(cylinder.createdAt),
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/features/cylinder/dto.ts[0m:[93m41[0m:[93m3[0m
+    [7m41[0m   createdAt?: string;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'createdAt' which is declared here on type 'CylinderBaseDTO'
+[96msrc/features/cylinder/dto.ts[0m:[93m434[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'string | null' is not assignable to type 'string | undefined'.
+  Type 'null' is not assignable to type 'string | undefined'.
+
+[7m434[0m       updatedAt: formatDateToISOString(cylinder.updatedAt),
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/features/cylinder/dto.ts[0m:[93m42[0m:[93m3[0m
+    [7m42[0m   updatedAt?: string;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'updatedAt' which is declared here on type 'CylinderBaseDTO'
+[96msrc/features/cylinder/dto.ts[0m:[93m471[0m:[93m6[0m - [91merror[0m[90m TS2552: [0mCannot find name 'CylinderSimpleDTO'. Did you mean 'CylinderTypeDTO'?
+
+[7m471[0m   ): CylinderSimpleDTO {
+[7m   [0m [91m     ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T13:54:41.269Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/controller.ts[0m:[93m10[0m:[93m23[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/config/appConfig' or its corresponding type declarations.
+
+[7m10[0m import appConfig from "@/config/appConfig";
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m1117[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'repository' does not exist on type 'ICylinderService'.
+
+[7m1117[0m         await this.service.repository.debugCheckDatabaseAccess();
+[7m    [0m [91m                           ~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T14:04:41.328Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/controller.ts[0m:[93m10[0m:[93m23[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/config/appConfig' or its corresponding type declarations.
+
+[7m10[0m import appConfig from "@/config/appConfig";
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m1117[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'repository' does not exist on type 'ICylinderService'.
+
+[7m1117[0m         await this.service.repository.debugCheckDatabaseAccess();
+[7m    [0m [91m                           ~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T14:13:27.944Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/controller.ts[0m:[93m1118[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'repository' does not exist on type 'ICylinderService'.
+
+[7m1118[0m         await this.service.repository.debugCheckDatabaseAccess();
+[7m    [0m [91m                           ~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T16:02:44.302Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/v1/index.ts[0m:[93m12[0m:[93m25[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../features/fleet/routes' or its corresponding type declarations.
+
+[7m12[0m import fleetRouter from "../../features/fleet/routes";
+[7m  [0m [91m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T16:07:43.662Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/v1/index.ts[0m:[93m12[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/fleet/routes"' has no default export.
+
+[7m12[0m import fleetRouter from "../../features/fleet/routes";
+[7m  [0m [91m       ~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T16:12:12.088Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/fleet/routes.ts[0m:[93m289[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehicleList' does not exist on type 'FleetController'.
+
+[7m289[0m   asyncHandler(fleetController.getVehicleList)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m742[0m:[93m32[0m - [91merror[0m[90m TS2551: [0mProperty 'updateVehicleStatus' does not exist on type 'FleetController'. Did you mean 'updateVehicle'?
+
+[7m742[0m   asyncHandler(fleetController.updateVehicleStatus)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/fleet/controller.ts[0m:[93m81[0m:[93m10[0m
+    [7m81[0m   public updateVehicle = async (req: Request, res: Response): Promise<void> => {
+    [7m  [0m [96m         ~~~~~~~~~~~~~[0m
+    'updateVehicle' is declared here.
+[96msrc/features/fleet/routes.ts[0m:[93m808[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'updateVehicleMileage' does not exist on type 'FleetController'.
+
+[7m808[0m   asyncHandler(fleetController.updateVehicleMileage)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m875[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'assignDriverToVehicle' does not exist on type 'FleetController'.
+
+[7m875[0m   asyncHandler(fleetController.assignDriverToVehicle)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m925[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehiclesByStatus' does not exist on type 'FleetController'.
+
+[7m925[0m   asyncHandler(fleetController.getVehiclesByStatus)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m974[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehiclesByType' does not exist on type 'FleetController'.
+
+[7m974[0m   asyncHandler(fleetController.getVehiclesByType)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T16:17:27.778Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/fleet/routes.ts[0m:[93m289[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehicleList' does not exist on type 'FleetController'.
+
+[7m289[0m   asyncHandler(fleetController.getVehicleList)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m742[0m:[93m32[0m - [91merror[0m[90m TS2551: [0mProperty 'updateVehicleStatus' does not exist on type 'FleetController'. Did you mean 'updateVehicle'?
+
+[7m742[0m   asyncHandler(fleetController.updateVehicleStatus)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/fleet/controller.ts[0m:[93m81[0m:[93m10[0m
+    [7m81[0m   public updateVehicle = async (req: Request, res: Response): Promise<void> => {
+    [7m  [0m [96m         ~~~~~~~~~~~~~[0m
+    'updateVehicle' is declared here.
+[96msrc/features/fleet/routes.ts[0m:[93m808[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'updateVehicleMileage' does not exist on type 'FleetController'.
+
+[7m808[0m   asyncHandler(fleetController.updateVehicleMileage)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m875[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'assignDriverToVehicle' does not exist on type 'FleetController'.
+
+[7m875[0m   asyncHandler(fleetController.assignDriverToVehicle)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m925[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehiclesByStatus' does not exist on type 'FleetController'.
+
+[7m925[0m   asyncHandler(fleetController.getVehiclesByStatus)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m974[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehiclesByType' does not exist on type 'FleetController'.
+
+[7m974[0m   asyncHandler(fleetController.getVehiclesByType)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T16:21:14.941Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/fleet/routes.ts[0m:[93m289[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehicleList' does not exist on type 'FleetController'.
+
+[7m289[0m   asyncHandler(fleetController.getVehicleList)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m742[0m:[93m32[0m - [91merror[0m[90m TS2551: [0mProperty 'updateVehicleStatus' does not exist on type 'FleetController'. Did you mean 'updateVehicle'?
+
+[7m742[0m   asyncHandler(fleetController.updateVehicleStatus)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/fleet/controller.ts[0m:[93m81[0m:[93m10[0m
+    [7m81[0m   public updateVehicle = async (req: Request, res: Response): Promise<void> => {
+    [7m  [0m [96m         ~~~~~~~~~~~~~[0m
+    'updateVehicle' is declared here.
+[96msrc/features/fleet/routes.ts[0m:[93m808[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'updateVehicleMileage' does not exist on type 'FleetController'.
+
+[7m808[0m   asyncHandler(fleetController.updateVehicleMileage)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m875[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'assignDriverToVehicle' does not exist on type 'FleetController'.
+
+[7m875[0m   asyncHandler(fleetController.assignDriverToVehicle)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m925[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehiclesByStatus' does not exist on type 'FleetController'.
+
+[7m925[0m   asyncHandler(fleetController.getVehiclesByStatus)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m974[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehiclesByType' does not exist on type 'FleetController'.
+
+[7m974[0m   asyncHandler(fleetController.getVehiclesByType)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T16:22:09.375Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/fleet/routes.ts[0m:[93m289[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehicleList' does not exist on type 'FleetController'.
+
+[7m289[0m   asyncHandler(fleetController.getVehicleList)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m742[0m:[93m32[0m - [91merror[0m[90m TS2551: [0mProperty 'updateVehicleStatus' does not exist on type 'FleetController'. Did you mean 'updateVehicle'?
+
+[7m742[0m   asyncHandler(fleetController.updateVehicleStatus)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/fleet/controller.ts[0m:[93m81[0m:[93m10[0m
+    [7m81[0m   public updateVehicle = async (req: Request, res: Response): Promise<void> => {
+    [7m  [0m [96m         ~~~~~~~~~~~~~[0m
+    'updateVehicle' is declared here.
+[96msrc/features/fleet/routes.ts[0m:[93m808[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'updateVehicleMileage' does not exist on type 'FleetController'.
+
+[7m808[0m   asyncHandler(fleetController.updateVehicleMileage)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m875[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'assignDriverToVehicle' does not exist on type 'FleetController'.
+
+[7m875[0m   asyncHandler(fleetController.assignDriverToVehicle)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m925[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehiclesByStatus' does not exist on type 'FleetController'.
+
+[7m925[0m   asyncHandler(fleetController.getVehiclesByStatus)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m974[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehiclesByType' does not exist on type 'FleetController'.
+
+[7m974[0m   asyncHandler(fleetController.getVehiclesByType)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T16:24:19.789Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/fleet/routes.ts[0m:[93m289[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehicleList' does not exist on type 'FleetController'.
+
+[7m289[0m   asyncHandler(fleetController.getVehicleList)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m742[0m:[93m32[0m - [91merror[0m[90m TS2551: [0mProperty 'updateVehicleStatus' does not exist on type 'FleetController'. Did you mean 'updateVehicle'?
+
+[7m742[0m   asyncHandler(fleetController.updateVehicleStatus)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/fleet/controller.ts[0m:[93m81[0m:[93m10[0m
+    [7m81[0m   public updateVehicle = async (req: Request, res: Response): Promise<void> => {
+    [7m  [0m [96m         ~~~~~~~~~~~~~[0m
+    'updateVehicle' is declared here.
+[96msrc/features/fleet/routes.ts[0m:[93m808[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'updateVehicleMileage' does not exist on type 'FleetController'.
+
+[7m808[0m   asyncHandler(fleetController.updateVehicleMileage)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m875[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'assignDriverToVehicle' does not exist on type 'FleetController'.
+
+[7m875[0m   asyncHandler(fleetController.assignDriverToVehicle)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m925[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehiclesByStatus' does not exist on type 'FleetController'.
+
+[7m925[0m   asyncHandler(fleetController.getVehiclesByStatus)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m974[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehiclesByType' does not exist on type 'FleetController'.
+
+[7m974[0m   asyncHandler(fleetController.getVehiclesByType)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T16:25:33.747Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/fleet/routes.ts[0m:[93m289[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehicleList' does not exist on type 'FleetController'.
+
+[7m289[0m   asyncHandler(fleetController.getVehicleList)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m742[0m:[93m32[0m - [91merror[0m[90m TS2551: [0mProperty 'updateVehicleStatus' does not exist on type 'FleetController'. Did you mean 'updateVehicle'?
+
+[7m742[0m   asyncHandler(fleetController.updateVehicleStatus)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/fleet/controller.ts[0m:[93m81[0m:[93m10[0m
+    [7m81[0m   public updateVehicle = async (req: Request, res: Response): Promise<void> => {
+    [7m  [0m [96m         ~~~~~~~~~~~~~[0m
+    'updateVehicle' is declared here.
+[96msrc/features/fleet/routes.ts[0m:[93m808[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'updateVehicleMileage' does not exist on type 'FleetController'.
+
+[7m808[0m   asyncHandler(fleetController.updateVehicleMileage)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m875[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'assignDriverToVehicle' does not exist on type 'FleetController'.
+
+[7m875[0m   asyncHandler(fleetController.assignDriverToVehicle)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m925[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehiclesByStatus' does not exist on type 'FleetController'.
+
+[7m925[0m   asyncHandler(fleetController.getVehiclesByStatus)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/routes.ts[0m:[93m974[0m:[93m32[0m - [91merror[0m[90m TS2339: [0mProperty 'getVehiclesByType' does not exist on type 'FleetController'.
+
+[7m974[0m   asyncHandler(fleetController.getVehiclesByType)
+[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T16:26:52.180Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/fleet/repository.ts[0m:[93m332[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType '{ [OpTypes.or]: (Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]; }' is not assignable to type 'WhereOptions<FleetVehicleInterface> | undefined'.
+  Types of property '[Op.or]' are incompatible.
+    Type '(Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]' is not assignable to type 'AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface>>> | undefined'.
+      Type '{ nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; }' is not assignable to type 'Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface> | { [OpTypes.or]: AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<...>>>; } | { ...; } | { ...; }'.
+        Types of property 'nextMaintenanceDate' are incompatible.
+          Type '{ [OpTypes.not]: null; [OpTypes.lte]: Date; }' is not assignable to type 'WhereAttributeHashValue<Date | undefined>'.
+            Types of property '[Op.not]' are incompatible.
+              Type 'null' is not assignable to type 'string | number | boolean | Date | Fn | Col | Literal | { [OpTypes.col]: string; } | Cast | Buffer<ArrayBufferLike> | readonly OperatorValues<never>[] | ... 10 more ... | undefined'.
+
+[7m332[0m         where: {
+[7m   [0m [91m        ~~~~~[0m
+[96msrc/features/fleet/repository.ts[0m:[93m385[0m:[93m9[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(this: ModelStatic<...>, options: { logging?: boolean | ((sql: string, timing?: number | undefined) => void) | undefined; where?: WhereOptions<FleetVehicleInterface> | undefined; ... 8 more ...; group: GroupOption; }): Promise<...>', gave the following error.
+    Type '{ [OpTypes.or]: (Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]; }' is not assignable to type 'WhereOptions<FleetVehicleInterface> | undefined'.
+      Types of property '[Op.or]' are incompatible.
+        Type '(Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]' is not assignable to type 'AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface>>> | undefined'.
+          Type '{ nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; }' is not assignable to type 'Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface> | { [OpTypes.or]: AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<...>>>; } | { ...; } | { ...; }'.
+            Types of property 'nextMaintenanceDate' are incompatible.
+              Type '{ [OpTypes.not]: null; [OpTypes.lte]: Date; }' is not assignable to type 'WhereAttributeHashValue<Date | undefined>'.
+                Types of property '[Op.not]' are incompatible.
+                  Type 'null' is not assignable to type 'string | number | boolean | Date | Fn | Col | Literal | { [OpTypes.col]: string; } | Cast | Buffer<ArrayBufferLike> | readonly OperatorValues<never>[] | ... 10 more ... | undefined'.
+  Overload 2 of 2, '(this: ModelStatic<FleetVehicle>, options?: Omit<CountOptions<FleetVehicleInterface>, "group"> | undefined): Promise<...>', gave the following error.
+    Type '{ [OpTypes.or]: (Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]; }' is not assignable to type 'WhereOptions<FleetVehicleInterface> | undefined'.
+      Types of property '[Op.or]' are incompatible.
+        Type '(Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]' is not assignable to type 'AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface>>> | undefined'.
+          Type '{ nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; }' is not assignable to type 'Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface> | { [OpTypes.or]: AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<...>>>; } | { ...; } | { ...; }'.
+            Types of property 'nextMaintenanceDate' are incompatible.
+              Type '{ [OpTypes.not]: null; [OpTypes.lte]: Date; }' is not assignable to type 'WhereAttributeHashValue<Date | undefined>'.
+                Types of property '[Op.not]' are incompatible.
+                  Type 'null' is not assignable to type 'string | number | boolean | Date | Fn | Col | Literal | { [OpTypes.col]: string; } | Cast | Buffer<ArrayBufferLike> | readonly OperatorValues<never>[] | ... 10 more ... | undefined'.
+
+[7m385[0m         where: {
+[7m   [0m [91m        ~~~~~[0m
+
+  [96mnode_modules/sequelize/types/model.d.ts[0m:[93m55[0m:[93m3[0m
+    [7m55[0m   where?: WhereOptions<TAttributes>;
+    [7m  [0m [96m  ~~~~~[0m
+    The expected type comes from property 'where' which is declared here on type '{ logging?: boolean | ((sql: string, timing?: number | undefined) => void) | undefined; where?: WhereOptions<FleetVehicleInterface> | undefined; ... 8 more ...; group: GroupOption; }'
+[96msrc/features/fleet/repository.ts[0m:[93m413[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'GroupedCountResultItem[]' is not assignable to type 'number'.
+
+[7m413[0m         requireMaintenance: needsMaintenance,
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/repository.ts[0m:[93m484[0m:[93m15[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: Omit<...> & { ...; }): Promise<...>', gave the following error.
+    Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+  Overload 2 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: UpdateOptions<...>): Promise<...>', gave the following error.
+    Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+
+[7m484[0m               lastMaintenanceDate: maintenanceData.serviceDate,
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/fleet/interfaces/interfaces.ts[0m:[93m21[0m:[93m3[0m
+    [7m21[0m   lastMaintenanceDate?: Date;
+    [7m  [0m [96m  ~~~~~~~~~~~~~~~~~~~[0m
+    The expected type comes from property 'lastMaintenanceDate' which is declared here on type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'
+  [96msrc/features/fleet/interfaces/interfaces.ts[0m:[93m21[0m:[93m3[0m
+    [7m21[0m   lastMaintenanceDate?: Date;
+    [7m  [0m [96m  ~~~~~~~~~~~~~~~~~~~[0m
+    The expected type comes from property 'lastMaintenanceDate' which is declared here on type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'
+[96msrc/features/fleet/repository.ts[0m:[93m558[0m:[93m13[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: Omit<...> & { ...; }): Promise<...>', gave the following error.
+    Argument of type '{ nextMaintenanceMileage?: number | undefined; nextMaintenanceDate?: string | undefined; lastMaintenanceDate?: string | undefined; }' is not assignable to parameter of type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'.
+      Types of property 'lastMaintenanceDate' are incompatible.
+        Type 'string | undefined' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+          Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+  Overload 2 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: UpdateOptions<...>): Promise<...>', gave the following error.
+    Argument of type '{ nextMaintenanceMileage?: number | undefined; nextMaintenanceDate?: string | undefined; lastMaintenanceDate?: string | undefined; }' is not assignable to parameter of type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'.
+      Types of property 'lastMaintenanceDate' are incompatible.
+        Type 'string | undefined' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+          Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+
+[7m558[0m             {
+[7m   [0m [91m            ~[0m
+[7m559[0m               ...(maintenanceData.serviceDate && {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m567[0m               }),
+[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m
+[7m568[0m             },
+[7m   [0m [91m~~~~~~~~~~~~~[0m
+
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T16:29:37.621Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/fleet/repository.ts[0m:[93m332[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType '{ [OpTypes.or]: (Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]; }' is not assignable to type 'WhereOptions<FleetVehicleInterface> | undefined'.
+  Types of property '[Op.or]' are incompatible.
+    Type '(Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]' is not assignable to type 'AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface>>> | undefined'.
+      Type '{ nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; }' is not assignable to type 'Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface> | { [OpTypes.or]: AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<...>>>; } | { ...; } | { ...; }'.
+        Types of property 'nextMaintenanceDate' are incompatible.
+          Type '{ [OpTypes.not]: null; [OpTypes.lte]: Date; }' is not assignable to type 'WhereAttributeHashValue<Date | undefined>'.
+            Types of property '[Op.not]' are incompatible.
+              Type 'null' is not assignable to type 'string | number | boolean | Date | Fn | Col | Literal | { [OpTypes.col]: string; } | Cast | Buffer<ArrayBufferLike> | readonly OperatorValues<never>[] | ... 10 more ... | undefined'.
+
+[7m332[0m         where: {
+[7m   [0m [91m        ~~~~~[0m
+[96msrc/features/fleet/repository.ts[0m:[93m385[0m:[93m9[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(this: ModelStatic<...>, options: { logging?: boolean | ((sql: string, timing?: number | undefined) => void) | undefined; where?: WhereOptions<FleetVehicleInterface> | undefined; ... 8 more ...; group: GroupOption; }): Promise<...>', gave the following error.
+    Type '{ [OpTypes.or]: (Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]; }' is not assignable to type 'WhereOptions<FleetVehicleInterface> | undefined'.
+      Types of property '[Op.or]' are incompatible.
+        Type '(Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]' is not assignable to type 'AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface>>> | undefined'.
+          Type '{ nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; }' is not assignable to type 'Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface> | { [OpTypes.or]: AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<...>>>; } | { ...; } | { ...; }'.
+            Types of property 'nextMaintenanceDate' are incompatible.
+              Type '{ [OpTypes.not]: null; [OpTypes.lte]: Date; }' is not assignable to type 'WhereAttributeHashValue<Date | undefined>'.
+                Types of property '[Op.not]' are incompatible.
+                  Type 'null' is not assignable to type 'string | number | boolean | Date | Fn | Col | Literal | { [OpTypes.col]: string; } | Cast | Buffer<ArrayBufferLike> | readonly OperatorValues<never>[] | ... 10 more ... | undefined'.
+  Overload 2 of 2, '(this: ModelStatic<FleetVehicle>, options?: Omit<CountOptions<FleetVehicleInterface>, "group"> | undefined): Promise<...>', gave the following error.
+    Type '{ [OpTypes.or]: (Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]; }' is not assignable to type 'WhereOptions<FleetVehicleInterface> | undefined'.
+      Types of property '[Op.or]' are incompatible.
+        Type '(Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]' is not assignable to type 'AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface>>> | undefined'.
+          Type '{ nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; }' is not assignable to type 'Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface> | { [OpTypes.or]: AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<...>>>; } | { ...; } | { ...; }'.
+            Types of property 'nextMaintenanceDate' are incompatible.
+              Type '{ [OpTypes.not]: null; [OpTypes.lte]: Date; }' is not assignable to type 'WhereAttributeHashValue<Date | undefined>'.
+                Types of property '[Op.not]' are incompatible.
+                  Type 'null' is not assignable to type 'string | number | boolean | Date | Fn | Col | Literal | { [OpTypes.col]: string; } | Cast | Buffer<ArrayBufferLike> | readonly OperatorValues<never>[] | ... 10 more ... | undefined'.
+
+[7m385[0m         where: {
+[7m   [0m [91m        ~~~~~[0m
+
+  [96mnode_modules/sequelize/types/model.d.ts[0m:[93m55[0m:[93m3[0m
+    [7m55[0m   where?: WhereOptions<TAttributes>;
+    [7m  [0m [96m  ~~~~~[0m
+    The expected type comes from property 'where' which is declared here on type '{ logging?: boolean | ((sql: string, timing?: number | undefined) => void) | undefined; where?: WhereOptions<FleetVehicleInterface> | undefined; ... 8 more ...; group: GroupOption; }'
+[96msrc/features/fleet/repository.ts[0m:[93m413[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'GroupedCountResultItem[]' is not assignable to type 'number'.
+
+[7m413[0m         requireMaintenance: needsMaintenance,
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/repository.ts[0m:[93m484[0m:[93m15[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: Omit<...> & { ...; }): Promise<...>', gave the following error.
+    Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+  Overload 2 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: UpdateOptions<...>): Promise<...>', gave the following error.
+    Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+
+[7m484[0m               lastMaintenanceDate: maintenanceData.serviceDate,
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/fleet/interfaces/interfaces.ts[0m:[93m21[0m:[93m3[0m
+    [7m21[0m   lastMaintenanceDate?: Date;
+    [7m  [0m [96m  ~~~~~~~~~~~~~~~~~~~[0m
+    The expected type comes from property 'lastMaintenanceDate' which is declared here on type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'
+  [96msrc/features/fleet/interfaces/interfaces.ts[0m:[93m21[0m:[93m3[0m
+    [7m21[0m   lastMaintenanceDate?: Date;
+    [7m  [0m [96m  ~~~~~~~~~~~~~~~~~~~[0m
+    The expected type comes from property 'lastMaintenanceDate' which is declared here on type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'
+[96msrc/features/fleet/repository.ts[0m:[93m558[0m:[93m13[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: Omit<...> & { ...; }): Promise<...>', gave the following error.
+    Argument of type '{ nextMaintenanceMileage?: number | undefined; nextMaintenanceDate?: string | undefined; lastMaintenanceDate?: string | undefined; }' is not assignable to parameter of type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'.
+      Types of property 'lastMaintenanceDate' are incompatible.
+        Type 'string | undefined' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+          Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+  Overload 2 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: UpdateOptions<...>): Promise<...>', gave the following error.
+    Argument of type '{ nextMaintenanceMileage?: number | undefined; nextMaintenanceDate?: string | undefined; lastMaintenanceDate?: string | undefined; }' is not assignable to parameter of type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'.
+      Types of property 'lastMaintenanceDate' are incompatible.
+        Type 'string | undefined' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+          Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+
+[7m558[0m             {
+[7m   [0m [91m            ~[0m
+[7m559[0m               ...(maintenanceData.serviceDate && {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m567[0m               }),
+[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m
+[7m568[0m             },
+[7m   [0m [91m~~~~~~~~~~~~~[0m
+
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T16:31:30.230Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/fleet/repository.ts[0m:[93m377[0m:[93m9[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(this: ModelStatic<...>, options: { logging?: boolean | ((sql: string, timing?: number | undefined) => void) | undefined; where?: WhereOptions<FleetVehicleInterface> | undefined; ... 8 more ...; group: GroupOption; }): Promise<...>', gave the following error.
+    Type '{ [OpTypes.or]: (Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]; }' is not assignable to type 'WhereOptions<FleetVehicleInterface> | undefined'.
+      Types of property '[Op.or]' are incompatible.
+        Type '(Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]' is not assignable to type 'AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface>>> | undefined'.
+          Type '{ nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; }' is not assignable to type 'Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface> | { [OpTypes.or]: AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<...>>>; } | { ...; } | { ...; }'.
+            Types of property 'nextMaintenanceDate' are incompatible.
+              Type '{ [OpTypes.not]: null; [OpTypes.lte]: Date; }' is not assignable to type 'WhereAttributeHashValue<Date | undefined>'.
+                Types of property '[Op.not]' are incompatible.
+                  Type 'null' is not assignable to type 'string | number | boolean | Date | Fn | Col | Literal | { [OpTypes.col]: string; } | Cast | Buffer<ArrayBufferLike> | readonly OperatorValues<never>[] | ... 10 more ... | undefined'.
+  Overload 2 of 2, '(this: ModelStatic<FleetVehicle>, options?: Omit<CountOptions<FleetVehicleInterface>, "group"> | undefined): Promise<...>', gave the following error.
+    Type '{ [OpTypes.or]: (Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]; }' is not assignable to type 'WhereOptions<FleetVehicleInterface> | undefined'.
+      Types of property '[Op.or]' are incompatible.
+        Type '(Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]' is not assignable to type 'AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface>>> | undefined'.
+          Type '{ nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; }' is not assignable to type 'Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface> | { [OpTypes.or]: AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<...>>>; } | { ...; } | { ...; }'.
+            Types of property 'nextMaintenanceDate' are incompatible.
+              Type '{ [OpTypes.not]: null; [OpTypes.lte]: Date; }' is not assignable to type 'WhereAttributeHashValue<Date | undefined>'.
+                Types of property '[Op.not]' are incompatible.
+                  Type 'null' is not assignable to type 'string | number | boolean | Date | Fn | Col | Literal | { [OpTypes.col]: string; } | Cast | Buffer<ArrayBufferLike> | readonly OperatorValues<never>[] | ... 10 more ... | undefined'.
+
+[7m377[0m         where: {
+[7m   [0m [91m        ~~~~~[0m
+
+  [96mnode_modules/sequelize/types/model.d.ts[0m:[93m55[0m:[93m3[0m
+    [7m55[0m   where?: WhereOptions<TAttributes>;
+    [7m  [0m [96m  ~~~~~[0m
+    The expected type comes from property 'where' which is declared here on type '{ logging?: boolean | ((sql: string, timing?: number | undefined) => void) | undefined; where?: WhereOptions<FleetVehicleInterface> | undefined; ... 8 more ...; group: GroupOption; }'
+[96msrc/features/fleet/repository.ts[0m:[93m405[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'GroupedCountResultItem[]' is not assignable to type 'number'.
+
+[7m405[0m         requireMaintenance: needsMaintenance,
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/repository.ts[0m:[93m476[0m:[93m15[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: Omit<...> & { ...; }): Promise<...>', gave the following error.
+    Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+  Overload 2 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: UpdateOptions<...>): Promise<...>', gave the following error.
+    Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+
+[7m476[0m               lastMaintenanceDate: maintenanceData.serviceDate,
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/fleet/interfaces/interfaces.ts[0m:[93m21[0m:[93m3[0m
+    [7m21[0m   lastMaintenanceDate?: Date;
+    [7m  [0m [96m  ~~~~~~~~~~~~~~~~~~~[0m
+    The expected type comes from property 'lastMaintenanceDate' which is declared here on type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'
+  [96msrc/features/fleet/interfaces/interfaces.ts[0m:[93m21[0m:[93m3[0m
+    [7m21[0m   lastMaintenanceDate?: Date;
+    [7m  [0m [96m  ~~~~~~~~~~~~~~~~~~~[0m
+    The expected type comes from property 'lastMaintenanceDate' which is declared here on type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'
+[96msrc/features/fleet/repository.ts[0m:[93m550[0m:[93m13[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: Omit<...> & { ...; }): Promise<...>', gave the following error.
+    Argument of type '{ nextMaintenanceMileage?: number | undefined; nextMaintenanceDate?: string | undefined; lastMaintenanceDate?: string | undefined; }' is not assignable to parameter of type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'.
+      Types of property 'lastMaintenanceDate' are incompatible.
+        Type 'string | undefined' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+          Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+  Overload 2 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: UpdateOptions<...>): Promise<...>', gave the following error.
+    Argument of type '{ nextMaintenanceMileage?: number | undefined; nextMaintenanceDate?: string | undefined; lastMaintenanceDate?: string | undefined; }' is not assignable to parameter of type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'.
+      Types of property 'lastMaintenanceDate' are incompatible.
+        Type 'string | undefined' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+          Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+
+[7m550[0m             {
+[7m   [0m [91m            ~[0m
+[7m551[0m               ...(maintenanceData.serviceDate && {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m559[0m               }),
+[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m
+[7m560[0m             },
+[7m   [0m [91m~~~~~~~~~~~~~[0m
+
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-14T16:32:35.575Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/fleet/repository.ts[0m:[93m332[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType '{ [OpTypes.or]: (Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]; }' is not assignable to type 'WhereOptions<FleetVehicleInterface> | undefined'.
+  Types of property '[Op.or]' are incompatible.
+    Type '(Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]' is not assignable to type 'AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface>>> | undefined'.
+      Type '{ nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; }' is not assignable to type 'Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface> | { [OpTypes.or]: AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<...>>>; } | { ...; } | { ...; }'.
+        Types of property 'nextMaintenanceDate' are incompatible.
+          Type '{ [OpTypes.not]: null; [OpTypes.lte]: Date; }' is not assignable to type 'WhereAttributeHashValue<Date | undefined>'.
+            Types of property '[Op.not]' are incompatible.
+              Type 'null' is not assignable to type 'string | number | boolean | Date | Fn | Col | Literal | { [OpTypes.col]: string; } | Cast | Buffer<ArrayBufferLike> | readonly OperatorValues<never>[] | ... 10 more ... | undefined'.
+
+[7m332[0m         where: {
+[7m   [0m [91m        ~~~~~[0m
+[96msrc/features/fleet/repository.ts[0m:[93m385[0m:[93m9[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(this: ModelStatic<...>, options: { logging?: boolean | ((sql: string, timing?: number | undefined) => void) | undefined; where?: WhereOptions<FleetVehicleInterface> | undefined; ... 8 more ...; group: GroupOption; }): Promise<...>', gave the following error.
+    Type '{ [OpTypes.or]: (Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]; }' is not assignable to type 'WhereOptions<FleetVehicleInterface> | undefined'.
+      Types of property '[Op.or]' are incompatible.
+        Type '(Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]' is not assignable to type 'AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface>>> | undefined'.
+          Type '{ nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; }' is not assignable to type 'Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface> | { [OpTypes.or]: AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<...>>>; } | { ...; } | { ...; }'.
+            Types of property 'nextMaintenanceDate' are incompatible.
+              Type '{ [OpTypes.not]: null; [OpTypes.lte]: Date; }' is not assignable to type 'WhereAttributeHashValue<Date | undefined>'.
+                Types of property '[Op.not]' are incompatible.
+                  Type 'null' is not assignable to type 'string | number | boolean | Date | Fn | Col | Literal | { [OpTypes.col]: string; } | Cast | Buffer<ArrayBufferLike> | readonly OperatorValues<never>[] | ... 10 more ... | undefined'.
+  Overload 2 of 2, '(this: ModelStatic<FleetVehicle>, options?: Omit<CountOptions<FleetVehicleInterface>, "group"> | undefined): Promise<...>', gave the following error.
+    Type '{ [OpTypes.or]: (Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]; }' is not assignable to type 'WhereOptions<FleetVehicleInterface> | undefined'.
+      Types of property '[Op.or]' are incompatible.
+        Type '(Literal | { nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; })[]' is not assignable to type 'AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface>>> | undefined'.
+          Type '{ nextMaintenanceDate: { [OpTypes.not]: null; [OpTypes.lte]: Date; }; }' is not assignable to type 'Fn | Literal | Where | Json | WhereAttributeHash<FleetVehicleInterface> | { [OpTypes.or]: AllowArray<AllowNotOrAndWithImplicitAndArrayRecursive<Fn | Literal | Where | Json | WhereAttributeHash<...>>>; } | { ...; } | { ...; }'.
+            Types of property 'nextMaintenanceDate' are incompatible.
+              Type '{ [OpTypes.not]: null; [OpTypes.lte]: Date; }' is not assignable to type 'WhereAttributeHashValue<Date | undefined>'.
+                Types of property '[Op.not]' are incompatible.
+                  Type 'null' is not assignable to type 'string | number | boolean | Date | Fn | Col | Literal | { [OpTypes.col]: string; } | Cast | Buffer<ArrayBufferLike> | readonly OperatorValues<never>[] | ... 10 more ... | undefined'.
+
+[7m385[0m         where: {
+[7m   [0m [91m        ~~~~~[0m
+
+  [96mnode_modules/sequelize/types/model.d.ts[0m:[93m55[0m:[93m3[0m
+    [7m55[0m   where?: WhereOptions<TAttributes>;
+    [7m  [0m [96m  ~~~~~[0m
+    The expected type comes from property 'where' which is declared here on type '{ logging?: boolean | ((sql: string, timing?: number | undefined) => void) | undefined; where?: WhereOptions<FleetVehicleInterface> | undefined; ... 8 more ...; group: GroupOption; }'
+[96msrc/features/fleet/repository.ts[0m:[93m413[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'GroupedCountResultItem[]' is not assignable to type 'number'.
+
+[7m413[0m         requireMaintenance: needsMaintenance,
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/fleet/repository.ts[0m:[93m484[0m:[93m15[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: Omit<...> & { ...; }): Promise<...>', gave the following error.
+    Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+  Overload 2 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: UpdateOptions<...>): Promise<...>', gave the following error.
+    Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+
+[7m484[0m               lastMaintenanceDate: maintenanceData.serviceDate,
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/fleet/interfaces/interfaces.ts[0m:[93m21[0m:[93m3[0m
+    [7m21[0m   lastMaintenanceDate?: Date;
+    [7m  [0m [96m  ~~~~~~~~~~~~~~~~~~~[0m
+    The expected type comes from property 'lastMaintenanceDate' which is declared here on type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'
+  [96msrc/features/fleet/interfaces/interfaces.ts[0m:[93m21[0m:[93m3[0m
+    [7m21[0m   lastMaintenanceDate?: Date;
+    [7m  [0m [96m  ~~~~~~~~~~~~~~~~~~~[0m
+    The expected type comes from property 'lastMaintenanceDate' which is declared here on type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'
+[96msrc/features/fleet/repository.ts[0m:[93m558[0m:[93m13[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: Omit<...> & { ...; }): Promise<...>', gave the following error.
+    Argument of type '{ nextMaintenanceMileage?: number | undefined; nextMaintenanceDate?: string | undefined; lastMaintenanceDate?: string | undefined; }' is not assignable to parameter of type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'.
+      Types of property 'lastMaintenanceDate' are incompatible.
+        Type 'string | undefined' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+          Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+  Overload 2 of 2, '(this: ModelStatic<...>, values: { id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }, options: UpdateOptions<...>): Promise<...>', gave the following error.
+    Argument of type '{ nextMaintenanceMileage?: number | undefined; nextMaintenanceDate?: string | undefined; lastMaintenanceDate?: string | undefined; }' is not assignable to parameter of type '{ id?: string | Fn | Col | Literal | undefined; vehicleType?: string | Fn | Col | Literal | undefined; make?: string | Fn | Col | Literal | undefined; ... 23 more ...; updatedAt?: Date | ... 3 more ... | undefined; }'.
+      Types of property 'lastMaintenanceDate' are incompatible.
+        Type 'string | undefined' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+          Type 'string' is not assignable to type 'Date | Fn | Col | Literal | undefined'.
+
+[7m558[0m             {
+[7m   [0m [91m            ~[0m
+[7m559[0m               ...(maintenanceData.serviceDate && {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m567[0m               }),
+[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m
+[7m568[0m             },
+[7m   [0m [91m~~~~~~~~~~~~~[0m
+
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)

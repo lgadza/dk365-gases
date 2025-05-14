@@ -1,5 +1,5 @@
 import { IUserRepository } from "./interfaces/services";
-import { UserInterface } from "./interfaces";
+import { UserInterface } from "./interfaces/interfaces";
 import User from "./model";
 import Role from "../rbac/models/roles.model";
 import UserRole from "./user-role.model";

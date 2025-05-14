@@ -1,4 +1,4 @@
-import { UserInterface } from "./interfaces";
+import { UserInterface } from "./interfaces/interfaces";
 
 // Base DTO for user information
 export interface UserBaseDTO {

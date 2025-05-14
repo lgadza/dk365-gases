@@ -31,6 +31,14 @@ router.use("/movements", cylinderMovementRouter);
  * Important: Specific routes (with fixed paths) must come BEFORE routes with parameters
  */
 
+// Debug routes - only available in development
+if (process.env.NODE_ENV === "development") {
+  router.get(
+    "/debug/database-access",
+    asyncHandler(cylinderController.debugDatabaseAccess)
+  );
+}
+
 // Special functionality routes (specific - come first)
 router.get(
   "/inspection/due",
@@ -189,6 +197,15 @@ router.get(
 /**
  * Cylinder type routes - mounted at /types
  */
+// Add a dedicated search endpoint (POST to allow complex search criteria in body)
+cylinderTypeRouter.post(
+  "/search",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
+  ValidationUtil.validateRequest(cylinderValidationSchemas.searchCylinderTypes),
+  asyncHandler(cylinderController.searchCylinderTypes)
+);
+
 cylinderTypeRouter.get(
   "/",
   AuthMiddleware.verifyToken,

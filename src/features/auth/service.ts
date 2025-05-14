@@ -1,4 +1,4 @@
-import { UserInterface } from "@/features/users/interfaces";
+import { UserInterface } from "@/features/users/interfaces/interfaces";
 import { IAuthService, IAuthRepository } from "./interfaces/services";
 import { AuthResponseDTO, UserInfoDTO } from "./dto";
 import JwtUtil, { TokenType } from "@/common/utils/auth/jwt";

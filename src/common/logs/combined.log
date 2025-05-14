@@ -12207,3 +12207,1744 @@
 2025-05-13T20:19:17.251Z warn: RESPONSE 401 POST / [216.68ms]
 2025-05-13T20:20:58.428Z info: REQUEST POST /api/v1/auth/login
 2025-05-13T20:20:58.987Z info: RESPONSE 200 POST /login [559.53ms]
+2025-05-14T12:34:38.631Z info: Database configuration:
+2025-05-14T12:34:41.444Z info: Connecting to Redis:
+2025-05-14T12:35:09.121Z info: Rate limiting is disabled
+2025-05-14T12:35:10.947Z info: Cache utility initialized
+2025-05-14T12:35:21.469Z info: Configuring CORS middleware
+2025-05-14T12:35:21.470Z info: Configuring compression middleware
+2025-05-14T12:35:21.476Z info: Rate limiting is disabled
+2025-05-14T12:35:21.476Z info: Rate limiting is disabled
+2025-05-14T12:35:21.478Z info: Checking database connection...
+2025-05-14T12:35:21.637Z info: Redis connected successfully
+2025-05-14T12:35:21.660Z info: Sequelize connection has been established successfully.
+2025-05-14T12:35:21.728Z info: Database connection successful
+2025-05-14T12:35:21.729Z info: Setting up model associations...
+2025-05-14T12:35:21.730Z info: Setting up model associations...
+2025-05-14T12:35:21.744Z info: Loading all model associations...
+2025-05-14T12:35:39.141Z info: Applied 11 of 11 model associations
+2025-05-14T12:35:39.146Z info: Model associations loaded
+2025-05-14T12:35:39.159Z info: Model associations set up successfully
+2025-05-14T12:35:39.161Z info: Checking Redis connection...
+2025-05-14T12:35:39.190Z info: Redis client is ready
+2025-05-14T12:35:39.376Z info: Redis ping successful
+2025-05-14T12:35:39.376Z info: Redis connection successful
+2025-05-14T12:35:39.378Z info: Syncing database models...
+2025-05-14T12:35:39.379Z info: Setting up model associations before sync...
+2025-05-14T12:35:39.380Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T12:35:39.381Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T12:35:39.383Z info: Syncing model: Role
+2025-05-14T12:35:39.757Z info: Successfully synced model: Role
+2025-05-14T12:35:39.762Z info: Syncing model: Permission
+2025-05-14T12:35:39.877Z info: Successfully synced model: Permission
+2025-05-14T12:35:39.882Z info: Syncing model: User
+2025-05-14T12:35:40.020Z info: Successfully synced model: User
+2025-05-14T12:35:40.021Z info: Syncing model: Address
+2025-05-14T12:35:40.055Z info: Successfully synced model: Address
+2025-05-14T12:35:40.056Z info: Syncing model: RolePermission
+2025-05-14T12:35:40.100Z info: Successfully synced model: RolePermission
+2025-05-14T12:35:40.100Z info: Syncing model: UserRole
+2025-05-14T12:35:40.136Z info: Successfully synced model: UserRole
+2025-05-14T12:35:40.136Z info: Syncing model: AddressLink
+2025-05-14T12:35:40.205Z info: Successfully synced model: AddressLink
+2025-05-14T12:35:40.206Z info: Syncing model: Cylinder
+2025-05-14T12:35:40.307Z info: Successfully synced model: Cylinder
+2025-05-14T12:35:40.307Z info: Syncing model: Invoice
+2025-05-14T12:35:40.371Z info: Successfully synced model: Invoice
+2025-05-14T12:35:40.371Z info: Syncing model: Cylinder
+2025-05-14T12:35:40.457Z info: Successfully synced model: Cylinder
+2025-05-14T12:35:40.457Z info: All models synced successfully
+2025-05-14T12:35:40.458Z info: Database synced successfully
+2025-05-14T12:35:40.458Z info: Verifying database tables before seeding...
+2025-05-14T12:35:40.460Z info: Found database tables: , , , , , , , , , 
+2025-05-14T12:35:40.461Z info: Running seeders...
+2025-05-14T12:35:40.461Z info: Starting database seeding...
+2025-05-14T12:35:41.464Z info: Starting RBAC seeding...
+2025-05-14T12:35:41.468Z info: Checking existing roles...
+2025-05-14T12:35:41.486Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T12:35:41.512Z info: Found 10 tables for permission generation
+2025-05-14T12:35:41.513Z info: No new permissions to create
+2025-05-14T12:35:41.526Z info: Checking for new permissions to assign to super_admin
+2025-05-14T12:35:41.527Z info: Checking for new permissions to assign to admin
+2025-05-14T12:35:41.528Z info: Checking for new permissions to assign to manager
+2025-05-14T12:35:41.528Z info: Checking for new permissions for driver
+2025-05-14T12:35:41.529Z info: No new role-permission mappings needed
+2025-05-14T12:35:41.529Z info: RBAC seeding completed successfully
+2025-05-14T12:35:41.529Z info: Database seeding completed
+2025-05-14T12:35:41.529Z info: Seeding completed successfully
+2025-05-14T12:35:41.534Z info: API Routes (133 total routes):
+2025-05-14T12:35:41.687Z info: Server running on port 3001
+2025-05-14T12:42:03.218Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:42:03.279Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T12:42:03.470Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:42:03.556Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:42:03.591Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T12:42:03.651Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T12:42:03.905Z info: RESPONSE 200 GET / [625.80ms]
+2025-05-14T12:42:03.938Z info: RESPONSE 200 GET /stats [347.36ms]
+2025-05-14T12:42:04.036Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:42:04.053Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:42:04.072Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T12:42:04.102Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T12:42:04.125Z info: RESPONSE 200 GET / [473.33ms]
+2025-05-14T12:42:04.143Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:42:04.199Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T12:42:04.301Z info: RESPONSE 200 GET / [198.64ms]
+2025-05-14T12:42:04.315Z info: RESPONSE 200 GET /stats [243.39ms]
+2025-05-14T12:42:04.420Z info: RESPONSE 200 GET / [221.33ms]
+2025-05-14T12:43:43.480Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:43:43.486Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:43:43.502Z info: REQUEST POST /api/v1/cylinder-types/search
+2025-05-14T12:43:43.503Z warn: RESPONSE 404 POST /api/v1/cylinder-types/search [1.10ms]
+2025-05-14T12:43:46.942Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:43:46.944Z info: REQUEST POST /api/v1/cylinder-types/search
+2025-05-14T12:43:46.944Z warn: RESPONSE 404 POST /api/v1/cylinder-types/search [0.72ms]
+2025-05-14T12:43:47.386Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:43:47.387Z info: REQUEST POST /api/v1/cylinder-types/search
+2025-05-14T12:43:47.388Z warn: RESPONSE 404 POST /api/v1/cylinder-types/search [0.61ms]
+2025-05-14T12:44:12.678Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:44:12.680Z info: REQUEST POST /api/v1/cylinder-types/search
+2025-05-14T12:44:12.681Z warn: RESPONSE 404 POST /api/v1/cylinder-types/search [0.86ms]
+2025-05-14T12:44:13.546Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:44:13.548Z info: REQUEST POST /api/v1/cylinder-types/search
+2025-05-14T12:44:13.548Z warn: RESPONSE 404 POST /api/v1/cylinder-types/search [0.73ms]
+2025-05-14T12:44:15.699Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:44:15.700Z info: REQUEST POST /api/v1/cylinder-types/search
+2025-05-14T12:44:15.702Z warn: RESPONSE 404 POST /api/v1/cylinder-types/search [2.21ms]
+2025-05-14T12:45:56.134Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:45:56.145Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:45:56.147Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T12:45:56.152Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T12:45:56.156Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:45:56.216Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T12:45:56.494Z info: RESPONSE 200 GET / [346.61ms]
+2025-05-14T12:45:56.572Z info: RESPONSE 200 GET /stats [356.32ms]
+2025-05-14T12:45:56.595Z info: RESPONSE 200 GET / [443.14ms]
+2025-05-14T12:45:56.605Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:45:56.609Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:45:56.613Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:45:56.617Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T12:45:56.637Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T12:45:56.643Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T12:45:56.831Z info: RESPONSE 200 GET / [187.82ms]
+2025-05-14T12:45:56.850Z info: RESPONSE 200 GET /stats [232.67ms]
+2025-05-14T12:45:56.855Z info: RESPONSE 200 GET / [218.02ms]
+2025-05-14T12:46:01.621Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:46:01.624Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:46:01.626Z info: REQUEST POST /api/v1/cylinders/search
+2025-05-14T12:46:01.628Z warn: RESPONSE 404 POST /api/v1/cylinders/search [1.63ms]
+2025-05-14T12:49:08.939Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:49:08.946Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T12:49:08.950Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:49:08.952Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:49:08.953Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T12:49:08.957Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T12:49:09.261Z info: RESPONSE 200 GET / [314.96ms]
+2025-05-14T12:49:09.320Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:49:09.355Z info: RESPONSE 200 GET / [401.64ms]
+2025-05-14T12:49:09.387Z info: RESPONSE 200 GET /stats [430.84ms]
+2025-05-14T12:49:09.395Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T12:49:09.402Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:49:09.411Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:49:09.414Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T12:49:09.420Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T12:49:09.584Z info: RESPONSE 200 GET / [189.40ms]
+2025-05-14T12:49:09.620Z info: RESPONSE 200 GET / [206.20ms]
+2025-05-14T12:49:09.625Z info: RESPONSE 200 GET /stats [204.77ms]
+2025-05-14T12:49:28.479Z info: Database configuration:
+2025-05-14T12:49:28.635Z info: Connecting to Redis:
+2025-05-14T12:49:31.694Z info: Rate limiting is disabled
+2025-05-14T12:49:32.553Z info: Cache utility initialized
+2025-05-14T12:49:36.722Z info: Configuring CORS middleware
+2025-05-14T12:49:36.724Z info: Configuring compression middleware
+2025-05-14T12:49:36.733Z info: Rate limiting is disabled
+2025-05-14T12:49:36.734Z info: Rate limiting is disabled
+2025-05-14T12:49:36.736Z info: Checking database connection...
+2025-05-14T12:49:36.824Z info: Redis connected successfully
+2025-05-14T12:49:36.900Z info: Sequelize connection has been established successfully.
+2025-05-14T12:49:36.949Z info: Database connection successful
+2025-05-14T12:49:36.950Z info: Setting up model associations...
+2025-05-14T12:49:36.951Z info: Setting up model associations...
+2025-05-14T12:49:36.962Z info: Loading all model associations...
+2025-05-14T12:49:48.159Z info: Applied 11 of 11 model associations
+2025-05-14T12:49:48.159Z info: Model associations loaded
+2025-05-14T12:49:48.159Z info: Model associations set up successfully
+2025-05-14T12:49:48.160Z info: Checking Redis connection...
+2025-05-14T12:49:48.165Z info: Redis client is ready
+2025-05-14T12:49:48.334Z info: Redis ping successful
+2025-05-14T12:49:48.334Z info: Redis connection successful
+2025-05-14T12:49:48.335Z info: Syncing database models...
+2025-05-14T12:49:48.335Z info: Setting up model associations before sync...
+2025-05-14T12:49:48.335Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T12:49:48.336Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T12:49:48.336Z info: Syncing model: Role
+2025-05-14T12:49:48.480Z info: Successfully synced model: Role
+2025-05-14T12:49:48.481Z info: Syncing model: Permission
+2025-05-14T12:49:48.552Z info: Successfully synced model: Permission
+2025-05-14T12:49:48.553Z info: Syncing model: User
+2025-05-14T12:49:48.644Z info: Successfully synced model: User
+2025-05-14T12:49:48.644Z info: Syncing model: Address
+2025-05-14T12:49:48.672Z info: Successfully synced model: Address
+2025-05-14T12:49:48.673Z info: Syncing model: RolePermission
+2025-05-14T12:49:48.708Z info: Successfully synced model: RolePermission
+2025-05-14T12:49:48.708Z info: Syncing model: UserRole
+2025-05-14T12:49:48.739Z info: Successfully synced model: UserRole
+2025-05-14T12:49:48.740Z info: Syncing model: AddressLink
+2025-05-14T12:49:48.794Z info: Successfully synced model: AddressLink
+2025-05-14T12:49:48.795Z info: Syncing model: Cylinder
+2025-05-14T12:49:48.881Z info: Successfully synced model: Cylinder
+2025-05-14T12:49:48.881Z info: Syncing model: Invoice
+2025-05-14T12:49:48.934Z info: Successfully synced model: Invoice
+2025-05-14T12:49:48.935Z info: Syncing model: Cylinder
+2025-05-14T12:49:49.015Z info: Successfully synced model: Cylinder
+2025-05-14T12:49:49.016Z info: All models synced successfully
+2025-05-14T12:49:49.016Z info: Database synced successfully
+2025-05-14T12:49:49.016Z info: Verifying database tables before seeding...
+2025-05-14T12:49:49.018Z info: Found database tables: , , , , , , , , , 
+2025-05-14T12:49:49.018Z info: Running seeders...
+2025-05-14T12:49:49.018Z info: Starting database seeding...
+2025-05-14T12:49:50.030Z info: Starting RBAC seeding...
+2025-05-14T12:49:50.033Z info: Checking existing roles...
+2025-05-14T12:49:50.051Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T12:49:50.075Z info: Found 10 tables for permission generation
+2025-05-14T12:49:50.076Z info: No new permissions to create
+2025-05-14T12:49:50.098Z info: Checking for new permissions to assign to super_admin
+2025-05-14T12:49:50.099Z info: Checking for new permissions to assign to admin
+2025-05-14T12:49:50.099Z info: Checking for new permissions to assign to manager
+2025-05-14T12:49:50.100Z info: Checking for new permissions for driver
+2025-05-14T12:49:50.100Z info: No new role-permission mappings needed
+2025-05-14T12:49:50.100Z info: RBAC seeding completed successfully
+2025-05-14T12:49:50.101Z info: Database seeding completed
+2025-05-14T12:49:50.101Z info: Seeding completed successfully
+2025-05-14T12:49:50.106Z info: API Routes (133 total routes):
+2025-05-14T12:49:50.176Z info: Server running on port 3001
+2025-05-14T12:50:21.551Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:50:21.557Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:50:21.576Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T12:50:21.582Z warn: RESPONSE 404 POST /api/v1/cylinders/types/search [6.09ms]
+2025-05-14T12:51:54.623Z info: Database configuration:
+2025-05-14T12:51:54.738Z info: Connecting to Redis:
+2025-05-14T12:51:57.771Z info: Rate limiting is disabled
+2025-05-14T12:51:58.666Z info: Cache utility initialized
+2025-05-14T12:52:02.890Z info: Configuring CORS middleware
+2025-05-14T12:52:02.892Z info: Configuring compression middleware
+2025-05-14T12:52:02.898Z info: Rate limiting is disabled
+2025-05-14T12:52:02.899Z info: Rate limiting is disabled
+2025-05-14T12:52:02.900Z info: Checking database connection...
+2025-05-14T12:52:02.962Z info: Redis connected successfully
+2025-05-14T12:52:03.037Z info: Sequelize connection has been established successfully.
+2025-05-14T12:52:03.076Z info: Database connection successful
+2025-05-14T12:52:03.077Z info: Setting up model associations...
+2025-05-14T12:52:03.077Z info: Setting up model associations...
+2025-05-14T12:52:03.084Z info: Loading all model associations...
+2025-05-14T12:52:15.713Z info: Applied 11 of 11 model associations
+2025-05-14T12:52:15.713Z info: Model associations loaded
+2025-05-14T12:52:15.714Z info: Model associations set up successfully
+2025-05-14T12:52:15.714Z info: Checking Redis connection...
+2025-05-14T12:52:15.719Z info: Redis client is ready
+2025-05-14T12:52:15.922Z info: Redis ping successful
+2025-05-14T12:52:15.922Z info: Redis connection successful
+2025-05-14T12:52:15.923Z info: Syncing database models...
+2025-05-14T12:52:15.923Z info: Setting up model associations before sync...
+2025-05-14T12:52:15.923Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T12:52:15.924Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T12:52:15.924Z info: Syncing model: Role
+2025-05-14T12:52:16.089Z info: Successfully synced model: Role
+2025-05-14T12:52:16.090Z info: Syncing model: Permission
+2025-05-14T12:52:16.154Z info: Successfully synced model: Permission
+2025-05-14T12:52:16.154Z info: Syncing model: User
+2025-05-14T12:52:16.250Z info: Successfully synced model: User
+2025-05-14T12:52:16.251Z info: Syncing model: Address
+2025-05-14T12:52:16.277Z info: Successfully synced model: Address
+2025-05-14T12:52:16.277Z info: Syncing model: RolePermission
+2025-05-14T12:52:16.313Z info: Successfully synced model: RolePermission
+2025-05-14T12:52:16.313Z info: Syncing model: UserRole
+2025-05-14T12:52:16.339Z info: Successfully synced model: UserRole
+2025-05-14T12:52:16.339Z info: Syncing model: AddressLink
+2025-05-14T12:52:16.396Z info: Successfully synced model: AddressLink
+2025-05-14T12:52:16.397Z info: Syncing model: Cylinder
+2025-05-14T12:52:16.483Z info: Successfully synced model: Cylinder
+2025-05-14T12:52:16.484Z info: Syncing model: Invoice
+2025-05-14T12:52:16.542Z info: Successfully synced model: Invoice
+2025-05-14T12:52:16.543Z info: Syncing model: Cylinder
+2025-05-14T12:52:16.625Z info: Successfully synced model: Cylinder
+2025-05-14T12:52:16.625Z info: All models synced successfully
+2025-05-14T12:52:16.625Z info: Database synced successfully
+2025-05-14T12:52:16.626Z info: Verifying database tables before seeding...
+2025-05-14T12:52:16.628Z info: Found database tables: , , , , , , , , , 
+2025-05-14T12:52:16.628Z info: Running seeders...
+2025-05-14T12:52:16.628Z info: Starting database seeding...
+2025-05-14T12:52:17.641Z info: Starting RBAC seeding...
+2025-05-14T12:52:17.644Z info: Checking existing roles...
+2025-05-14T12:52:17.662Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T12:52:17.682Z info: Found 10 tables for permission generation
+2025-05-14T12:52:17.683Z info: No new permissions to create
+2025-05-14T12:52:17.704Z info: Checking for new permissions to assign to super_admin
+2025-05-14T12:52:17.705Z info: Checking for new permissions to assign to admin
+2025-05-14T12:52:17.705Z info: Checking for new permissions to assign to manager
+2025-05-14T12:52:17.706Z info: Checking for new permissions for driver
+2025-05-14T12:52:17.706Z info: No new role-permission mappings needed
+2025-05-14T12:52:17.706Z info: RBAC seeding completed successfully
+2025-05-14T12:52:17.707Z info: Database seeding completed
+2025-05-14T12:52:17.707Z info: Seeding completed successfully
+2025-05-14T12:52:17.711Z info: API Routes (133 total routes):
+2025-05-14T12:52:17.827Z info: Server running on port 3001
+2025-05-14T12:52:34.103Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:52:34.111Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T12:52:34.359Z info: RESPONSE 200 GET / [248.07ms]
+2025-05-14T12:52:35.681Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:52:35.694Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T12:52:35.870Z info: RESPONSE 200 POST /search [176.46ms]
+2025-05-14T12:52:36.243Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:52:36.245Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T12:52:36.427Z info: RESPONSE 200 POST /search [182.19ms]
+2025-05-14T12:54:20.515Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:54:20.518Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T12:54:20.523Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:54:20.524Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:54:20.528Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T12:54:20.533Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T12:54:20.811Z info: RESPONSE 200 GET / [293.19ms]
+2025-05-14T12:54:20.920Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:54:20.935Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T12:54:20.955Z info: RESPONSE 200 GET /stats [422.62ms]
+2025-05-14T12:54:20.962Z info: RESPONSE 200 GET / [434.96ms]
+2025-05-14T12:54:20.979Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:54:20.982Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:54:20.988Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T12:54:20.993Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T12:54:21.124Z info: RESPONSE 200 GET / [188.15ms]
+2025-05-14T12:54:21.190Z info: RESPONSE 200 GET /stats [201.43ms]
+2025-05-14T12:54:21.205Z info: RESPONSE 200 GET / [211.74ms]
+2025-05-14T12:54:41.505Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:54:41.507Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T12:54:41.729Z info: RESPONSE 200 POST /search [222.30ms]
+2025-05-14T12:54:42.202Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:54:42.205Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T12:54:42.379Z info: RESPONSE 200 POST /search [174.62ms]
+2025-05-14T12:56:20.104Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:56:20.110Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T12:56:20.114Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:56:20.116Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:56:20.119Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T12:56:20.126Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T12:56:20.426Z info: RESPONSE 200 GET / [315.17ms]
+2025-05-14T12:56:20.477Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:56:20.488Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T12:56:20.507Z info: RESPONSE 200 GET /stats [380.77ms]
+2025-05-14T12:56:20.521Z info: RESPONSE 200 GET / [402.63ms]
+2025-05-14T12:56:20.527Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:56:20.531Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T12:56:20.540Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:56:20.548Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T12:56:20.690Z info: RESPONSE 200 GET / [201.33ms]
+2025-05-14T12:56:20.755Z info: RESPONSE 200 GET /stats [224.48ms]
+2025-05-14T12:56:20.775Z info: RESPONSE 200 GET / [227.01ms]
+2025-05-14T12:56:26.911Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:56:26.912Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T12:56:27.087Z info: RESPONSE 200 POST /search [174.80ms]
+2025-05-14T12:56:27.365Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T12:56:27.366Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T12:56:27.552Z info: RESPONSE 200 POST /search [185.97ms]
+2025-05-14T13:00:40.829Z info: Database configuration:
+2025-05-14T13:00:40.961Z info: Connecting to Redis:
+2025-05-14T13:00:43.430Z info: Rate limiting is disabled
+2025-05-14T13:00:44.263Z info: Cache utility initialized
+2025-05-14T13:00:48.930Z info: Configuring CORS middleware
+2025-05-14T13:00:48.931Z info: Configuring compression middleware
+2025-05-14T13:00:48.937Z info: Rate limiting is disabled
+2025-05-14T13:00:48.937Z info: Rate limiting is disabled
+2025-05-14T13:00:48.939Z info: Checking database connection...
+2025-05-14T13:00:49.089Z info: Sequelize connection has been established successfully.
+2025-05-14T13:00:49.108Z info: Redis connected successfully
+2025-05-14T13:00:49.136Z info: Database connection successful
+2025-05-14T13:00:49.137Z info: Setting up model associations...
+2025-05-14T13:00:49.138Z info: Setting up model associations...
+2025-05-14T13:00:49.147Z info: Loading all model associations...
+2025-05-14T13:01:03.752Z info: Applied 11 of 11 model associations
+2025-05-14T13:01:03.752Z info: Model associations loaded
+2025-05-14T13:01:03.753Z info: Model associations set up successfully
+2025-05-14T13:01:03.753Z info: Checking Redis connection...
+2025-05-14T13:01:03.762Z info: Redis client is ready
+2025-05-14T13:01:03.931Z info: Redis ping successful
+2025-05-14T13:01:03.932Z info: Redis connection successful
+2025-05-14T13:01:03.932Z info: Syncing database models...
+2025-05-14T13:01:03.932Z info: Setting up model associations before sync...
+2025-05-14T13:01:03.933Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T13:01:03.933Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T13:01:03.934Z info: Syncing model: Role
+2025-05-14T13:01:04.136Z info: Successfully synced model: Role
+2025-05-14T13:01:04.136Z info: Syncing model: Permission
+2025-05-14T13:01:04.218Z info: Successfully synced model: Permission
+2025-05-14T13:01:04.219Z info: Syncing model: User
+2025-05-14T13:01:04.347Z info: Successfully synced model: User
+2025-05-14T13:01:04.348Z info: Syncing model: Address
+2025-05-14T13:01:04.391Z info: Successfully synced model: Address
+2025-05-14T13:01:04.392Z info: Syncing model: RolePermission
+2025-05-14T13:01:04.432Z info: Successfully synced model: RolePermission
+2025-05-14T13:01:04.432Z info: Syncing model: UserRole
+2025-05-14T13:01:04.473Z info: Successfully synced model: UserRole
+2025-05-14T13:01:04.474Z info: Syncing model: AddressLink
+2025-05-14T13:01:04.556Z info: Successfully synced model: AddressLink
+2025-05-14T13:01:04.558Z info: Syncing model: Cylinder
+2025-05-14T13:01:04.682Z info: Successfully synced model: Cylinder
+2025-05-14T13:01:04.683Z info: Syncing model: Invoice
+2025-05-14T13:01:04.763Z info: Successfully synced model: Invoice
+2025-05-14T13:01:04.764Z info: Syncing model: Cylinder
+2025-05-14T13:01:04.888Z info: Successfully synced model: Cylinder
+2025-05-14T13:01:04.889Z info: All models synced successfully
+2025-05-14T13:01:04.889Z info: Database synced successfully
+2025-05-14T13:01:04.889Z info: Verifying database tables before seeding...
+2025-05-14T13:01:04.891Z info: Found database tables: , , , , , , , , , 
+2025-05-14T13:01:04.892Z info: Running seeders...
+2025-05-14T13:01:04.892Z info: Starting database seeding...
+2025-05-14T13:01:05.916Z info: Starting RBAC seeding...
+2025-05-14T13:01:05.921Z info: Checking existing roles...
+2025-05-14T13:01:05.945Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T13:01:05.979Z info: Found 10 tables for permission generation
+2025-05-14T13:01:05.980Z info: No new permissions to create
+2025-05-14T13:01:06.021Z info: Checking for new permissions to assign to super_admin
+2025-05-14T13:01:06.024Z info: Checking for new permissions to assign to admin
+2025-05-14T13:01:06.026Z info: Checking for new permissions to assign to manager
+2025-05-14T13:01:06.031Z info: Checking for new permissions for driver
+2025-05-14T13:01:06.031Z info: No new role-permission mappings needed
+2025-05-14T13:01:06.031Z info: RBAC seeding completed successfully
+2025-05-14T13:01:06.031Z info: Database seeding completed
+2025-05-14T13:01:06.032Z info: Seeding completed successfully
+2025-05-14T13:01:06.040Z info: API Routes (133 total routes):
+2025-05-14T13:01:06.145Z info: Server running on port 3001
+2025-05-14T13:02:26.358Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:02:26.404Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T13:02:26.880Z info: RESPONSE 200 GET / [475.45ms]
+2025-05-14T13:02:49.519Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:02:49.545Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T13:02:49.778Z info: RESPONSE 200 POST /search [233.98ms]
+2025-05-14T13:02:49.830Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:02:49.831Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T13:02:50.039Z info: RESPONSE 200 POST /search [207.67ms]
+2025-05-14T13:05:19.893Z info: Database configuration:
+2025-05-14T13:05:20.064Z info: Connecting to Redis:
+2025-05-14T13:05:23.399Z info: Rate limiting is disabled
+2025-05-14T13:05:24.129Z info: Cache utility initialized
+2025-05-14T13:05:28.108Z info: Configuring CORS middleware
+2025-05-14T13:05:28.109Z info: Configuring compression middleware
+2025-05-14T13:05:28.115Z info: Rate limiting is disabled
+2025-05-14T13:05:28.115Z info: Rate limiting is disabled
+2025-05-14T13:05:28.116Z info: Checking database connection...
+2025-05-14T13:05:28.176Z info: Redis connected successfully
+2025-05-14T13:05:28.262Z info: Sequelize connection has been established successfully.
+2025-05-14T13:05:28.309Z info: Database connection successful
+2025-05-14T13:05:28.310Z info: Setting up model associations...
+2025-05-14T13:05:28.310Z info: Setting up model associations...
+2025-05-14T13:05:28.318Z info: Loading all model associations...
+2025-05-14T13:05:39.970Z info: Applied 11 of 11 model associations
+2025-05-14T13:05:39.971Z info: Model associations loaded
+2025-05-14T13:05:39.971Z info: Model associations set up successfully
+2025-05-14T13:05:39.971Z info: Checking Redis connection...
+2025-05-14T13:05:39.976Z info: Redis client is ready
+2025-05-14T13:05:40.144Z info: Redis ping successful
+2025-05-14T13:05:40.150Z info: Redis connection successful
+2025-05-14T13:05:40.150Z info: Syncing database models...
+2025-05-14T13:05:40.151Z info: Setting up model associations before sync...
+2025-05-14T13:05:40.151Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T13:05:40.152Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T13:05:40.152Z info: Syncing model: Role
+2025-05-14T13:05:40.380Z info: Successfully synced model: Role
+2025-05-14T13:05:40.380Z info: Syncing model: Permission
+2025-05-14T13:05:40.439Z info: Successfully synced model: Permission
+2025-05-14T13:05:40.440Z info: Syncing model: User
+2025-05-14T13:05:40.534Z info: Successfully synced model: User
+2025-05-14T13:05:40.534Z info: Syncing model: Address
+2025-05-14T13:05:40.570Z info: Successfully synced model: Address
+2025-05-14T13:05:40.570Z info: Syncing model: RolePermission
+2025-05-14T13:05:40.612Z info: Successfully synced model: RolePermission
+2025-05-14T13:05:40.613Z info: Syncing model: UserRole
+2025-05-14T13:05:40.650Z info: Successfully synced model: UserRole
+2025-05-14T13:05:40.651Z info: Syncing model: AddressLink
+2025-05-14T13:05:40.718Z info: Successfully synced model: AddressLink
+2025-05-14T13:05:40.719Z info: Syncing model: Cylinder
+2025-05-14T13:05:40.819Z info: Successfully synced model: Cylinder
+2025-05-14T13:05:40.819Z info: Syncing model: Invoice
+2025-05-14T13:05:40.880Z info: Successfully synced model: Invoice
+2025-05-14T13:05:40.880Z info: Syncing model: Cylinder
+2025-05-14T13:05:40.994Z info: Successfully synced model: Cylinder
+2025-05-14T13:05:40.995Z info: All models synced successfully
+2025-05-14T13:05:40.995Z info: Database synced successfully
+2025-05-14T13:05:40.996Z info: Verifying database tables before seeding...
+2025-05-14T13:05:40.999Z info: Found database tables: , , , , , , , , , 
+2025-05-14T13:05:40.999Z info: Running seeders...
+2025-05-14T13:05:41.000Z info: Starting database seeding...
+2025-05-14T13:05:42.005Z info: Starting RBAC seeding...
+2025-05-14T13:05:42.009Z info: Checking existing roles...
+2025-05-14T13:05:42.029Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T13:05:42.056Z info: Found 10 tables for permission generation
+2025-05-14T13:05:42.057Z info: No new permissions to create
+2025-05-14T13:05:42.084Z info: Checking for new permissions to assign to super_admin
+2025-05-14T13:05:42.085Z info: Checking for new permissions to assign to admin
+2025-05-14T13:05:42.085Z info: Checking for new permissions to assign to manager
+2025-05-14T13:05:42.086Z info: Checking for new permissions for driver
+2025-05-14T13:05:42.086Z info: No new role-permission mappings needed
+2025-05-14T13:05:42.086Z info: RBAC seeding completed successfully
+2025-05-14T13:05:42.087Z info: Database seeding completed
+2025-05-14T13:05:42.087Z info: Seeding completed successfully
+2025-05-14T13:05:42.091Z info: API Routes (133 total routes):
+2025-05-14T13:05:42.155Z info: Server running on port 3001
+2025-05-14T13:06:50.618Z info: Database configuration:
+2025-05-14T13:06:50.763Z info: Connecting to Redis:
+2025-05-14T13:06:53.639Z info: Rate limiting is disabled
+2025-05-14T13:06:54.352Z info: Cache utility initialized
+2025-05-14T13:06:59.429Z info: Configuring CORS middleware
+2025-05-14T13:06:59.431Z info: Configuring compression middleware
+2025-05-14T13:06:59.447Z info: Rate limiting is disabled
+2025-05-14T13:06:59.448Z info: Rate limiting is disabled
+2025-05-14T13:06:59.450Z info: Checking database connection...
+2025-05-14T13:06:59.599Z info: Redis connected successfully
+2025-05-14T13:06:59.614Z info: Sequelize connection has been established successfully.
+2025-05-14T13:06:59.666Z info: Database connection successful
+2025-05-14T13:06:59.666Z info: Setting up model associations...
+2025-05-14T13:06:59.667Z info: Setting up model associations...
+2025-05-14T13:06:59.679Z info: Loading all model associations...
+2025-05-14T13:07:11.898Z info: Applied 11 of 11 model associations
+2025-05-14T13:07:11.898Z info: Model associations loaded
+2025-05-14T13:07:11.899Z info: Model associations set up successfully
+2025-05-14T13:07:11.899Z info: Checking Redis connection...
+2025-05-14T13:07:11.907Z info: Redis client is ready
+2025-05-14T13:07:12.079Z info: Redis ping successful
+2025-05-14T13:07:12.079Z info: Redis connection successful
+2025-05-14T13:07:12.080Z info: Syncing database models...
+2025-05-14T13:07:12.080Z info: Setting up model associations before sync...
+2025-05-14T13:07:12.080Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T13:07:12.081Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T13:07:12.081Z info: Syncing model: Role
+2025-05-14T13:07:12.213Z info: Successfully synced model: Role
+2025-05-14T13:07:12.213Z info: Syncing model: Permission
+2025-05-14T13:07:12.287Z info: Successfully synced model: Permission
+2025-05-14T13:07:12.288Z info: Syncing model: User
+2025-05-14T13:07:12.379Z info: Successfully synced model: User
+2025-05-14T13:07:12.379Z info: Syncing model: Address
+2025-05-14T13:07:12.420Z info: Successfully synced model: Address
+2025-05-14T13:07:12.420Z info: Syncing model: RolePermission
+2025-05-14T13:07:12.449Z info: Successfully synced model: RolePermission
+2025-05-14T13:07:12.449Z info: Syncing model: UserRole
+2025-05-14T13:07:12.481Z info: Successfully synced model: UserRole
+2025-05-14T13:07:12.481Z info: Syncing model: AddressLink
+2025-05-14T13:07:12.535Z info: Successfully synced model: AddressLink
+2025-05-14T13:07:12.535Z info: Syncing model: Cylinder
+2025-05-14T13:07:12.631Z info: Successfully synced model: Cylinder
+2025-05-14T13:07:12.631Z info: Syncing model: Invoice
+2025-05-14T13:07:12.696Z info: Successfully synced model: Invoice
+2025-05-14T13:07:12.696Z info: Syncing model: Cylinder
+2025-05-14T13:07:12.784Z info: Successfully synced model: Cylinder
+2025-05-14T13:07:12.784Z info: All models synced successfully
+2025-05-14T13:07:12.784Z info: Database synced successfully
+2025-05-14T13:07:12.785Z info: Verifying database tables before seeding...
+2025-05-14T13:07:12.787Z info: Found database tables: , , , , , , , , , 
+2025-05-14T13:07:12.787Z info: Running seeders...
+2025-05-14T13:07:12.788Z info: Starting database seeding...
+2025-05-14T13:07:13.791Z info: Starting RBAC seeding...
+2025-05-14T13:07:13.799Z info: Checking existing roles...
+2025-05-14T13:07:13.818Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T13:07:13.841Z info: Found 10 tables for permission generation
+2025-05-14T13:07:13.842Z info: No new permissions to create
+2025-05-14T13:07:13.870Z info: Checking for new permissions to assign to super_admin
+2025-05-14T13:07:13.871Z info: Checking for new permissions to assign to admin
+2025-05-14T13:07:13.871Z info: Checking for new permissions to assign to manager
+2025-05-14T13:07:13.871Z info: Checking for new permissions for driver
+2025-05-14T13:07:13.872Z info: No new role-permission mappings needed
+2025-05-14T13:07:13.872Z info: RBAC seeding completed successfully
+2025-05-14T13:07:13.872Z info: Database seeding completed
+2025-05-14T13:07:13.872Z info: Seeding completed successfully
+2025-05-14T13:07:13.876Z info: API Routes (133 total routes):
+2025-05-14T13:07:13.943Z info: Server running on port 3001
+2025-05-14T13:10:39.146Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:10:39.154Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T13:10:39.173Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:10:39.175Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T13:10:39.182Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:10:39.186Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T13:10:39.450Z info: RESPONSE 200 GET / [295.39ms]
+2025-05-14T13:10:39.475Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:10:39.489Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T13:10:39.497Z info: RESPONSE 200 GET / [321.46ms]
+2025-05-14T13:10:39.507Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:10:39.516Z info: RESPONSE 200 GET /stats [330.14ms]
+2025-05-14T13:10:39.522Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T13:10:39.529Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:10:39.532Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T13:10:39.674Z info: RESPONSE 200 GET / [185.11ms]
+2025-05-14T13:10:39.734Z info: RESPONSE 200 GET / [211.91ms]
+2025-05-14T13:10:39.740Z info: RESPONSE 200 GET /stats [208.40ms]
+2025-05-14T13:18:16.735Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:18:16.739Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T13:18:16.775Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:18:16.867Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T13:18:17.083Z info: RESPONSE 200 GET / [344.45ms]
+2025-05-14T13:18:17.176Z info: RESPONSE 200 GET / [309.04ms]
+2025-05-14T13:18:17.186Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:18:17.189Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T13:18:17.200Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:18:17.205Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T13:18:17.209Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:18:17.211Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T13:18:17.367Z info: RESPONSE 200 GET /stats [178.78ms]
+2025-05-14T13:18:17.372Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:18:17.376Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T13:18:17.392Z info: RESPONSE 200 GET / [187.57ms]
+2025-05-14T13:18:17.414Z info: RESPONSE 200 GET / [202.47ms]
+2025-05-14T13:18:17.594Z info: RESPONSE 200 GET /stats [218.33ms]
+2025-05-14T13:18:22.731Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:18:22.732Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:18:22.734Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T13:18:22.737Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T13:18:22.741Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:18:22.745Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T13:18:22.961Z info: RESPONSE 200 GET / [226.87ms]
+2025-05-14T13:18:22.967Z info: RESPONSE 200 GET /stats [221.79ms]
+2025-05-14T13:18:22.981Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:18:22.986Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:18:22.991Z info: RESPONSE 200 GET / [253.67ms]
+2025-05-14T13:18:22.993Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T13:18:23.003Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T13:18:23.006Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:18:23.007Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T13:18:23.227Z info: RESPONSE 200 GET / [223.93ms]
+2025-05-14T13:18:23.248Z info: RESPONSE 200 GET /stats [254.78ms]
+2025-05-14T13:18:23.250Z info: RESPONSE 200 GET / [243.08ms]
+2025-05-14T13:19:59.267Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:19:59.270Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T13:19:59.274Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:19:59.275Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:19:59.276Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T13:19:59.278Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T13:19:59.516Z info: RESPONSE 200 GET / [245.96ms]
+2025-05-14T13:19:59.524Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:19:59.526Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T13:19:59.539Z info: RESPONSE 200 GET /stats [261.11ms]
+2025-05-14T13:19:59.543Z info: RESPONSE 200 GET / [267.63ms]
+2025-05-14T13:19:59.549Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:19:59.550Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:19:59.551Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T13:19:59.553Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T13:19:59.713Z info: RESPONSE 200 GET / [187.40ms]
+2025-05-14T13:19:59.780Z info: RESPONSE 200 GET /stats [229.26ms]
+2025-05-14T13:19:59.784Z info: RESPONSE 200 GET / [231.00ms]
+2025-05-14T13:21:28.906Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:21:28.932Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T13:21:29.232Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:21:29.234Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T13:21:29.252Z info: RESPONSE 200 POST /search [320.40ms]
+2025-05-14T13:21:29.464Z info: RESPONSE 200 POST /search [229.54ms]
+2025-05-14T13:21:53.614Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:21:53.615Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T13:21:53.898Z info: RESPONSE 200 POST /search [283.06ms]
+2025-05-14T13:22:05.831Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:22:05.832Z info: REQUEST POST /api/v1/cylinders
+2025-05-14T13:22:06.255Z error: TypeError: cylinder.manufacturingDate.toISOString is not a function
+    at Function.toBaseDTO (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\dto.ts:410:38)
+    at Function.toDetailDTO (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\dto.ts:463:15)
+    at CylinderService.getCylinderById (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\service.ts:79:45)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CylinderController.createCylinder (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\controller.ts:91:22)
+2025-05-14T13:22:06.256Z error: AppError: Failed to get cylinder
+    at CylinderService.getCylinderById (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\service.ts:93:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CylinderController.createCylinder (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\controller.ts:91:22)
+2025-05-14T13:22:06.257Z error: API Error: Failed to get cylinder
+2025-05-14T13:22:06.257Z error: RESPONSE 500 POST / [424.83ms]
+2025-05-14T13:24:32.144Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:24:32.145Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T13:24:32.477Z info: RESPONSE 200 GET / [331.76ms]
+2025-05-14T13:27:01.522Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:27:01.523Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T13:27:01.759Z info: RESPONSE 200 POST /search [236.46ms]
+2025-05-14T13:27:07.130Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:27:07.131Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T13:27:07.317Z info: RESPONSE 200 POST /search [185.65ms]
+2025-05-14T13:27:11.641Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:27:11.643Z info: REQUEST POST /api/v1/cylinders
+2025-05-14T13:27:11.861Z error: TypeError: cylinder.manufacturingDate.toISOString is not a function
+    at Function.toBaseDTO (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\dto.ts:410:38)
+    at Function.toDetailDTO (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\dto.ts:463:15)
+    at CylinderService.getCylinderById (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\service.ts:79:45)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CylinderController.createCylinder (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\controller.ts:91:22)
+2025-05-14T13:27:11.862Z error: AppError: Failed to get cylinder
+    at CylinderService.getCylinderById (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\service.ts:93:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CylinderController.createCylinder (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\controller.ts:91:22)
+2025-05-14T13:27:11.862Z error: API Error: Failed to get cylinder
+2025-05-14T13:27:11.863Z error: RESPONSE 500 POST / [220.11ms]
+2025-05-14T13:29:35.146Z info: Database configuration:
+2025-05-14T13:30:04.722Z info: Database configuration:
+2025-05-14T13:30:53.934Z info: Database configuration:
+2025-05-14T13:31:41.733Z info: Database configuration:
+2025-05-14T13:31:41.854Z info: Connecting to Redis:
+2025-05-14T13:31:44.589Z info: Rate limiting is disabled
+2025-05-14T13:31:45.307Z info: Cache utility initialized
+2025-05-14T13:31:49.432Z info: Configuring CORS middleware
+2025-05-14T13:31:49.433Z info: Configuring compression middleware
+2025-05-14T13:31:49.438Z info: Rate limiting is disabled
+2025-05-14T13:31:49.439Z info: Rate limiting is disabled
+2025-05-14T13:31:49.441Z info: Checking database connection...
+2025-05-14T13:31:49.493Z info: Redis connected successfully
+2025-05-14T13:31:49.682Z info: Sequelize connection has been established successfully.
+2025-05-14T13:31:49.730Z info: Database connection successful
+2025-05-14T13:31:49.731Z info: Setting up model associations...
+2025-05-14T13:31:49.731Z info: Setting up model associations...
+2025-05-14T13:31:49.740Z info: Loading all model associations...
+2025-05-14T13:32:01.787Z info: Applied 11 of 11 model associations
+2025-05-14T13:32:01.787Z info: Model associations loaded
+2025-05-14T13:32:01.788Z info: Model associations set up successfully
+2025-05-14T13:32:01.788Z info: Checking Redis connection...
+2025-05-14T13:32:01.795Z info: Redis client is ready
+2025-05-14T13:32:02.019Z info: Redis ping successful
+2025-05-14T13:32:02.019Z info: Redis connection successful
+2025-05-14T13:32:02.019Z info: Syncing database models...
+2025-05-14T13:32:02.020Z info: Setting up model associations before sync...
+2025-05-14T13:32:02.020Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T13:32:02.020Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T13:32:02.021Z info: Syncing model: Role
+2025-05-14T13:32:02.210Z info: Successfully synced model: Role
+2025-05-14T13:32:02.211Z info: Syncing model: Permission
+2025-05-14T13:32:02.317Z info: Successfully synced model: Permission
+2025-05-14T13:32:02.317Z info: Syncing model: User
+2025-05-14T13:32:02.446Z info: Successfully synced model: User
+2025-05-14T13:32:02.447Z info: Syncing model: Address
+2025-05-14T13:32:02.491Z info: Successfully synced model: Address
+2025-05-14T13:32:02.491Z info: Syncing model: RolePermission
+2025-05-14T13:32:02.543Z info: Successfully synced model: RolePermission
+2025-05-14T13:32:02.543Z info: Syncing model: UserRole
+2025-05-14T13:32:02.581Z info: Successfully synced model: UserRole
+2025-05-14T13:32:02.581Z info: Syncing model: AddressLink
+2025-05-14T13:32:02.640Z info: Successfully synced model: AddressLink
+2025-05-14T13:32:02.640Z info: Syncing model: Cylinder
+2025-05-14T13:32:02.739Z info: Successfully synced model: Cylinder
+2025-05-14T13:32:02.740Z info: Syncing model: Invoice
+2025-05-14T13:32:02.804Z info: Successfully synced model: Invoice
+2025-05-14T13:32:02.805Z info: Syncing model: Cylinder
+2025-05-14T13:32:02.903Z info: Successfully synced model: Cylinder
+2025-05-14T13:32:02.903Z info: All models synced successfully
+2025-05-14T13:32:02.903Z info: Database synced successfully
+2025-05-14T13:32:02.904Z info: Verifying database tables before seeding...
+2025-05-14T13:32:02.906Z info: Found database tables: , , , , , , , , , 
+2025-05-14T13:32:02.906Z info: Running seeders...
+2025-05-14T13:32:02.906Z info: Starting database seeding...
+2025-05-14T13:32:03.921Z info: Starting RBAC seeding...
+2025-05-14T13:32:03.925Z info: Checking existing roles...
+2025-05-14T13:32:03.948Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T13:32:03.976Z info: Found 10 tables for permission generation
+2025-05-14T13:32:03.977Z info: No new permissions to create
+2025-05-14T13:32:04.007Z info: Checking for new permissions to assign to super_admin
+2025-05-14T13:32:04.009Z info: Checking for new permissions to assign to admin
+2025-05-14T13:32:04.010Z info: Checking for new permissions to assign to manager
+2025-05-14T13:32:04.010Z info: Checking for new permissions for driver
+2025-05-14T13:32:04.010Z info: No new role-permission mappings needed
+2025-05-14T13:32:04.011Z info: RBAC seeding completed successfully
+2025-05-14T13:32:04.011Z info: Database seeding completed
+2025-05-14T13:32:04.011Z info: Seeding completed successfully
+2025-05-14T13:32:04.017Z info: API Routes (133 total routes):
+2025-05-14T13:32:04.088Z info: Server running on port 3001
+2025-05-14T13:33:36.299Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:33:36.319Z info: REQUEST POST /api/v1/cylinders
+2025-05-14T13:33:36.627Z error: ConflictError: Cylinder with serial number 626 already exists
+    at CylinderService.createCylinder (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\service.ts:146:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CylinderController.createCylinder (C:\Users\siuol\Desktop\dk365-gases\src\features\cylinder\controller.ts:91:22)
+2025-05-14T13:33:36.628Z error: API Error: Cylinder with serial number 626 already exists
+2025-05-14T13:33:36.630Z warn: RESPONSE 409 POST / [310.76ms]
+2025-05-14T13:34:04.576Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T13:34:04.578Z info: REQUEST POST /api/v1/cylinders
+2025-05-14T13:34:04.947Z info: RESPONSE 201 POST / [368.89ms]
+2025-05-14T13:35:10.071Z info: REQUEST GET /api/v1/cy
+2025-05-14T13:35:10.072Z warn: RESPONSE 404 GET /api/v1/cy [1.23ms]
+2025-05-14T13:35:24.555Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T13:35:24.556Z error: API Error: No authentication token provided
+2025-05-14T13:35:24.556Z warn: RESPONSE 401 GET / [1.16ms]
+2025-05-14T13:35:53.619Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T13:35:53.868Z info: RESPONSE 200 GET / [248.67ms]
+2025-05-14T13:47:24.514Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T13:47:24.760Z info: RESPONSE 200 GET / [246.19ms]
+2025-05-14T13:53:13.343Z info: Database configuration:
+2025-05-14T13:53:13.497Z info: Connecting to Redis:
+2025-05-14T13:53:16.415Z info: Rate limiting is disabled
+2025-05-14T13:53:17.222Z info: Cache utility initialized
+2025-05-14T13:53:22.151Z info: Configuring CORS middleware
+2025-05-14T13:53:22.152Z info: Configuring compression middleware
+2025-05-14T13:53:22.159Z info: Rate limiting is disabled
+2025-05-14T13:53:22.160Z info: Rate limiting is disabled
+2025-05-14T13:53:22.161Z info: Checking database connection...
+2025-05-14T13:53:22.418Z info: Sequelize connection has been established successfully.
+2025-05-14T13:53:22.464Z info: Database connection successful
+2025-05-14T13:53:22.465Z info: Setting up model associations...
+2025-05-14T13:53:22.465Z info: Setting up model associations...
+2025-05-14T13:53:22.475Z info: Loading all model associations...
+2025-05-14T13:53:33.900Z info: Applied 11 of 11 model associations
+2025-05-14T13:53:33.900Z info: Model associations loaded
+2025-05-14T13:53:33.900Z info: Model associations set up successfully
+2025-05-14T13:53:33.901Z info: Checking Redis connection...
+2025-05-14T13:53:33.902Z error: Redis connection error:
+2025-05-14T13:53:33.904Z info: Retrying Redis connection in 50ms...
+2025-05-14T13:53:33.904Z warn: Redis connection closed
+2025-05-14T13:53:43.978Z error: Redis connection error:
+2025-05-14T13:53:43.978Z info: Retrying Redis connection in 100ms...
+2025-05-14T13:53:43.979Z warn: Redis connection closed
+2025-05-14T13:53:50.792Z info: Redis connected successfully
+2025-05-14T13:53:55.007Z info: Redis client is ready
+2025-05-14T13:53:55.423Z info: Redis ping successful
+2025-05-14T13:53:55.423Z info: Redis connection successful
+2025-05-14T13:53:55.424Z info: Syncing database models...
+2025-05-14T13:53:55.424Z info: Setting up model associations before sync...
+2025-05-14T13:53:55.424Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T13:53:55.425Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T13:53:55.425Z info: Syncing model: Role
+2025-05-14T13:53:55.565Z info: Successfully synced model: Role
+2025-05-14T13:53:55.565Z info: Syncing model: Permission
+2025-05-14T13:53:55.636Z info: Successfully synced model: Permission
+2025-05-14T13:53:55.637Z info: Syncing model: User
+2025-05-14T13:53:55.733Z info: Successfully synced model: User
+2025-05-14T13:53:55.734Z info: Syncing model: Address
+2025-05-14T13:53:55.758Z info: Successfully synced model: Address
+2025-05-14T13:53:55.758Z info: Syncing model: RolePermission
+2025-05-14T13:53:55.788Z info: Successfully synced model: RolePermission
+2025-05-14T13:53:55.789Z info: Syncing model: UserRole
+2025-05-14T13:53:55.823Z info: Successfully synced model: UserRole
+2025-05-14T13:53:55.823Z info: Syncing model: AddressLink
+2025-05-14T13:53:55.877Z info: Successfully synced model: AddressLink
+2025-05-14T13:53:55.877Z info: Syncing model: Cylinder
+2025-05-14T13:53:55.976Z info: Successfully synced model: Cylinder
+2025-05-14T13:53:55.977Z info: Syncing model: Invoice
+2025-05-14T13:53:56.042Z info: Successfully synced model: Invoice
+2025-05-14T13:53:56.043Z info: Syncing model: Cylinder
+2025-05-14T13:53:56.154Z info: Successfully synced model: Cylinder
+2025-05-14T13:53:56.178Z info: All models synced successfully
+2025-05-14T13:53:56.179Z info: Database synced successfully
+2025-05-14T13:53:56.180Z info: Verifying database tables before seeding...
+2025-05-14T13:53:56.182Z info: Found database tables: , , , , , , , , , 
+2025-05-14T13:53:56.182Z info: Running seeders...
+2025-05-14T13:53:56.183Z info: Starting database seeding...
+2025-05-14T13:53:57.195Z info: Starting RBAC seeding...
+2025-05-14T13:53:57.199Z info: Checking existing roles...
+2025-05-14T13:53:57.222Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T13:53:57.254Z info: Found 10 tables for permission generation
+2025-05-14T13:53:57.255Z info: No new permissions to create
+2025-05-14T13:53:57.287Z info: Checking for new permissions to assign to super_admin
+2025-05-14T13:53:57.288Z info: Checking for new permissions to assign to admin
+2025-05-14T13:53:57.288Z info: Checking for new permissions to assign to manager
+2025-05-14T13:53:57.289Z info: Checking for new permissions for driver
+2025-05-14T13:53:57.289Z info: No new role-permission mappings needed
+2025-05-14T13:53:57.289Z info: RBAC seeding completed successfully
+2025-05-14T13:53:57.289Z info: Database seeding completed
+2025-05-14T13:53:57.290Z info: Seeding completed successfully
+2025-05-14T13:53:57.295Z info: API Routes (133 total routes):
+2025-05-14T13:53:57.374Z info: Server running on port 3001
+2025-05-14T13:54:33.731Z info: Database configuration:
+2025-05-14T14:04:33.545Z info: Database configuration:
+2025-05-14T14:13:20.135Z info: Database configuration:
+2025-05-14T14:16:39.039Z info: Database configuration:
+2025-05-14T14:16:39.156Z info: Connecting to Redis:
+2025-05-14T14:16:41.864Z info: Rate limiting is disabled
+2025-05-14T14:16:42.649Z info: Cache utility initialized
+2025-05-14T14:16:46.959Z info: Configuring CORS middleware
+2025-05-14T14:16:46.977Z info: Configuring compression middleware
+2025-05-14T14:16:46.985Z info: Rate limiting is disabled
+2025-05-14T14:16:46.986Z info: Rate limiting is disabled
+2025-05-14T14:16:46.988Z info: Checking database connection...
+2025-05-14T14:16:47.048Z info: Redis connected successfully
+2025-05-14T14:16:47.140Z info: Sequelize connection has been established successfully.
+2025-05-14T14:16:47.185Z info: Database connection successful
+2025-05-14T14:16:47.185Z info: Setting up model associations...
+2025-05-14T14:16:47.186Z info: Setting up model associations...
+2025-05-14T14:16:47.193Z info: Loading all model associations...
+2025-05-14T14:16:59.825Z info: Applied 11 of 11 model associations
+2025-05-14T14:16:59.826Z info: Model associations loaded
+2025-05-14T14:16:59.826Z info: Model associations set up successfully
+2025-05-14T14:16:59.826Z info: Checking Redis connection...
+2025-05-14T14:16:59.831Z info: Redis client is ready
+2025-05-14T14:17:00.017Z info: Redis ping successful
+2025-05-14T14:17:00.017Z info: Redis connection successful
+2025-05-14T14:17:00.018Z info: Syncing database models...
+2025-05-14T14:17:00.018Z info: Setting up model associations before sync...
+2025-05-14T14:17:00.018Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T14:17:00.019Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T14:17:00.020Z info: Syncing model: Role
+2025-05-14T14:17:00.185Z info: Successfully synced model: Role
+2025-05-14T14:17:00.185Z info: Syncing model: Permission
+2025-05-14T14:17:00.264Z info: Successfully synced model: Permission
+2025-05-14T14:17:00.265Z info: Syncing model: User
+2025-05-14T14:17:00.382Z info: Successfully synced model: User
+2025-05-14T14:17:00.382Z info: Syncing model: Address
+2025-05-14T14:17:00.416Z info: Successfully synced model: Address
+2025-05-14T14:17:00.417Z info: Syncing model: RolePermission
+2025-05-14T14:17:00.455Z info: Successfully synced model: RolePermission
+2025-05-14T14:17:00.456Z info: Syncing model: UserRole
+2025-05-14T14:17:00.499Z info: Successfully synced model: UserRole
+2025-05-14T14:17:00.500Z info: Syncing model: AddressLink
+2025-05-14T14:17:00.566Z info: Successfully synced model: AddressLink
+2025-05-14T14:17:00.566Z info: Syncing model: Cylinder
+2025-05-14T14:17:00.679Z info: Successfully synced model: Cylinder
+2025-05-14T14:17:00.679Z info: Syncing model: Invoice
+2025-05-14T14:17:00.743Z info: Successfully synced model: Invoice
+2025-05-14T14:17:00.744Z info: Syncing model: Cylinder
+2025-05-14T14:17:00.849Z info: Successfully synced model: Cylinder
+2025-05-14T14:17:00.849Z info: All models synced successfully
+2025-05-14T14:17:00.849Z info: Database synced successfully
+2025-05-14T14:17:00.849Z info: Verifying database tables before seeding...
+2025-05-14T14:17:00.852Z info: Found database tables: , , , , , , , , , 
+2025-05-14T14:17:00.852Z info: Running seeders...
+2025-05-14T14:17:00.852Z info: Starting database seeding...
+2025-05-14T14:17:01.855Z info: Starting RBAC seeding...
+2025-05-14T14:17:01.860Z info: Checking existing roles...
+2025-05-14T14:17:01.887Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T14:17:01.921Z info: Found 10 tables for permission generation
+2025-05-14T14:17:01.922Z info: No new permissions to create
+2025-05-14T14:17:01.966Z info: Checking for new permissions to assign to super_admin
+2025-05-14T14:17:01.968Z info: Checking for new permissions to assign to admin
+2025-05-14T14:17:01.969Z info: Checking for new permissions to assign to manager
+2025-05-14T14:17:01.969Z info: Checking for new permissions for driver
+2025-05-14T14:17:01.970Z info: No new role-permission mappings needed
+2025-05-14T14:17:01.970Z info: RBAC seeding completed successfully
+2025-05-14T14:17:01.970Z info: Database seeding completed
+2025-05-14T14:17:01.970Z info: Seeding completed successfully
+2025-05-14T14:17:01.979Z info: API Routes (134 total routes):
+2025-05-14T14:17:02.110Z info: Server running on port 3001
+2025-05-14T14:18:29.001Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T14:18:29.270Z warn: Database has cylinders but query returned none. Check filters and permissions.
+2025-05-14T14:18:29.279Z info: RESPONSE 200 GET / [278.00ms]
+2025-05-14T14:22:35.910Z info: Database configuration:
+2025-05-14T14:22:36.022Z info: Connecting to Redis:
+2025-05-14T14:22:38.933Z info: Rate limiting is disabled
+2025-05-14T14:22:39.640Z info: Cache utility initialized
+2025-05-14T14:22:44.346Z info: Configuring CORS middleware
+2025-05-14T14:22:44.348Z info: Configuring compression middleware
+2025-05-14T14:22:44.353Z info: Rate limiting is disabled
+2025-05-14T14:22:44.354Z info: Rate limiting is disabled
+2025-05-14T14:22:44.356Z info: Checking database connection...
+2025-05-14T14:22:44.510Z info: Sequelize connection has been established successfully.
+2025-05-14T14:22:44.525Z info: Redis connected successfully
+2025-05-14T14:22:44.587Z info: Database connection successful
+2025-05-14T14:22:44.587Z info: Setting up model associations...
+2025-05-14T14:22:44.588Z info: Setting up model associations...
+2025-05-14T14:22:44.602Z info: Loading all model associations...
+2025-05-14T14:22:57.552Z info: Applied 11 of 11 model associations
+2025-05-14T14:22:57.553Z info: Model associations loaded
+2025-05-14T14:22:57.553Z info: Model associations set up successfully
+2025-05-14T14:22:57.553Z info: Checking Redis connection...
+2025-05-14T14:22:57.557Z info: Redis client is ready
+2025-05-14T14:22:57.734Z info: Redis ping successful
+2025-05-14T14:22:57.735Z info: Redis connection successful
+2025-05-14T14:22:57.735Z info: Syncing database models...
+2025-05-14T14:22:57.735Z info: Setting up model associations before sync...
+2025-05-14T14:22:57.735Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T14:22:57.736Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T14:22:57.736Z info: Syncing model: Role
+2025-05-14T14:22:57.847Z info: Successfully synced model: Role
+2025-05-14T14:22:57.847Z info: Syncing model: Permission
+2025-05-14T14:22:57.905Z info: Successfully synced model: Permission
+2025-05-14T14:22:57.905Z info: Syncing model: User
+2025-05-14T14:22:58.018Z info: Successfully synced model: User
+2025-05-14T14:22:58.019Z info: Syncing model: Address
+2025-05-14T14:22:58.047Z info: Successfully synced model: Address
+2025-05-14T14:22:58.047Z info: Syncing model: RolePermission
+2025-05-14T14:22:58.082Z info: Successfully synced model: RolePermission
+2025-05-14T14:22:58.083Z info: Syncing model: UserRole
+2025-05-14T14:22:58.116Z info: Successfully synced model: UserRole
+2025-05-14T14:22:58.116Z info: Syncing model: AddressLink
+2025-05-14T14:22:58.174Z info: Successfully synced model: AddressLink
+2025-05-14T14:22:58.174Z info: Syncing model: Cylinder
+2025-05-14T14:22:58.277Z info: Successfully synced model: Cylinder
+2025-05-14T14:22:58.277Z info: Syncing model: Invoice
+2025-05-14T14:22:58.344Z info: Successfully synced model: Invoice
+2025-05-14T14:22:58.345Z info: Syncing model: Cylinder
+2025-05-14T14:22:58.439Z info: Successfully synced model: Cylinder
+2025-05-14T14:22:58.439Z info: All models synced successfully
+2025-05-14T14:22:58.440Z info: Database synced successfully
+2025-05-14T14:22:58.440Z info: Verifying database tables before seeding...
+2025-05-14T14:22:58.441Z info: Found database tables: , , , , , , , , , 
+2025-05-14T14:22:58.442Z info: Running seeders...
+2025-05-14T14:22:58.442Z info: Starting database seeding...
+2025-05-14T14:22:59.443Z info: Starting RBAC seeding...
+2025-05-14T14:22:59.448Z info: Checking existing roles...
+2025-05-14T14:22:59.471Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T14:22:59.498Z info: Found 10 tables for permission generation
+2025-05-14T14:22:59.499Z info: No new permissions to create
+2025-05-14T14:22:59.516Z info: Checking for new permissions to assign to super_admin
+2025-05-14T14:22:59.517Z info: Checking for new permissions to assign to admin
+2025-05-14T14:22:59.517Z info: Checking for new permissions to assign to manager
+2025-05-14T14:22:59.518Z info: Checking for new permissions for driver
+2025-05-14T14:22:59.518Z info: No new role-permission mappings needed
+2025-05-14T14:22:59.518Z info: RBAC seeding completed successfully
+2025-05-14T14:22:59.518Z info: Database seeding completed
+2025-05-14T14:22:59.519Z info: Seeding completed successfully
+2025-05-14T14:22:59.524Z info: API Routes (134 total routes):
+2025-05-14T14:22:59.610Z info: Server running on port 3001
+2025-05-14T14:23:02.846Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T14:23:03.058Z warn: Filters eliminated all 4 cylinders. Where clause: {"isActive":false}
+2025-05-14T14:23:03.061Z warn: Database has cylinders but query returned none. Check filters and permissions.
+2025-05-14T14:23:03.067Z info: RESPONSE 200 GET / [221.48ms]
+2025-05-14T14:28:27.172Z info: Database configuration:
+2025-05-14T14:28:27.296Z info: Connecting to Redis:
+2025-05-14T14:28:29.839Z info: Rate limiting is disabled
+2025-05-14T14:28:30.521Z info: Cache utility initialized
+2025-05-14T14:28:34.694Z info: Configuring CORS middleware
+2025-05-14T14:28:34.695Z info: Configuring compression middleware
+2025-05-14T14:28:34.701Z info: Rate limiting is disabled
+2025-05-14T14:28:34.701Z info: Rate limiting is disabled
+2025-05-14T14:28:34.703Z info: Checking database connection...
+2025-05-14T14:28:34.834Z info: Sequelize connection has been established successfully.
+2025-05-14T14:28:34.850Z info: Redis connected successfully
+2025-05-14T14:28:34.878Z info: Database connection successful
+2025-05-14T14:28:34.878Z info: Setting up model associations...
+2025-05-14T14:28:34.879Z info: Setting up model associations...
+2025-05-14T14:28:34.886Z info: Loading all model associations...
+2025-05-14T14:28:47.424Z info: Applied 11 of 11 model associations
+2025-05-14T14:28:47.425Z info: Model associations loaded
+2025-05-14T14:28:47.425Z info: Model associations set up successfully
+2025-05-14T14:28:47.426Z info: Checking Redis connection...
+2025-05-14T14:28:47.433Z info: Redis client is ready
+2025-05-14T14:28:47.617Z info: Redis ping successful
+2025-05-14T14:28:47.617Z info: Redis connection successful
+2025-05-14T14:28:47.617Z info: Syncing database models...
+2025-05-14T14:28:47.618Z info: Setting up model associations before sync...
+2025-05-14T14:28:47.618Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T14:28:47.618Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T14:28:47.619Z info: Syncing model: Role
+2025-05-14T14:28:47.744Z info: Successfully synced model: Role
+2025-05-14T14:28:47.745Z info: Syncing model: Permission
+2025-05-14T14:28:47.811Z info: Successfully synced model: Permission
+2025-05-14T14:28:47.811Z info: Syncing model: User
+2025-05-14T14:28:47.907Z info: Successfully synced model: User
+2025-05-14T14:28:47.908Z info: Syncing model: Address
+2025-05-14T14:28:47.953Z info: Successfully synced model: Address
+2025-05-14T14:28:47.953Z info: Syncing model: RolePermission
+2025-05-14T14:28:47.991Z info: Successfully synced model: RolePermission
+2025-05-14T14:28:47.992Z info: Syncing model: UserRole
+2025-05-14T14:28:48.022Z info: Successfully synced model: UserRole
+2025-05-14T14:28:48.022Z info: Syncing model: AddressLink
+2025-05-14T14:28:48.073Z info: Successfully synced model: AddressLink
+2025-05-14T14:28:48.073Z info: Syncing model: Cylinder
+2025-05-14T14:28:48.176Z info: Successfully synced model: Cylinder
+2025-05-14T14:28:48.177Z info: Syncing model: Invoice
+2025-05-14T14:28:48.233Z info: Successfully synced model: Invoice
+2025-05-14T14:28:48.234Z info: Syncing model: Cylinder
+2025-05-14T14:28:48.356Z info: Successfully synced model: Cylinder
+2025-05-14T14:28:48.356Z info: All models synced successfully
+2025-05-14T14:28:48.357Z info: Database synced successfully
+2025-05-14T14:28:48.357Z info: Verifying database tables before seeding...
+2025-05-14T14:28:48.359Z info: Found database tables: , , , , , , , , , 
+2025-05-14T14:28:48.359Z info: Running seeders...
+2025-05-14T14:28:48.360Z info: Starting database seeding...
+2025-05-14T14:28:49.362Z info: Starting RBAC seeding...
+2025-05-14T14:28:49.371Z info: Checking existing roles...
+2025-05-14T14:28:49.393Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T14:28:49.418Z info: Found 10 tables for permission generation
+2025-05-14T14:28:49.419Z info: No new permissions to create
+2025-05-14T14:28:49.444Z info: Checking for new permissions to assign to super_admin
+2025-05-14T14:28:49.445Z info: Checking for new permissions to assign to admin
+2025-05-14T14:28:49.445Z info: Checking for new permissions to assign to manager
+2025-05-14T14:28:49.446Z info: Checking for new permissions for driver
+2025-05-14T14:28:49.446Z info: No new role-permission mappings needed
+2025-05-14T14:28:49.446Z info: RBAC seeding completed successfully
+2025-05-14T14:28:49.446Z info: Database seeding completed
+2025-05-14T14:28:49.447Z info: Seeding completed successfully
+2025-05-14T14:28:49.451Z info: API Routes (134 total routes):
+2025-05-14T14:28:49.516Z info: Server running on port 3001
+2025-05-14T14:28:53.314Z info: REQUEST GET /api/v1/cylinders/
+2025-05-14T14:28:53.543Z info: RESPONSE 200 GET / [229.76ms]
+2025-05-14T14:30:21.326Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:30:21.443Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:30:21.491Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:30:21.551Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:30:21.558Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:30:21.564Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:30:21.598Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:30:21.605Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:30:21.667Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:30:21.675Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T14:30:21.688Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T14:30:21.703Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T14:30:22.025Z info: RESPONSE 200 GET / [337.03ms]
+2025-05-14T14:30:22.107Z info: RESPONSE 200 GET /stats [404.16ms]
+2025-05-14T14:30:22.112Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:30:22.116Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T14:30:22.141Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:30:22.146Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T14:30:22.152Z info: RESPONSE 200 GET / [477.29ms]
+2025-05-14T14:30:22.171Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:30:22.178Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T14:30:22.307Z info: RESPONSE 200 GET / [190.32ms]
+2025-05-14T14:30:22.425Z info: RESPONSE 200 GET /stats [278.83ms]
+2025-05-14T14:30:22.527Z info: RESPONSE 200 GET / [349.39ms]
+2025-05-14T14:32:11.567Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:32:11.569Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T14:32:11.574Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:32:11.576Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T14:32:11.591Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:32:11.605Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T14:32:11.935Z info: RESPONSE 200 GET / [364.10ms]
+2025-05-14T14:32:12.145Z info: RESPONSE 200 GET /stats [540.25ms]
+2025-05-14T14:32:12.313Z info: RESPONSE 200 GET / [737.62ms]
+2025-05-14T14:32:12.358Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:32:12.373Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:32:12.421Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T14:32:12.447Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T14:32:12.467Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:32:12.478Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T14:32:12.658Z info: RESPONSE 200 GET / [211.52ms]
+2025-05-14T14:32:12.694Z info: RESPONSE 200 GET /stats [278.46ms]
+2025-05-14T14:32:12.711Z info: RESPONSE 200 GET / [232.37ms]
+2025-05-14T14:39:49.127Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:39:49.129Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T14:39:49.132Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:39:49.135Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T14:39:49.141Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:39:49.143Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T14:39:49.444Z info: RESPONSE 200 GET / [314.54ms]
+2025-05-14T14:39:49.449Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:39:49.531Z info: RESPONSE 200 GET /stats [387.72ms]
+2025-05-14T14:39:49.538Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T14:39:49.647Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:39:49.650Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T14:39:49.683Z info: RESPONSE 200 GET / [547.29ms]
+2025-05-14T14:39:49.687Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T14:39:49.690Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T14:39:49.819Z info: RESPONSE 200 GET / [281.05ms]
+2025-05-14T14:39:49.831Z info: RESPONSE 200 GET /stats [180.43ms]
+2025-05-14T14:39:49.882Z info: RESPONSE 200 GET / [191.65ms]
+2025-05-14T15:12:43.197Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T15:12:43.201Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T15:12:43.206Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T15:12:43.209Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T15:12:43.214Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T15:12:43.217Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T15:12:43.488Z info: RESPONSE 200 GET / [286.65ms]
+2025-05-14T15:12:43.543Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T15:12:43.562Z info: RESPONSE 200 GET /stats [345.36ms]
+2025-05-14T15:12:43.583Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T15:12:43.587Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T15:12:43.606Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T15:12:43.627Z info: RESPONSE 200 GET / [418.56ms]
+2025-05-14T15:12:43.662Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T15:12:43.670Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T15:12:43.779Z info: RESPONSE 200 GET / [195.78ms]
+2025-05-14T15:12:43.831Z info: RESPONSE 200 GET /stats [225.54ms]
+2025-05-14T15:12:43.882Z info: RESPONSE 200 GET / [212.26ms]
+2025-05-14T15:46:55.733Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T15:46:55.741Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T15:46:55.744Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-14T15:46:55.969Z info: RESPONSE 200 POST /search [225.06ms]
+2025-05-14T15:48:33.078Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T15:48:33.079Z info: REQUEST POST /api/v1/cylinders
+2025-05-14T15:48:33.254Z warn: Request validation failed
+2025-05-14T15:48:33.255Z error: API Error: Validation failed
+2025-05-14T15:48:33.255Z warn: RESPONSE 400 POST / [176.18ms]
+2025-05-14T15:48:50.799Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T15:48:50.800Z info: REQUEST POST /api/v1/cylinders
+2025-05-14T15:48:51.133Z info: RESPONSE 201 POST / [333.03ms]
+2025-05-14T15:51:41.683Z info: Database configuration:
+2025-05-14T15:51:43.703Z info: Connecting to Redis:
+2025-05-14T15:52:12.901Z info: Rate limiting is disabled
+2025-05-14T15:52:14.669Z info: Cache utility initialized
+2025-05-14T15:52:25.955Z info: Configuring CORS middleware
+2025-05-14T15:52:25.957Z info: Configuring compression middleware
+2025-05-14T15:52:25.966Z info: Rate limiting is disabled
+2025-05-14T15:52:25.967Z info: Rate limiting is disabled
+2025-05-14T15:52:25.969Z info: Checking database connection...
+2025-05-14T15:52:26.129Z info: Sequelize connection has been established successfully.
+2025-05-14T15:52:26.133Z info: Redis connected successfully
+2025-05-14T15:52:26.181Z info: Database connection successful
+2025-05-14T15:52:26.181Z info: Setting up model associations...
+2025-05-14T15:52:26.182Z info: Setting up model associations...
+2025-05-14T15:52:26.189Z info: Loading all model associations...
+2025-05-14T15:52:41.197Z info: Applied 11 of 11 model associations
+2025-05-14T15:52:41.197Z info: Model associations loaded
+2025-05-14T15:52:41.198Z info: Model associations set up successfully
+2025-05-14T15:52:41.198Z info: Checking Redis connection...
+2025-05-14T15:52:41.209Z info: Redis client is ready
+2025-05-14T15:52:41.374Z info: Redis ping successful
+2025-05-14T15:52:41.375Z info: Redis connection successful
+2025-05-14T15:52:41.375Z info: Syncing database models...
+2025-05-14T15:52:41.375Z info: Setting up model associations before sync...
+2025-05-14T15:52:41.375Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T15:52:41.376Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T15:52:41.376Z info: Syncing model: Role
+2025-05-14T15:52:41.538Z info: Successfully synced model: Role
+2025-05-14T15:52:41.538Z info: Syncing model: Permission
+2025-05-14T15:52:41.631Z info: Successfully synced model: Permission
+2025-05-14T15:52:41.632Z info: Syncing model: User
+2025-05-14T15:52:41.745Z info: Successfully synced model: User
+2025-05-14T15:52:41.746Z info: Syncing model: Address
+2025-05-14T15:52:41.773Z info: Successfully synced model: Address
+2025-05-14T15:52:41.773Z info: Syncing model: RolePermission
+2025-05-14T15:52:41.810Z info: Successfully synced model: RolePermission
+2025-05-14T15:52:41.811Z info: Syncing model: UserRole
+2025-05-14T15:52:41.848Z info: Successfully synced model: UserRole
+2025-05-14T15:52:41.849Z info: Syncing model: AddressLink
+2025-05-14T15:52:41.917Z info: Successfully synced model: AddressLink
+2025-05-14T15:52:41.917Z info: Syncing model: Cylinder
+2025-05-14T15:52:42.025Z info: Successfully synced model: Cylinder
+2025-05-14T15:52:42.025Z info: Syncing model: Invoice
+2025-05-14T15:52:42.090Z info: Successfully synced model: Invoice
+2025-05-14T15:52:42.091Z info: Syncing model: Cylinder
+2025-05-14T15:52:42.223Z info: Successfully synced model: Cylinder
+2025-05-14T15:52:42.224Z info: All models synced successfully
+2025-05-14T15:52:42.224Z info: Database synced successfully
+2025-05-14T15:52:42.224Z info: Verifying database tables before seeding...
+2025-05-14T15:52:42.228Z info: Found database tables: , , , , , , , , , 
+2025-05-14T15:52:42.228Z info: Running seeders...
+2025-05-14T15:52:42.229Z info: Starting database seeding...
+2025-05-14T15:52:43.238Z info: Starting RBAC seeding...
+2025-05-14T15:52:43.245Z info: Checking existing roles...
+2025-05-14T15:52:43.272Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T15:52:43.313Z info: Found 10 tables for permission generation
+2025-05-14T15:52:43.314Z info: No new permissions to create
+2025-05-14T15:52:43.336Z info: Checking for new permissions to assign to super_admin
+2025-05-14T15:52:43.338Z info: Checking for new permissions to assign to admin
+2025-05-14T15:52:43.338Z info: Checking for new permissions to assign to manager
+2025-05-14T15:52:43.339Z info: Checking for new permissions for driver
+2025-05-14T15:52:43.339Z info: No new role-permission mappings needed
+2025-05-14T15:52:43.339Z info: RBAC seeding completed successfully
+2025-05-14T15:52:43.339Z info: Database seeding completed
+2025-05-14T15:52:43.340Z info: Seeding completed successfully
+2025-05-14T15:52:43.345Z info: API Routes (134 total routes):
+2025-05-14T15:52:43.515Z info: Server running on port 3001
+2025-05-14T15:55:01.392Z info: Database configuration:
+2025-05-14T15:55:01.610Z info: Connecting to Redis:
+2025-05-14T15:55:05.144Z info: Rate limiting is disabled
+2025-05-14T15:55:06.030Z info: Cache utility initialized
+2025-05-14T15:55:11.184Z info: Configuring CORS middleware
+2025-05-14T15:55:11.185Z info: Configuring compression middleware
+2025-05-14T15:55:11.196Z info: Rate limiting is disabled
+2025-05-14T15:55:11.196Z info: Rate limiting is disabled
+2025-05-14T15:55:11.197Z info: Checking database connection...
+2025-05-14T15:55:11.275Z info: Redis connected successfully
+2025-05-14T15:55:11.348Z info: Sequelize connection has been established successfully.
+2025-05-14T15:55:11.393Z info: Database connection successful
+2025-05-14T15:55:30.487Z info: Database configuration:
+2025-05-14T15:55:30.611Z info: Connecting to Redis:
+2025-05-14T15:55:33.593Z info: Rate limiting is disabled
+2025-05-14T15:55:34.443Z info: Cache utility initialized
+2025-05-14T15:55:40.419Z info: Configuring CORS middleware
+2025-05-14T15:55:40.420Z info: Configuring compression middleware
+2025-05-14T15:55:40.426Z info: Rate limiting is disabled
+2025-05-14T15:55:40.426Z info: Rate limiting is disabled
+2025-05-14T15:55:40.428Z info: Checking database connection...
+2025-05-14T15:55:40.490Z info: Redis connected successfully
+2025-05-14T15:55:40.570Z info: Sequelize connection has been established successfully.
+2025-05-14T15:55:40.713Z info: Database connection successful
+2025-05-14T15:56:03.304Z info: Database configuration:
+2025-05-14T15:56:03.452Z info: Connecting to Redis:
+2025-05-14T15:56:06.836Z info: Rate limiting is disabled
+2025-05-14T15:56:07.810Z info: Cache utility initialized
+2025-05-14T15:56:12.945Z info: Configuring CORS middleware
+2025-05-14T15:56:12.946Z info: Configuring compression middleware
+2025-05-14T15:56:12.953Z info: Rate limiting is disabled
+2025-05-14T15:56:12.953Z info: Rate limiting is disabled
+2025-05-14T15:56:12.955Z info: Checking database connection...
+2025-05-14T15:56:13.011Z info: Redis connected successfully
+2025-05-14T15:56:13.104Z info: Sequelize connection has been established successfully.
+2025-05-14T15:56:13.149Z info: Database connection successful
+2025-05-14T15:56:13.149Z info: Setting up model associations...
+2025-05-14T15:56:13.150Z info: Setting up model associations...
+2025-05-14T15:56:13.169Z info: Loading all model associations...
+2025-05-14T15:56:27.819Z info: Applied 11 of 11 model associations
+2025-05-14T15:56:27.819Z info: Model associations loaded
+2025-05-14T15:56:27.819Z info: Model associations set up successfully
+2025-05-14T15:56:27.820Z info: Checking Redis connection...
+2025-05-14T15:56:27.832Z info: Redis client is ready
+2025-05-14T15:56:28.015Z info: Redis ping successful
+2025-05-14T15:56:28.015Z info: Redis connection successful
+2025-05-14T15:56:28.016Z info: Syncing database models...
+2025-05-14T15:56:28.016Z info: Setting up model associations before sync...
+2025-05-14T15:56:28.016Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T15:56:28.017Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T15:56:28.017Z info: Syncing model: Role
+2025-05-14T15:56:28.152Z info: Successfully synced model: Role
+2025-05-14T15:56:28.153Z info: Syncing model: Permission
+2025-05-14T15:56:28.219Z info: Successfully synced model: Permission
+2025-05-14T15:56:28.219Z info: Syncing model: User
+2025-05-14T15:56:28.320Z info: Successfully synced model: User
+2025-05-14T15:56:28.320Z info: Syncing model: Address
+2025-05-14T15:56:28.348Z info: Successfully synced model: Address
+2025-05-14T15:56:28.348Z info: Syncing model: RolePermission
+2025-05-14T15:56:28.382Z info: Successfully synced model: RolePermission
+2025-05-14T15:56:28.382Z info: Syncing model: UserRole
+2025-05-14T15:56:28.414Z info: Successfully synced model: UserRole
+2025-05-14T15:56:28.414Z info: Syncing model: AddressLink
+2025-05-14T15:56:28.470Z info: Successfully synced model: AddressLink
+2025-05-14T15:56:28.470Z info: Syncing model: Cylinder
+2025-05-14T15:56:28.588Z info: Successfully synced model: Cylinder
+2025-05-14T15:56:28.589Z info: Syncing model: Invoice
+2025-05-14T15:56:28.654Z info: Successfully synced model: Invoice
+2025-05-14T15:56:28.655Z info: Syncing model: Cylinder
+2025-05-14T15:56:28.786Z info: Successfully synced model: Cylinder
+2025-05-14T15:56:28.786Z info: All models synced successfully
+2025-05-14T15:56:28.786Z info: Database synced successfully
+2025-05-14T15:56:28.787Z info: Verifying database tables before seeding...
+2025-05-14T15:56:28.789Z info: Found database tables: , , , , , , , , , 
+2025-05-14T15:56:28.790Z info: Running seeders...
+2025-05-14T15:56:28.791Z info: Starting database seeding...
+2025-05-14T15:56:29.801Z info: Starting RBAC seeding...
+2025-05-14T15:56:29.805Z info: Checking existing roles...
+2025-05-14T15:56:29.825Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T15:56:29.855Z info: Found 10 tables for permission generation
+2025-05-14T15:56:29.856Z info: No new permissions to create
+2025-05-14T15:56:29.883Z info: Checking for new permissions to assign to super_admin
+2025-05-14T15:56:29.884Z info: Checking for new permissions to assign to admin
+2025-05-14T15:56:29.885Z info: Checking for new permissions to assign to manager
+2025-05-14T15:56:29.885Z info: Checking for new permissions for driver
+2025-05-14T15:56:29.885Z info: No new role-permission mappings needed
+2025-05-14T15:56:29.885Z info: RBAC seeding completed successfully
+2025-05-14T15:56:29.885Z info: Database seeding completed
+2025-05-14T15:56:29.886Z info: Seeding completed successfully
+2025-05-14T15:56:29.890Z info: API Routes (134 total routes):
+2025-05-14T15:56:29.963Z info: Server running on port 3001
+2025-05-14T15:58:53.690Z info: Database configuration:
+2025-05-14T15:58:53.819Z info: Connecting to Redis:
+2025-05-14T15:58:56.980Z info: Rate limiting is disabled
+2025-05-14T15:58:58.004Z info: Cache utility initialized
+2025-05-14T15:59:02.857Z info: Configuring CORS middleware
+2025-05-14T15:59:02.859Z info: Configuring compression middleware
+2025-05-14T15:59:02.865Z info: Rate limiting is disabled
+2025-05-14T15:59:02.865Z info: Rate limiting is disabled
+2025-05-14T15:59:02.867Z info: Checking database connection...
+2025-05-14T15:59:03.012Z info: Sequelize connection has been established successfully.
+2025-05-14T15:59:03.019Z info: Redis connected successfully
+2025-05-14T15:59:03.061Z info: Database connection successful
+2025-05-14T15:59:03.062Z info: Setting up model associations...
+2025-05-14T15:59:03.062Z info: Setting up model associations...
+2025-05-14T15:59:03.069Z info: Loading all model associations...
+2025-05-14T15:59:17.071Z info: Applied 11 of 11 model associations
+2025-05-14T15:59:17.071Z info: Model associations loaded
+2025-05-14T15:59:17.071Z info: Model associations set up successfully
+2025-05-14T15:59:17.072Z info: Checking Redis connection...
+2025-05-14T15:59:17.078Z info: Redis client is ready
+2025-05-14T15:59:17.254Z info: Redis ping successful
+2025-05-14T15:59:17.254Z info: Redis connection successful
+2025-05-14T15:59:17.254Z info: Syncing database models...
+2025-05-14T15:59:17.255Z info: Setting up model associations before sync...
+2025-05-14T15:59:17.255Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T15:59:17.256Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T15:59:17.256Z info: Syncing model: Role
+2025-05-14T15:59:17.389Z info: Successfully synced model: Role
+2025-05-14T15:59:17.389Z info: Syncing model: Permission
+2025-05-14T15:59:17.463Z info: Successfully synced model: Permission
+2025-05-14T15:59:17.463Z info: Syncing model: User
+2025-05-14T15:59:17.593Z info: Successfully synced model: User
+2025-05-14T15:59:17.593Z info: Syncing model: Address
+2025-05-14T15:59:17.625Z info: Successfully synced model: Address
+2025-05-14T15:59:17.625Z info: Syncing model: RolePermission
+2025-05-14T15:59:17.662Z info: Successfully synced model: RolePermission
+2025-05-14T15:59:17.662Z info: Syncing model: UserRole
+2025-05-14T15:59:17.702Z info: Successfully synced model: UserRole
+2025-05-14T15:59:17.703Z info: Syncing model: AddressLink
+2025-05-14T15:59:17.762Z info: Successfully synced model: AddressLink
+2025-05-14T15:59:17.762Z info: Syncing model: Cylinder
+2025-05-14T15:59:17.871Z info: Successfully synced model: Cylinder
+2025-05-14T15:59:17.872Z info: Syncing model: Invoice
+2025-05-14T15:59:17.937Z info: Successfully synced model: Invoice
+2025-05-14T15:59:17.937Z info: Syncing model: Cylinder
+2025-05-14T15:59:18.052Z info: Successfully synced model: Cylinder
+2025-05-14T15:59:18.053Z info: All models synced successfully
+2025-05-14T15:59:18.053Z info: Database synced successfully
+2025-05-14T15:59:18.053Z info: Verifying database tables before seeding...
+2025-05-14T15:59:18.056Z info: Found database tables: , , , , , , , , , 
+2025-05-14T15:59:18.057Z info: Running seeders...
+2025-05-14T15:59:18.057Z info: Starting database seeding...
+2025-05-14T15:59:19.065Z info: Starting RBAC seeding...
+2025-05-14T15:59:19.068Z info: Checking existing roles...
+2025-05-14T15:59:19.090Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T15:59:19.118Z info: Found 10 tables for permission generation
+2025-05-14T15:59:19.119Z info: No new permissions to create
+2025-05-14T15:59:19.142Z info: Checking for new permissions to assign to super_admin
+2025-05-14T15:59:19.143Z info: Checking for new permissions to assign to admin
+2025-05-14T15:59:19.144Z info: Checking for new permissions to assign to manager
+2025-05-14T15:59:19.144Z info: Checking for new permissions for driver
+2025-05-14T15:59:19.144Z info: No new role-permission mappings needed
+2025-05-14T15:59:19.145Z info: RBAC seeding completed successfully
+2025-05-14T15:59:19.145Z info: Database seeding completed
+2025-05-14T15:59:19.145Z info: Seeding completed successfully
+2025-05-14T15:59:19.149Z info: API Routes (134 total routes):
+2025-05-14T15:59:19.217Z info: Server running on port 3001
+2025-05-14T16:00:10.139Z info: Database configuration:
+2025-05-14T16:00:10.250Z info: Connecting to Redis:
+2025-05-14T16:00:13.374Z info: Rate limiting is disabled
+2025-05-14T16:00:14.174Z info: Cache utility initialized
+2025-05-14T16:00:18.770Z info: Configuring CORS middleware
+2025-05-14T16:00:18.771Z info: Configuring compression middleware
+2025-05-14T16:00:18.781Z info: Rate limiting is disabled
+2025-05-14T16:00:18.781Z info: Rate limiting is disabled
+2025-05-14T16:00:18.783Z info: Checking database connection...
+2025-05-14T16:00:18.836Z info: Redis connected successfully
+2025-05-14T16:00:18.926Z info: Sequelize connection has been established successfully.
+2025-05-14T16:00:18.981Z info: Database connection successful
+2025-05-14T16:00:18.982Z info: Setting up model associations...
+2025-05-14T16:00:18.982Z info: Setting up model associations...
+2025-05-14T16:00:18.993Z info: Loading all model associations...
+2025-05-14T16:00:32.725Z info: Applied 11 of 11 model associations
+2025-05-14T16:00:32.726Z info: Model associations loaded
+2025-05-14T16:00:32.726Z info: Model associations set up successfully
+2025-05-14T16:00:32.726Z info: Checking Redis connection...
+2025-05-14T16:00:32.732Z info: Redis client is ready
+2025-05-14T16:00:32.948Z info: Redis ping successful
+2025-05-14T16:00:32.949Z info: Redis connection successful
+2025-05-14T16:00:32.949Z info: Syncing database models...
+2025-05-14T16:00:32.949Z info: Setting up model associations before sync...
+2025-05-14T16:00:32.949Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T16:00:32.950Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T16:00:32.950Z info: Syncing model: Role
+2025-05-14T16:00:33.192Z info: Successfully synced model: Role
+2025-05-14T16:00:33.192Z info: Syncing model: Permission
+2025-05-14T16:00:33.252Z info: Successfully synced model: Permission
+2025-05-14T16:00:33.252Z info: Syncing model: User
+2025-05-14T16:00:33.352Z info: Successfully synced model: User
+2025-05-14T16:00:33.353Z info: Syncing model: Address
+2025-05-14T16:00:33.379Z info: Successfully synced model: Address
+2025-05-14T16:00:33.380Z info: Syncing model: RolePermission
+2025-05-14T16:00:33.410Z info: Successfully synced model: RolePermission
+2025-05-14T16:00:33.411Z info: Syncing model: UserRole
+2025-05-14T16:00:33.441Z info: Successfully synced model: UserRole
+2025-05-14T16:00:33.442Z info: Syncing model: AddressLink
+2025-05-14T16:00:33.498Z info: Successfully synced model: AddressLink
+2025-05-14T16:00:33.499Z info: Syncing model: Cylinder
+2025-05-14T16:00:33.609Z info: Successfully synced model: Cylinder
+2025-05-14T16:00:33.610Z info: Syncing model: Invoice
+2025-05-14T16:00:33.709Z info: Successfully synced model: Invoice
+2025-05-14T16:00:33.709Z info: Syncing model: Cylinder
+2025-05-14T16:00:33.828Z info: Successfully synced model: Cylinder
+2025-05-14T16:00:33.828Z info: All models synced successfully
+2025-05-14T16:00:33.828Z info: Database synced successfully
+2025-05-14T16:00:33.828Z info: Verifying database tables before seeding...
+2025-05-14T16:00:33.830Z info: Found database tables: , , , , , , , , , 
+2025-05-14T16:00:33.831Z info: Running seeders...
+2025-05-14T16:00:33.831Z info: Starting database seeding...
+2025-05-14T16:00:34.835Z info: Starting RBAC seeding...
+2025-05-14T16:00:34.841Z info: Checking existing roles...
+2025-05-14T16:00:34.878Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T16:00:34.921Z info: Found 10 tables for permission generation
+2025-05-14T16:00:34.922Z info: No new permissions to create
+2025-05-14T16:00:34.956Z info: Checking for new permissions to assign to super_admin
+2025-05-14T16:00:34.957Z info: Checking for new permissions to assign to admin
+2025-05-14T16:00:34.958Z info: Checking for new permissions to assign to manager
+2025-05-14T16:00:34.959Z info: Checking for new permissions for driver
+2025-05-14T16:00:34.960Z info: No new role-permission mappings needed
+2025-05-14T16:00:34.960Z info: RBAC seeding completed successfully
+2025-05-14T16:00:34.961Z info: Database seeding completed
+2025-05-14T16:00:34.961Z info: Seeding completed successfully
+2025-05-14T16:00:34.969Z info: API Routes (134 total routes):
+2025-05-14T16:00:35.052Z info: Server running on port 3001
+2025-05-14T16:02:11.345Z info: Database configuration:
+2025-05-14T16:02:11.516Z info: Connecting to Redis:
+2025-05-14T16:02:15.738Z info: Rate limiting is disabled
+2025-05-14T16:02:16.479Z info: Cache utility initialized
+2025-05-14T16:02:22.845Z info: Configuring CORS middleware
+2025-05-14T16:02:22.852Z info: Configuring compression middleware
+2025-05-14T16:02:22.904Z info: Rate limiting is disabled
+2025-05-14T16:02:22.912Z info: Rate limiting is disabled
+2025-05-14T16:02:22.916Z info: Checking database connection...
+2025-05-14T16:02:23.029Z info: Redis connected successfully
+2025-05-14T16:02:23.165Z info: Sequelize connection has been established successfully.
+2025-05-14T16:02:23.328Z info: Database connection successful
+2025-05-14T16:02:42.829Z info: Database configuration:
+2025-05-14T16:07:41.851Z info: Database configuration:
+2025-05-14T16:12:01.511Z info: Database configuration:
+2025-05-14T16:17:18.895Z info: Database configuration:
+2025-05-14T16:21:05.635Z info: Database configuration:
+2025-05-14T16:21:56.295Z info: Database configuration:
+2025-05-14T16:24:10.769Z info: Database configuration:
+2025-05-14T16:25:24.394Z info: Database configuration:
+2025-05-14T16:26:40.443Z info: Database configuration:
+2025-05-14T16:29:27.875Z info: Database configuration:
+2025-05-14T16:31:20.340Z info: Database configuration:
+2025-05-14T16:32:24.995Z info: Database configuration:
+2025-05-14T16:36:31.242Z info: Database configuration:
+2025-05-14T16:36:31.389Z info: Connecting to Redis:
+2025-05-14T16:36:34.491Z info: Rate limiting is disabled
+2025-05-14T16:36:35.369Z info: Cache utility initialized
+2025-05-14T16:36:43.418Z info: Configuring CORS middleware
+2025-05-14T16:36:43.420Z info: Configuring compression middleware
+2025-05-14T16:36:43.459Z info: Rate limiting is disabled
+2025-05-14T16:36:43.460Z info: Rate limiting is disabled
+2025-05-14T16:36:43.463Z info: Checking database connection...
+2025-05-14T16:36:43.690Z info: Redis connected successfully
+2025-05-14T16:36:43.765Z info: Sequelize connection has been established successfully.
+2025-05-14T16:36:43.843Z info: Database connection successful
+2025-05-14T16:36:43.844Z info: Setting up model associations...
+2025-05-14T16:36:43.845Z info: Setting up model associations...
+2025-05-14T16:36:43.860Z info: Loading all model associations...
+2025-05-14T16:37:11.864Z info: Applied 13 of 13 model associations
+2025-05-14T16:37:11.864Z info: Model associations loaded
+2025-05-14T16:37:11.865Z info: Model associations set up successfully
+2025-05-14T16:37:11.865Z info: Checking Redis connection...
+2025-05-14T16:37:11.875Z info: Redis client is ready
+2025-05-14T16:37:12.196Z info: Redis ping successful
+2025-05-14T16:37:12.197Z info: Redis connection successful
+2025-05-14T16:37:12.197Z info: Syncing database models...
+2025-05-14T16:37:12.197Z info: Setting up model associations before sync...
+2025-05-14T16:37:12.198Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-14T16:37:12.198Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-14T16:37:12.199Z info: Syncing model: Role
+2025-05-14T16:37:12.460Z info: Successfully synced model: Role
+2025-05-14T16:37:12.461Z info: Syncing model: Permission
+2025-05-14T16:37:12.572Z info: Successfully synced model: Permission
+2025-05-14T16:37:12.573Z info: Syncing model: User
+2025-05-14T16:37:12.726Z info: Successfully synced model: User
+2025-05-14T16:37:12.727Z info: Syncing model: Address
+2025-05-14T16:37:12.759Z info: Successfully synced model: Address
+2025-05-14T16:37:12.759Z info: Syncing model: RolePermission
+2025-05-14T16:37:12.839Z info: Successfully synced model: RolePermission
+2025-05-14T16:37:12.839Z info: Syncing model: UserRole
+2025-05-14T16:37:12.868Z info: Successfully synced model: UserRole
+2025-05-14T16:37:12.869Z info: Syncing model: AddressLink
+2025-05-14T16:37:12.965Z info: Successfully synced model: AddressLink
+2025-05-14T16:37:12.965Z info: Syncing model: Cylinder
+2025-05-14T16:37:13.114Z info: Successfully synced model: Cylinder
+2025-05-14T16:37:13.115Z info: Syncing model: Invoice
+2025-05-14T16:37:13.201Z info: Successfully synced model: Invoice
+2025-05-14T16:37:13.202Z info: Syncing model: Cylinder
+2025-05-14T16:37:13.336Z info: Successfully synced model: Cylinder
+2025-05-14T16:37:13.337Z info: All models synced successfully
+2025-05-14T16:37:13.337Z info: Database synced successfully
+2025-05-14T16:37:13.337Z info: Verifying database tables before seeding...
+2025-05-14T16:37:13.340Z info: Found database tables: , , , , , , , , , 
+2025-05-14T16:37:13.340Z info: Running seeders...
+2025-05-14T16:37:13.341Z info: Starting database seeding...
+2025-05-14T16:37:14.353Z info: Starting RBAC seeding...
+2025-05-14T16:37:14.357Z info: Checking existing roles...
+2025-05-14T16:37:14.392Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-14T16:37:14.432Z info: Found 10 tables for permission generation
+2025-05-14T16:37:14.433Z info: No new permissions to create
+2025-05-14T16:37:14.457Z info: Checking for new permissions to assign to super_admin
+2025-05-14T16:37:14.458Z info: Checking for new permissions to assign to admin
+2025-05-14T16:37:14.458Z info: Checking for new permissions to assign to manager
+2025-05-14T16:37:14.459Z info: Checking for new permissions for driver
+2025-05-14T16:37:14.460Z info: No new role-permission mappings needed
+2025-05-14T16:37:14.460Z info: RBAC seeding completed successfully
+2025-05-14T16:37:14.460Z info: Database seeding completed
+2025-05-14T16:37:14.460Z info: Seeding completed successfully
+2025-05-14T16:37:14.468Z info: API Routes (156 total routes):
+2025-05-14T16:37:14.585Z info: Server running on port 3001
+2025-05-14T16:39:19.794Z info: REQUEST GET /api/v1/users
+2025-05-14T16:39:19.796Z error: API Error: No authentication token provided
+2025-05-14T16:39:19.799Z warn: RESPONSE 401 GET / [5.10ms]
+2025-05-14T16:39:29.677Z info: REQUEST GET /api/v1/users
+2025-05-14T16:39:30.204Z info: RESPONSE 200 GET / [526.43ms]
+2025-05-14T16:59:55.564Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T16:59:55.568Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T16:59:55.570Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T16:59:55.574Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T16:59:55.576Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T16:59:55.585Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T16:59:55.598Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T16:59:55.602Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T16:59:55.605Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T16:59:55.609Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T16:59:55.614Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T16:59:55.619Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T16:59:55.960Z info: RESPONSE 200 GET / [341.87ms]
+2025-05-14T16:59:55.964Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T16:59:55.966Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T16:59:56.000Z info: RESPONSE 200 GET /stats [385.89ms]
+2025-05-14T16:59:56.005Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T16:59:56.007Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T16:59:56.034Z info: RESPONSE 200 GET / [425.11ms]
+2025-05-14T16:59:56.038Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T16:59:56.044Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T16:59:56.151Z info: RESPONSE 200 GET / [185.64ms]
+2025-05-14T16:59:56.182Z info: RESPONSE 200 GET /stats [175.27ms]
+2025-05-14T16:59:56.230Z info: RESPONSE 200 GET / [185.69ms]
+2025-05-14T17:03:35.312Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:03:35.328Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:03:35.346Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:03:35.361Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:03:35.426Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:03:35.491Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:03:35.745Z info: RESPONSE 200 GET / [384.07ms]
+2025-05-14T17:03:35.777Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:03:35.828Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:03:35.882Z info: RESPONSE 200 GET / [456.33ms]
+2025-05-14T17:03:35.922Z info: RESPONSE 200 GET /stats [431.25ms]
+2025-05-14T17:03:35.990Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:03:36.033Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:03:36.065Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:03:36.111Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:03:36.175Z info: RESPONSE 200 GET / [347.13ms]
+2025-05-14T17:03:36.292Z info: RESPONSE 200 GET /stats [259.62ms]
+2025-05-14T17:03:36.430Z info: RESPONSE 200 GET / [319.78ms]
+2025-05-14T17:03:50.916Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:03:50.918Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:03:50.920Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:03:50.924Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:03:50.927Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:03:50.934Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:03:51.245Z info: RESPONSE 200 GET / [321.30ms]
+2025-05-14T17:03:51.274Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:03:51.277Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:03:51.313Z info: RESPONSE 200 GET /stats [379.12ms]
+2025-05-14T17:03:51.331Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:03:51.334Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:03:51.342Z info: RESPONSE 200 GET / [415.14ms]
+2025-05-14T17:03:51.347Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:03:51.349Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:03:51.461Z info: RESPONSE 200 GET / [183.26ms]
+2025-05-14T17:03:51.530Z info: RESPONSE 200 GET / [180.12ms]
+2025-05-14T17:03:51.539Z info: RESPONSE 200 GET /stats [205.47ms]
+2025-05-14T17:05:10.696Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:05:10.697Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:05:10.702Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:05:10.704Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:05:10.706Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:05:10.709Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:05:11.021Z info: RESPONSE 200 GET / [323.87ms]
+2025-05-14T17:05:11.025Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:05:11.027Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:05:11.056Z info: RESPONSE 200 GET /stats [347.12ms]
+2025-05-14T17:05:11.059Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:05:11.063Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:05:11.082Z info: RESPONSE 200 GET / [375.38ms]
+2025-05-14T17:05:11.085Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:05:11.086Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:05:11.199Z info: RESPONSE 200 GET / [171.89ms]
+2025-05-14T17:05:11.244Z info: RESPONSE 200 GET /stats [180.83ms]
+2025-05-14T17:05:11.265Z info: RESPONSE 200 GET / [179.62ms]
+2025-05-14T17:07:55.819Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:07:55.821Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:07:55.825Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:07:55.826Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:07:55.827Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:07:55.830Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:07:56.196Z info: RESPONSE 200 GET / [375.50ms]
+2025-05-14T17:07:56.200Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:07:56.201Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:07:56.235Z info: RESPONSE 200 GET /stats [404.47ms]
+2025-05-14T17:07:56.239Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:07:56.241Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:07:56.259Z info: RESPONSE 200 GET / [431.86ms]
+2025-05-14T17:07:56.262Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:07:56.263Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:07:56.611Z info: RESPONSE 200 GET / [410.00ms]
+2025-05-14T17:07:56.621Z info: RESPONSE 200 GET / [357.72ms]
+2025-05-14T17:07:56.676Z info: RESPONSE 200 GET /stats [435.04ms]
+2025-05-14T17:08:29.375Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:08:29.377Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:08:29.380Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:08:29.382Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:08:29.395Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:08:29.397Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:08:29.673Z info: RESPONSE 200 GET / [296.70ms]
+2025-05-14T17:08:29.677Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:08:29.678Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:08:29.714Z info: RESPONSE 200 GET /stats [317.07ms]
+2025-05-14T17:08:29.718Z info: RESPONSE 200 GET / [335.54ms]
+2025-05-14T17:08:29.735Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:08:29.777Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:08:29.782Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:08:29.793Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:08:29.902Z info: RESPONSE 200 GET / [224.18ms]
+2025-05-14T17:08:30.040Z info: RESPONSE 200 GET /stats [263.30ms]
+2025-05-14T17:08:30.081Z info: RESPONSE 200 GET / [288.68ms]
+2025-05-14T17:08:32.560Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:08:32.563Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:08:32.594Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:08:32.613Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:08:32.632Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:08:32.636Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:08:32.794Z info: RESPONSE 200 GET / [231.03ms]
+2025-05-14T17:08:32.797Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:08:32.802Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:08:32.821Z info: RESPONSE 200 GET /stats [185.06ms]
+2025-05-14T17:08:32.827Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:08:32.831Z info: RESPONSE 200 GET / [199.08ms]
+2025-05-14T17:08:32.835Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:08:32.844Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:08:32.847Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:08:32.990Z info: RESPONSE 200 GET / [187.68ms]
+2025-05-14T17:08:33.039Z info: RESPONSE 200 GET /stats [204.56ms]
+2025-05-14T17:08:33.054Z info: RESPONSE 200 GET / [206.30ms]
+2025-05-14T17:16:18.246Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:16:18.248Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:16:18.251Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:16:18.252Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:16:18.254Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:16:18.257Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:16:18.571Z info: RESPONSE 200 GET / [323.21ms]
+2025-05-14T17:16:18.626Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:16:18.644Z info: RESPONSE 200 GET /stats [386.98ms]
+2025-05-14T17:16:18.679Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:16:18.700Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:16:18.703Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:16:18.733Z info: RESPONSE 200 GET / [479.02ms]
+2025-05-14T17:16:18.762Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:16:18.773Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:16:18.866Z info: RESPONSE 200 GET / [186.57ms]
+2025-05-14T17:16:18.929Z info: RESPONSE 200 GET /stats [225.82ms]
+2025-05-14T17:16:19.004Z info: RESPONSE 200 GET / [230.41ms]
+2025-05-14T17:21:59.955Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:21:59.957Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:21:59.960Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:21:59.963Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:21:59.967Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:21:59.968Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:22:00.261Z info: RESPONSE 200 GET / [304.01ms]
+2025-05-14T17:22:00.297Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:22:00.334Z info: RESPONSE 200 GET /stats [365.81ms]
+2025-05-14T17:22:00.341Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:22:00.348Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:22:00.353Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:22:00.359Z info: RESPONSE 200 GET / [396.06ms]
+2025-05-14T17:22:00.369Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:22:00.384Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:22:00.530Z info: RESPONSE 200 GET / [189.26ms]
+2025-05-14T17:22:00.572Z info: RESPONSE 200 GET /stats [219.27ms]
+2025-05-14T17:22:00.608Z info: RESPONSE 200 GET / [223.78ms]
+2025-05-14T17:28:36.595Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:28:36.603Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:28:36.605Z info: REQUEST GET /api/v1/auth/me
+2025-05-14T17:28:36.967Z info: RESPONSE 200 GET /me [361.95ms]
+2025-05-14T17:28:37.225Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:28:37.228Z info: REQUEST GET /api/v1/auth/me
+2025-05-14T17:28:37.419Z info: RESPONSE 200 GET /me [191.89ms]
+2025-05-14T17:28:47.516Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:28:47.521Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:28:47.522Z info: REQUEST POST /api/v1/auth/login
+2025-05-14T17:28:47.669Z info: RESPONSE 200 POST /login [146.55ms]
+2025-05-14T17:32:09.751Z info: REQUEST POST /api/v1/auth/login
+2025-05-14T17:32:09.983Z info: RESPONSE 200 POST /login [231.96ms]
+2025-05-14T17:32:50.046Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:32:50.049Z info: REQUEST GET /api/v1/auth/me
+2025-05-14T17:32:50.465Z info: RESPONSE 200 GET /me [416.04ms]
+2025-05-14T17:32:50.558Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:32:50.561Z info: REQUEST GET /api/v1/auth/me
+2025-05-14T17:32:50.759Z info: RESPONSE 200 GET /me [197.26ms]
+2025-05-14T17:33:29.919Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:33:29.922Z info: REQUEST POST /api/v1/auth/login
+2025-05-14T17:33:30.116Z info: RESPONSE 200 POST /login [193.64ms]
+2025-05-14T17:34:14.355Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:34:14.359Z info: REQUEST GET /api/v1/auth/me
+2025-05-14T17:34:14.799Z info: RESPONSE 200 GET /me [439.17ms]
+2025-05-14T17:34:14.806Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:34:14.809Z info: REQUEST GET /api/v1/auth/me
+2025-05-14T17:34:15.010Z info: RESPONSE 200 GET /me [200.98ms]
+2025-05-14T17:34:15.519Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:34:15.521Z info: REQUEST GET /api/v1/auth/me
+2025-05-14T17:34:15.712Z info: RESPONSE 200 GET /me [191.12ms]
+2025-05-14T17:34:29.258Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:34:29.259Z info: REQUEST POST /api/v1/auth/login
+2025-05-14T17:34:29.484Z info: RESPONSE 200 POST /login [224.32ms]
+2025-05-14T17:38:28.636Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:38:28.638Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:38:28.641Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:38:28.643Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:38:28.646Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:38:28.650Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:38:28.971Z info: RESPONSE 200 GET / [324.86ms]
+2025-05-14T17:38:28.993Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:38:29.011Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-14T17:38:29.020Z info: RESPONSE 200 GET /stats [370.75ms]
+2025-05-14T17:38:29.046Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:38:29.051Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-14T17:38:29.087Z info: RESPONSE 200 GET / [448.77ms]
+2025-05-14T17:38:29.098Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-14T17:38:29.100Z info: REQUEST GET /api/v1/cylinders
+2025-05-14T17:38:29.404Z info: RESPONSE 200 GET / [392.11ms]
+2025-05-14T17:38:29.428Z info: RESPONSE 200 GET /stats [377.01ms]
+2025-05-14T17:38:29.451Z info: RESPONSE 200 GET / [351.27ms]

@@ -1,6 +1,6 @@
 import { Model, DataTypes, Optional } from "sequelize";
 import sequelize from "@/config/sequelize";
-import { UserInterface } from "./interfaces";
+import { UserInterface } from "./interfaces/interfaces";
 import bcrypt from "bcrypt";
 
 interface UserCreationInterface
