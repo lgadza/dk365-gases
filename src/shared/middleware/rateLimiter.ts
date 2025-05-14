@@ -9,6 +9,7 @@ import logger from "@/common/utils/logging/logger";
 import ResponseUtil, {
   HttpStatus,
 } from "@/common/utils/responses/responseUtil";
+import { appConfig } from "@/config";
 
 /**
  * Rate limiting options interface
@@ -18,6 +19,7 @@ interface RateLimitOptions {
   duration: number; // Per duration in seconds
   blockDuration?: number; // Block duration in seconds after exceeding points
   keyPrefix?: string; // Redis key prefix
+  enabled?: boolean; // Whether rate limiting is enabled
 }
 
 /**
@@ -42,7 +44,16 @@ export class RateLimiter {
       duration,
       blockDuration = 0,
       keyPrefix = "rlflx",
+      enabled = true,
     } = options;
+
+    // If rate limiting is disabled, don't initialize limiters
+    if (!enabled) {
+      this.redisLimiter = null;
+      this.memoryLimiter = null;
+      logger.info("Rate limiting is disabled");
+      return;
+    }
 
     try {
       // Set up Redis rate limiter
@@ -87,17 +98,31 @@ export class RateLimiter {
    * @param options - Rate limiting options
    * @returns Express middleware function
    */
-  public static createApiLimiter(
-    options: RateLimitOptions = {
-      points: 60, // 60 requests
-      duration: 60, // per 1 minute
-      blockDuration: 60 * 5, // 5 minutes block after exceeding
+  public static createApiLimiter(options?: RateLimitOptions) {
+    // Get environment specific settings
+    const envSettings =
+      appConfig.env === "development"
+        ? appConfig.rateLimit.development
+        : appConfig.rateLimit.production;
+
+    // Merge provided options with environment settings
+    const mergedOptions: RateLimitOptions = {
+      points: envSettings.points,
+      duration: envSettings.duration,
+      blockDuration: envSettings.blockDuration,
       keyPrefix: "rl:api",
-    }
-  ) {
-    this.initialize(options);
+      enabled: envSettings.enabled,
+      ...options,
+    };
+
+    this.initialize(mergedOptions);
 
     return async (req: Request, res: Response, next: NextFunction) => {
+      // If rate limiting is disabled, just proceed
+      if (!mergedOptions.enabled) {
+        return next();
+      }
+
       // Get client IP
       const clientIp = this.getClientIp(req);
 
@@ -142,17 +167,29 @@ export class RateLimiter {
    * @returns Express middleware function
    */
   public static createAuthLimiter(loginRoute: string = "/api/auth/login") {
-    // Stricter limits for auth routes
+    // Get environment specific settings
+    const envSettings =
+      appConfig.env === "development"
+        ? appConfig.rateLimit.development
+        : appConfig.rateLimit.production;
+
+    // Stricter limits for auth routes, but respect environment settings
     const authOptions: RateLimitOptions = {
-      points: 5, // 5 attempts
+      points: appConfig.env === "development" ? 100 : 5, // More lenient in development
       duration: 60 * 15, // per 15 minutes
-      blockDuration: 60 * 60, // 1 hour block after exceeding
+      blockDuration: appConfig.env === "development" ? 0 : 60 * 60, // No block in development
       keyPrefix: "rl:auth",
+      enabled: envSettings.enabled,
     };
 
     this.initialize(authOptions);
 
     return async (req: Request, res: Response, next: NextFunction) => {
+      // If rate limiting is disabled, just proceed
+      if (!authOptions.enabled) {
+        return next();
+      }
+
       // Only apply to specific authentication routes
       if (req.path === loginRoute && req.method === "POST") {
         const key = `${this.getClientIp(req)}:${req.body.email || "unknown"}`;
@@ -241,6 +278,12 @@ export class RateLimiter {
    * @returns Rate limiter result
    */
   private static async consumePoint(key: string): Promise<RateLimiterRes> {
+    // If no limiters are initialized (rate limiting disabled), return a "success" result
+    if (!this.redisLimiter && !this.memoryLimiter) {
+      // Create a mock result that indicates no limit is being enforced
+      return new RateLimiterRes(0, 1000, 0, false);
+    }
+
     if (this.isRedisAvailable && this.redisLimiter) {
       try {
         return await this.redisLimiter.consume(key);

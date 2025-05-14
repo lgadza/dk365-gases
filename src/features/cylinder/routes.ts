@@ -7,8 +7,10 @@ import PermissionMiddleware from "@/shared/middleware/permission";
 import ErrorHandlerUtil from "@/common/utils/errors/errorUtils";
 import { PermissionAction } from "../rbac/interfaces/roles.interface";
 
-// Create router
+// Create routers
 const router = Router();
+const cylinderTypeRouter = Router();
+const cylinderMovementRouter = Router();
 
 // Wrap controller methods with asyncHandler to catch errors
 const asyncHandler = ErrorHandlerUtil.asyncHandler;
@@ -20,25 +22,47 @@ const asyncHandler = ErrorHandlerUtil.asyncHandler;
  *   description: Gas cylinder inventory management API
  */
 
+// Mount sub-routers
+router.use("/types", cylinderTypeRouter);
+router.use("/movements", cylinderMovementRouter);
+
 /**
  * Cylinder routes
+ * Important: Specific routes (with fixed paths) must come BEFORE routes with parameters
  */
+
+// Special functionality routes (specific - come first)
 router.get(
-  "/",
+  "/inspection/due",
   AuthMiddleware.verifyToken,
   PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
-  ValidationUtil.validateRequest(cylinderValidationSchemas.getCylinderList),
-  asyncHandler(cylinderController.getCylinderList)
+  ValidationUtil.validateRequest(
+    cylinderValidationSchemas.getCylindersForInspection
+  ),
+  asyncHandler(cylinderController.getCylindersForInspection)
 );
 
 router.get(
-  "/:id",
+  "/stats",
   AuthMiddleware.verifyToken,
   PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
-  ValidationUtil.validateRequest(cylinderValidationSchemas.getCylinderById),
-  asyncHandler(cylinderController.getCylinderById)
+  ValidationUtil.validateRequest(
+    cylinderValidationSchemas.calculateCylinderStats
+  ),
+  asyncHandler(cylinderController.calculateCylinderStats)
 );
 
+router.get(
+  "/export/csv",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
+  ValidationUtil.validateRequest(
+    cylinderValidationSchemas.exportCylindersToCSV
+  ),
+  asyncHandler(cylinderController.exportCylindersToCSV)
+);
+
+// Lookup routes by specific criteria (come before generic ID route)
 router.get(
   "/serial/:serialNumber",
   AuthMiddleware.verifyToken,
@@ -49,12 +73,61 @@ router.get(
   asyncHandler(cylinderController.getCylinderBySerialNumber)
 );
 
+router.get(
+  "/status/:status",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
+  ValidationUtil.validateRequest(
+    cylinderValidationSchemas.getCylindersByStatus
+  ),
+  asyncHandler(cylinderController.getCylindersByStatus)
+);
+
+router.get(
+  "/by-type/:typeId",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
+  ValidationUtil.validateRequest(
+    cylinderValidationSchemas.getCylindersByTypeId
+  ),
+  asyncHandler(cylinderController.getCylindersByTypeId)
+);
+
+router.get(
+  "/by-customer/:customerId",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
+  ValidationUtil.validateRequest(
+    cylinderValidationSchemas.getCylindersByCustomerId
+  ),
+  asyncHandler(cylinderController.getCylindersByCustomerId)
+);
+
+// List route
+router.get(
+  "/",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
+  ValidationUtil.validateRequest(cylinderValidationSchemas.getCylinderList),
+  asyncHandler(cylinderController.getCylinderList)
+);
+
+// Create route
 router.post(
   "/",
   AuthMiddleware.verifyToken,
   PermissionMiddleware.hasPermission("cylinder", PermissionAction.CREATE),
   ValidationUtil.validateRequest(cylinderValidationSchemas.createCylinder),
   asyncHandler(cylinderController.createCylinder)
+);
+
+// ID-specific routes (should be last among cylinder routes)
+router.get(
+  "/:id",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
+  ValidationUtil.validateRequest(cylinderValidationSchemas.getCylinderById),
+  asyncHandler(cylinderController.getCylinderById)
 );
 
 router.put(
@@ -71,46 +144,6 @@ router.delete(
   PermissionMiddleware.hasPermission("cylinder", PermissionAction.DELETE),
   ValidationUtil.validateRequest(cylinderValidationSchemas.deleteCylinder),
   asyncHandler(cylinderController.deleteCylinder)
-);
-
-router.get(
-  "/type/:typeId",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
-  ValidationUtil.validateRequest(
-    cylinderValidationSchemas.getCylindersByTypeId
-  ),
-  asyncHandler(cylinderController.getCylindersByTypeId)
-);
-
-router.get(
-  "/customer/:customerId",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
-  ValidationUtil.validateRequest(
-    cylinderValidationSchemas.getCylindersByCustomerId
-  ),
-  asyncHandler(cylinderController.getCylindersByCustomerId)
-);
-
-router.get(
-  "/status/:status",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
-  ValidationUtil.validateRequest(
-    cylinderValidationSchemas.getCylindersByStatus
-  ),
-  asyncHandler(cylinderController.getCylindersByStatus)
-);
-
-router.get(
-  "/inspection/due",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
-  ValidationUtil.validateRequest(
-    cylinderValidationSchemas.getCylindersForInspection
-  ),
-  asyncHandler(cylinderController.getCylindersForInspection)
 );
 
 router.put(
@@ -143,72 +176,6 @@ router.get(
   asyncHandler(cylinderController.generateCylinderBarcode)
 );
 
-/**
- * Cylinder type routes
- */
-router.get(
-  "/types",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
-  ValidationUtil.validateRequest(cylinderValidationSchemas.getCylinderTypeList),
-  asyncHandler(cylinderController.getCylinderTypeList)
-);
-
-router.get(
-  "/types/:id",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
-  ValidationUtil.validateRequest(cylinderValidationSchemas.getCylinderTypeById),
-  asyncHandler(cylinderController.getCylinderTypeById)
-);
-
-router.post(
-  "/types",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.CREATE),
-  ValidationUtil.validateRequest(cylinderValidationSchemas.createCylinderType),
-  asyncHandler(cylinderController.createCylinderType)
-);
-
-router.put(
-  "/types/:id",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.UPDATE),
-  ValidationUtil.validateRequest(cylinderValidationSchemas.updateCylinderType),
-  asyncHandler(cylinderController.updateCylinderType)
-);
-
-router.delete(
-  "/types/:id",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.DELETE),
-  ValidationUtil.validateRequest(cylinderValidationSchemas.deleteCylinderType),
-  asyncHandler(cylinderController.deleteCylinderType)
-);
-
-/**
- * Cylinder movement routes
- */
-router.get(
-  "/movements",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
-  ValidationUtil.validateRequest(
-    cylinderValidationSchemas.getCylinderMovementList
-  ),
-  asyncHandler(cylinderController.getCylinderMovementList)
-);
-
-router.get(
-  "/movements/:id",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
-  ValidationUtil.validateRequest(
-    cylinderValidationSchemas.getCylinderMovementById
-  ),
-  asyncHandler(cylinderController.getCylinderMovementById)
-);
-
 router.get(
   "/:cylinderId/movements",
   AuthMiddleware.verifyToken,
@@ -219,8 +186,64 @@ router.get(
   asyncHandler(cylinderController.getCylinderMovementsByCylinderId)
 );
 
-router.post(
-  "/movements",
+/**
+ * Cylinder type routes - mounted at /types
+ */
+cylinderTypeRouter.get(
+  "/",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
+  ValidationUtil.validateRequest(cylinderValidationSchemas.getCylinderTypeList),
+  asyncHandler(cylinderController.getCylinderTypeList)
+);
+
+cylinderTypeRouter.post(
+  "/",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.CREATE),
+  ValidationUtil.validateRequest(cylinderValidationSchemas.createCylinderType),
+  asyncHandler(cylinderController.createCylinderType)
+);
+
+cylinderTypeRouter.get(
+  "/:id",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
+  ValidationUtil.validateRequest(cylinderValidationSchemas.getCylinderTypeById),
+  asyncHandler(cylinderController.getCylinderTypeById)
+);
+
+cylinderTypeRouter.put(
+  "/:id",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.UPDATE),
+  ValidationUtil.validateRequest(cylinderValidationSchemas.updateCylinderType),
+  asyncHandler(cylinderController.updateCylinderType)
+);
+
+cylinderTypeRouter.delete(
+  "/:id",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.DELETE),
+  ValidationUtil.validateRequest(cylinderValidationSchemas.deleteCylinderType),
+  asyncHandler(cylinderController.deleteCylinderType)
+);
+
+/**
+ * Cylinder movement routes - mounted at /movements
+ */
+cylinderMovementRouter.get(
+  "/",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
+  ValidationUtil.validateRequest(
+    cylinderValidationSchemas.getCylinderMovementList
+  ),
+  asyncHandler(cylinderController.getCylinderMovementList)
+);
+
+cylinderMovementRouter.post(
+  "/",
   AuthMiddleware.verifyToken,
   PermissionMiddleware.hasPermission("cylinder", PermissionAction.CREATE),
   ValidationUtil.validateRequest(
@@ -229,8 +252,18 @@ router.post(
   asyncHandler(cylinderController.recordCylinderMovement)
 );
 
-router.put(
-  "/movements/:id",
+cylinderMovementRouter.get(
+  "/:id",
+  AuthMiddleware.verifyToken,
+  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
+  ValidationUtil.validateRequest(
+    cylinderValidationSchemas.getCylinderMovementById
+  ),
+  asyncHandler(cylinderController.getCylinderMovementById)
+);
+
+cylinderMovementRouter.put(
+  "/:id",
   AuthMiddleware.verifyToken,
   PermissionMiddleware.hasPermission("cylinder", PermissionAction.UPDATE),
   ValidationUtil.validateRequest(
@@ -239,8 +272,8 @@ router.put(
   asyncHandler(cylinderController.updateCylinderMovement)
 );
 
-router.delete(
-  "/movements/:id",
+cylinderMovementRouter.delete(
+  "/:id",
   AuthMiddleware.verifyToken,
   PermissionMiddleware.hasPermission("cylinder", PermissionAction.DELETE),
   ValidationUtil.validateRequest(
@@ -250,7 +283,7 @@ router.delete(
 );
 
 /**
- * Reports and exports
+ * Reports routes
  */
 router.get(
   "/reports/inventory",
@@ -260,26 +293,6 @@ router.get(
     cylinderValidationSchemas.generateInventoryReport
   ),
   asyncHandler(cylinderController.generateInventoryReport)
-);
-
-router.get(
-  "/export/csv",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
-  ValidationUtil.validateRequest(
-    cylinderValidationSchemas.exportCylindersToCSV
-  ),
-  asyncHandler(cylinderController.exportCylindersToCSV)
-);
-
-router.get(
-  "/stats",
-  AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("cylinder", PermissionAction.READ),
-  ValidationUtil.validateRequest(
-    cylinderValidationSchemas.calculateCylinderStats
-  ),
-  asyncHandler(cylinderController.calculateCylinderStats)
 );
 
 export default router;

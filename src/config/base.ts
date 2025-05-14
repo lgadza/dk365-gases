@@ -41,6 +41,18 @@ const baseConfig = {
   rateLimit: {
     windowMs: 15 * 60 * 1000, // 15 minutes
     max: 100, // limit each IP to 100 requests per windowMs
+    development: {
+      enabled: false, // Disable rate limiting in development by default
+      points: 1000, // High limit for development
+      duration: 60, // per 1 minute
+      blockDuration: 0, // No blocking in development
+    },
+    production: {
+      enabled: true, // Enable rate limiting in production
+      points: 100, // Default production limit
+      duration: 60, // per 1 minute
+      blockDuration: 60 * 5, // 5 minutes block in production
+    },
   },
 
   // Security
