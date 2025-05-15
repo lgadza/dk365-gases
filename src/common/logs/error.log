@@ -6659,3 +6659,676 @@
     at Function.Module._load (node:internal/modules/cjs/loader:960:12)
     at Module.require (node:internal/modules/cjs/loader:1143:19)
 2025-05-14T16:39:19.796Z error: API Error: No authentication token provided
+2025-05-15T07:37:48.552Z error: API Error: Token has expired
+2025-05-15T07:37:55.118Z error: API Error: Token has expired
+2025-05-15T08:52:48.514Z error: Redis connection error:
+2025-05-15T08:52:48.712Z error: Redis connection error:
+2025-05-15T08:52:48.847Z error: Redis connection error:
+2025-05-15T08:52:49.038Z error: Redis connection error:
+2025-05-15T08:52:49.338Z error: Redis connection error:
+2025-05-15T08:52:49.701Z error: Redis connection error:
+2025-05-15T08:52:50.068Z error: Redis connection error:
+2025-05-15T08:52:50.433Z error: Redis connection error:
+2025-05-15T08:52:50.881Z error: Redis connection error:
+2025-05-15T08:52:51.362Z error: Redis connection error:
+2025-05-15T08:52:51.905Z error: Redis connection error:
+2025-05-15T08:52:52.526Z error: Redis connection error:
+2025-05-15T08:52:53.150Z error: Redis connection error:
+2025-05-15T08:52:53.813Z error: Redis connection error:
+2025-05-15T08:52:54.537Z error: Redis connection error:
+2025-05-15T08:52:55.329Z error: Redis connection error:
+2025-05-15T08:52:56.146Z error: Redis connection error:
+2025-05-15T08:52:57.037Z error: Redis connection error:
+2025-05-15T08:52:57.969Z error: Redis connection error:
+2025-05-15T08:52:58.957Z error: Redis connection error:
+2025-05-15T08:52:59.990Z error: Redis connection error:
+2025-05-15T08:53:01.094Z error: Redis connection error:
+2025-05-15T08:53:02.224Z error: Redis connection error:
+2025-05-15T08:53:03.432Z error: Redis connection error:
+2025-05-15T08:53:04.686Z error: Redis connection error:
+2025-05-15T08:53:06.002Z error: Redis connection error:
+2025-05-15T08:53:07.336Z error: Redis connection error:
+2025-05-15T08:53:08.709Z error: Redis connection error:
+2025-05-15T08:53:10.120Z error: Redis connection error:
+2025-05-15T08:53:11.595Z error: Redis connection error:
+2025-05-15T08:53:13.131Z error: Redis connection error:
+2025-05-15T08:53:14.773Z error: Redis connection error:
+2025-05-15T08:53:16.385Z error: Redis connection error:
+2025-05-15T08:53:18.048Z error: Redis connection error:
+2025-05-15T08:53:19.770Z error: Redis connection error:
+2025-05-15T08:53:21.535Z error: Redis connection error:
+2025-05-15T08:53:23.344Z error: Redis connection error:
+2025-05-15T08:53:25.257Z error: Redis connection error:
+2025-05-15T08:53:27.221Z error: Redis connection error:
+2025-05-15T08:53:29.182Z error: Redis connection error:
+2025-05-15T08:53:31.209Z error: Redis connection error:
+2025-05-15T08:53:33.224Z error: Redis connection error:
+2025-05-15T08:53:35.242Z error: Redis connection error:
+2025-05-15T08:53:37.282Z error: Redis connection error:
+2025-05-15T08:53:39.323Z error: Redis connection error:
+2025-05-15T08:53:41.341Z error: Redis connection error:
+2025-05-15T08:53:43.366Z error: Redis connection error:
+2025-05-15T08:53:45.393Z error: Redis connection error:
+2025-05-15T08:53:47.428Z error: Redis connection error:
+2025-05-15T08:53:49.450Z error: Redis connection error:
+2025-05-15T08:53:51.480Z error: Redis connection error:
+2025-05-15T08:53:53.509Z error: Redis connection error:
+2025-05-15T08:53:55.522Z error: Redis connection error:
+2025-05-15T08:53:57.529Z error: Redis connection error:
+2025-05-15T08:53:59.539Z error: Redis connection error:
+2025-05-15T08:54:01.559Z error: Redis connection error:
+2025-05-15T08:54:03.613Z error: Redis connection error:
+2025-05-15T08:54:05.677Z error: Redis connection error:
+2025-05-15T08:54:07.783Z error: Redis connection error:
+2025-05-15T08:54:09.825Z error: Redis connection error:
+2025-05-15T08:54:11.866Z error: Redis connection error:
+2025-05-15T08:54:13.896Z error: Redis connection error:
+2025-05-15T08:54:15.909Z error: Redis connection error:
+2025-05-15T08:54:17.936Z error: Redis connection error:
+2025-05-15T08:54:19.943Z error: Redis connection error:
+2025-05-15T08:54:21.965Z error: Redis connection error:
+2025-05-15T08:54:23.981Z error: Redis connection error:
+2025-05-15T08:54:25.995Z error: Redis connection error:
+2025-05-15T08:54:28.016Z error: Redis connection error:
+2025-05-15T08:54:30.031Z error: Redis connection error:
+2025-05-15T08:54:32.045Z error: Redis connection error:
+2025-05-15T08:54:34.055Z error: Redis connection error:
+2025-05-15T08:54:36.074Z error: Redis connection error:
+2025-05-15T08:54:38.095Z error: Redis connection error:
+2025-05-15T08:54:40.138Z error: Redis connection error:
+2025-05-15T08:54:42.154Z error: Redis connection error:
+2025-05-15T08:54:44.178Z error: Redis connection error:
+2025-05-15T08:54:46.207Z error: Redis connection error:
+2025-05-15T08:54:48.223Z error: Redis connection error:
+2025-05-15T08:54:50.233Z error: Redis connection error:
+2025-05-15T08:55:25.035Z error: Redis connection error:
+2025-05-15T08:55:25.234Z error: Redis connection error:
+2025-05-15T08:55:25.427Z error: Redis connection error:
+2025-05-15T08:55:25.646Z error: Redis connection error:
+2025-05-15T08:55:25.894Z error: Redis connection error:
+2025-05-15T08:55:26.194Z error: Redis connection error:
+2025-05-15T08:55:26.600Z error: Redis connection error:
+2025-05-15T08:55:26.983Z error: Redis connection error:
+2025-05-15T08:55:27.411Z error: Redis connection error:
+2025-05-15T08:55:27.905Z error: Redis connection error:
+2025-05-15T08:55:28.455Z error: Redis connection error:
+2025-05-15T08:55:29.017Z error: Redis connection error:
+2025-05-15T08:55:29.647Z error: Redis connection error:
+2025-05-15T08:55:30.304Z error: Redis connection error:
+2025-05-15T08:55:31.030Z error: Redis connection error:
+2025-05-15T08:55:31.842Z error: Redis connection error:
+2025-05-15T08:55:32.659Z error: Redis connection error:
+2025-05-15T08:55:33.529Z error: Redis connection error:
+2025-05-15T08:55:34.480Z error: Redis connection error:
+2025-05-15T08:55:35.463Z error: Redis connection error:
+2025-05-15T08:55:36.517Z error: Redis connection error:
+2025-05-15T08:55:37.583Z error: Redis connection error:
+2025-05-15T08:55:38.689Z error: Redis connection error:
+2025-05-15T08:55:39.845Z error: Redis connection error:
+2025-05-15T08:55:41.064Z error: Redis connection error:
+2025-05-15T08:55:42.410Z error: Redis connection error:
+2025-05-15T08:55:43.808Z error: Redis connection error:
+2025-05-15T08:55:45.195Z error: Redis connection error:
+2025-05-15T08:55:46.612Z error: Redis connection error:
+2025-05-15T08:55:48.076Z error: Redis connection error:
+2025-05-15T08:55:49.592Z error: Redis connection error:
+2025-05-15T08:55:51.183Z error: Redis connection error:
+2025-05-15T08:55:52.827Z error: Redis connection error:
+2025-05-15T08:55:54.509Z error: Redis connection error:
+2025-05-15T08:55:56.232Z error: Redis connection error:
+2025-05-15T08:55:58.006Z error: Redis connection error:
+2025-05-15T08:55:59.924Z error: Redis connection error:
+2025-05-15T08:56:01.780Z error: Redis connection error:
+2025-05-15T08:56:13.695Z error: Redis connection error:
+2025-05-15T08:56:25.686Z error: Redis connection error:
+2025-05-15T08:56:37.720Z error: Redis connection error:
+2025-05-15T08:56:49.741Z error: Redis connection error:
+2025-05-15T08:57:01.752Z error: Redis connection error:
+2025-05-15T08:57:13.776Z error: Redis connection error:
+2025-05-15T09:04:52.471Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/controller.ts[0m:[93m1148[0m:[93m41[0m - [91merror[0m[90m TS2551: [0mProperty 'getCylinderCategoryById' does not exist on type 'ICylinderService'. Did you mean 'getCylinderTypeById'?
+
+[7m1148[0m       const result = await this.service.getCylinderCategoryById(id);
+[7m    [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/cylinder/interfaces/services.ts[0m:[93m265[0m:[93m3[0m
+    [7m265[0m   getCylinderTypeById(id: string): Promise<CylinderTypeDTO>;
+    [7m   [0m [96m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'getCylinderTypeById' is declared here.
+[96msrc/features/cylinder/controller.ts[0m:[93m1187[0m:[93m41[0m - [91merror[0m[90m TS2551: [0mProperty 'createCylinderCategory' does not exist on type 'ICylinderService'. Did you mean 'createCylinderType'?
+
+[7m1187[0m       const result = await this.service.createCylinderCategory(categoryData);
+[7m    [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/cylinder/interfaces/services.ts[0m:[93m270[0m:[93m3[0m
+    [7m270[0m   createCylinderType(typeData: CreateCylinderTypeDTO): Promise<CylinderTypeDTO>;
+    [7m   [0m [96m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'createCylinderType' is declared here.
+[96msrc/features/cylinder/controller.ts[0m:[93m1228[0m:[93m41[0m - [91merror[0m[90m TS2551: [0mProperty 'updateCylinderCategory' does not exist on type 'ICylinderService'. Did you mean 'updateCylinderType'?
+
+[7m1228[0m       const result = await this.service.updateCylinderCategory(
+[7m    [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/cylinder/interfaces/services.ts[0m:[93m275[0m:[93m3[0m
+    [7m275[0m   updateCylinderType(
+    [7m   [0m [96m  ~~~~~~~~~~~~~~~~~~~[0m
+    [7m276[0m     id: string,
+    [7m   [0m [96m~~~~~~~~~~~~~~~[0m
+    [7m277[0m     typeData: UpdateCylinderTypeDTO
+    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [7m278[0m   ): Promise<CylinderTypeDTO>;
+    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'updateCylinderType' is declared here.
+[96msrc/features/cylinder/controller.ts[0m:[93m1264[0m:[93m41[0m - [91merror[0m[90m TS2551: [0mProperty 'deleteCylinderCategory' does not exist on type 'ICylinderService'. Did you mean 'deleteCylinderType'?
+
+[7m1264[0m       const result = await this.service.deleteCylinderCategory(id);
+[7m    [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/cylinder/interfaces/services.ts[0m:[93m283[0m:[93m3[0m
+    [7m283[0m   deleteCylinderType(id: string): Promise<boolean>;
+    [7m   [0m [96m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'deleteCylinderType' is declared here.
+[96msrc/features/cylinder/controller.ts[0m:[93m1297[0m:[93m41[0m - [91merror[0m[90m TS2551: [0mProperty 'getCylinderCategoryList' does not exist on type 'ICylinderService'. Did you mean 'getCylinderTypeList'?
+
+[7m1297[0m       const result = await this.service.getCylinderCategoryList({
+[7m    [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/features/cylinder/interfaces/services.ts[0m:[93m288[0m:[93m3[0m
+    [7m288[0m   getCylinderTypeList(
+    [7m   [0m [96m  ~~~~~~~~~~~~~~~~~~~~[0m
+    [7m289[0m     params: CylinderTypeListQueryParams
+    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [7m290[0m   ): Promise<PaginatedCylinderTypeListDTO>;
+    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'getCylinderTypeList' is declared here.
+[96msrc/features/cylinder/controller.ts[0m:[93m1345[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'processBatchMovement' does not exist on type 'ICylinderService'.
+
+[7m1345[0m       const result = await this.service.processBatchMovement(batchData);
+[7m    [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m1383[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'exchangeCylinders' does not exist on type 'ICylinderService'.
+
+[7m1383[0m       const result = await this.service.exchangeCylinders(
+[7m    [0m [91m                                        ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:06:14.350Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/v1/index.ts[0m:[93m11[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../features/cylinder/routes' or its corresponding type declarations.
+
+[7m11[0m import cylinderRouter from "../../features/cylinder/routes";
+[7m  [0m [91m                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:08:32.587Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/index.ts[0m:[93m1[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module './model' or its corresponding type declarations.
+
+[7m1[0m import Cylinder from "./model";
+[7m [0m [91m                     ~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m2[0m:[93m26[0m - [91merror[0m[90m TS2307: [0mCannot find module './cylinder-type.model' or its corresponding type declarations.
+
+[7m2[0m import CylinderType from "./cylinder-type.model";
+[7m [0m [91m                         ~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m3[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module './cylinder-movement.model' or its corresponding type declarations.
+
+[7m3[0m import CylinderMovement from "./cylinder-movement.model";
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m4[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module './cylinder-category.model' or its corresponding type declarations.
+
+[7m4[0m import CylinderCategory from "./cylinder-category.model";
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m5[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module './service' or its corresponding type declarations.
+
+[7m5[0m import cylinderService from "./service";
+[7m [0m [91m                            ~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m6[0m:[93m32[0m - [91merror[0m[90m TS2307: [0mCannot find module './controller' or its corresponding type declarations.
+
+[7m6[0m import cylinderController from "./controller";
+[7m [0m [91m                               ~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m8[0m:[93m39[0m - [91merror[0m[90m TS2307: [0mCannot find module './validation' or its corresponding type declarations.
+
+[7m8[0m import cylinderValidationSchemas from "./validation";
+[7m [0m [91m                                      ~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m9[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module './routes' or its corresponding type declarations.
+
+[7m9[0m import cylinderRoutes from "./routes";
+[7m [0m [91m                           ~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m36[0m:[93m3[0m - [91merror[0m[90m TS2305: [0mModule '"./dto"' has no exported member 'BatchMovementDTO'.
+
+[7m36[0m   BatchMovementDTO,
+[7m  [0m [91m  ~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:14:06.778Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/index.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/model"' has no default export.
+
+[7m1[0m import Cylinder from "./model";
+[7m [0m [91m       ~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m2[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/cylinder-type.model"' has no default export.
+
+[7m2[0m import CylinderType from "./cylinder-type.model";
+[7m [0m [91m       ~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m3[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/cylinder-movement.model"' has no default export.
+
+[7m3[0m import CylinderMovement from "./cylinder-movement.model";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m4[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module './cylinder-category.model' or its corresponding type declarations.
+
+[7m4[0m import CylinderCategory from "./cylinder-category.model";
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m5[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module './service' or its corresponding type declarations.
+
+[7m5[0m import cylinderService from "./service";
+[7m [0m [91m                            ~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m6[0m:[93m32[0m - [91merror[0m[90m TS2307: [0mCannot find module './controller' or its corresponding type declarations.
+
+[7m6[0m import cylinderController from "./controller";
+[7m [0m [91m                               ~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m8[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/validation"' has no default export.
+
+[7m8[0m import cylinderValidationSchemas from "./validation";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m9[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module './routes' or its corresponding type declarations.
+
+[7m9[0m import cylinderRoutes from "./routes";
+[7m [0m [91m                           ~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m36[0m:[93m3[0m - [91merror[0m[90m TS2305: [0mModule '"./dto"' has no exported member 'BatchMovementDTO'.
+
+[7m36[0m   BatchMovementDTO,
+[7m  [0m [91m  ~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:18:34.436Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/index.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/model"' has no default export.
+
+[7m1[0m import Cylinder from "./model";
+[7m [0m [91m       ~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m2[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/cylinder-type.model"' has no default export.
+
+[7m2[0m import CylinderType from "./cylinder-type.model";
+[7m [0m [91m       ~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m3[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/cylinder-movement.model"' has no default export.
+
+[7m3[0m import CylinderMovement from "./cylinder-movement.model";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m4[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module './cylinder-category.model' or its corresponding type declarations.
+
+[7m4[0m import CylinderCategory from "./cylinder-category.model";
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m5[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module './service' or its corresponding type declarations.
+
+[7m5[0m import cylinderService from "./service";
+[7m [0m [91m                            ~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m6[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/controller"' has no default export.
+
+[7m6[0m import cylinderController from "./controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m8[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/validation"' has no default export.
+
+[7m8[0m import cylinderValidationSchemas from "./validation";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m9[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module './routes' or its corresponding type declarations.
+
+[7m9[0m import cylinderRoutes from "./routes";
+[7m [0m [91m                           ~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m36[0m:[93m3[0m - [91merror[0m[90m TS2305: [0mModule '"./dto"' has no exported member 'BatchMovementDTO'.
+
+[7m36[0m   BatchMovementDTO,
+[7m  [0m [91m  ~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:18:57.751Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/index.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/model"' has no default export.
+
+[7m1[0m import Cylinder from "./model";
+[7m [0m [91m       ~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m2[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/cylinder-type.model"' has no default export.
+
+[7m2[0m import CylinderType from "./cylinder-type.model";
+[7m [0m [91m       ~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m3[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/cylinder-movement.model"' has no default export.
+
+[7m3[0m import CylinderMovement from "./cylinder-movement.model";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m4[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module './cylinder-category.model' or its corresponding type declarations.
+
+[7m4[0m import CylinderCategory from "./cylinder-category.model";
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m5[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module './service' or its corresponding type declarations.
+
+[7m5[0m import cylinderService from "./service";
+[7m [0m [91m                            ~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m6[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/controller"' has no default export.
+
+[7m6[0m import cylinderController from "./controller";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m8[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/validation"' has no default export.
+
+[7m8[0m import cylinderValidationSchemas from "./validation";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m9[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/routes"' has no default export.
+
+[7m9[0m import cylinderRoutes from "./routes";
+[7m [0m [91m       ~~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/index.ts[0m:[93m36[0m:[93m3[0m - [91merror[0m[90m TS2305: [0mModule '"./dto"' has no exported member 'BatchMovementDTO'.
+
+[7m36[0m   BatchMovementDTO,
+[7m  [0m [91m  ~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:21:41.395Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/v1/index.ts[0m:[93m13[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/routes"' has no default export.
+
+[7m13[0m import cylinderRouter from "../../features/cylinder/routes"; // Add cylinder router import
+[7m  [0m [91m       ~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:21:54.751Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/v1/index.ts[0m:[93m13[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/routes"' has no default export.
+
+[7m13[0m import cylinderRouter from "../../features/cylinder/routes"; // Add cylinder router import
+[7m  [0m [91m       ~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:22:37.739Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/routes.ts[0m:[93m2[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/controller"' has no default export.
+
+[7m2[0m import controller from "./controller";
+[7m [0m [91m       ~~~~~~~~~~[0m
+[96msrc/features/cylinder/routes.ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/validation"' has no default export.
+
+[7m4[0m import validationSchemas from "./validation";
+[7m [0m [91m       ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:23:56.184Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/routes.ts[0m:[93m2[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"C:/Users/siuol/Desktop/dk365-gases/src/features/cylinder/controller"' has no default export.
+
+[7m2[0m import controller from "./controller";
+[7m [0m [91m       ~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:26:13.522Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/controller.ts[0m:[93m205[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'typeId' does not exist in type 'CylinderListQueryParams'.
+
+[7m205[0m         typeId: params.typeId as string,
+[7m   [0m [91m        ~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m705[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'fromDate' does not exist in type 'CylinderMovementListQueryParams'.
+
+[7m705[0m         fromDate: params.fromDate
+[7m   [0m [91m        ~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m761[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 3-6 arguments, but got 7.
+
+[7m761[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m813[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 3-6 arguments, but got 7.
+
+[7m813[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m871[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 5-9 arguments, but got 10.
+
+[7m871[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:26:33.097Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/controller.ts[0m:[93m205[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'typeId' does not exist in type 'CylinderListQueryParams'.
+
+[7m205[0m         typeId: params.typeId as string,
+[7m   [0m [91m        ~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m705[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'fromDate' does not exist in type 'CylinderMovementListQueryParams'.
+
+[7m705[0m         fromDate: params.fromDate
+[7m   [0m [91m        ~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m761[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 3-6 arguments, but got 7.
+
+[7m761[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m813[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 3-6 arguments, but got 7.
+
+[7m813[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m871[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 5-9 arguments, but got 10.
+
+[7m871[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:27:19.777Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/controller.ts[0m:[93m205[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'typeId' does not exist in type 'CylinderListQueryParams'.
+
+[7m205[0m         typeId: params.typeId as string,
+[7m   [0m [91m        ~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m705[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'fromDate' does not exist in type 'CylinderMovementListQueryParams'.
+
+[7m705[0m         fromDate: params.fromDate
+[7m   [0m [91m        ~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m761[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 3-6 arguments, but got 7.
+
+[7m761[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m813[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 3-6 arguments, but got 7.
+
+[7m813[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m871[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 5-9 arguments, but got 10.
+
+[7m871[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:29:13.069Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/controller.ts[0m:[93m205[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'typeId' does not exist in type 'CylinderListQueryParams'.
+
+[7m205[0m         typeId: params.typeId as string,
+[7m   [0m [91m        ~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m705[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'fromDate' does not exist in type 'CylinderMovementListQueryParams'.
+
+[7m705[0m         fromDate: params.fromDate
+[7m   [0m [91m        ~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m761[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 3-6 arguments, but got 7.
+
+[7m761[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m813[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 3-6 arguments, but got 7.
+
+[7m813[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m871[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 5-9 arguments, but got 10.
+
+[7m871[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:31:04.774Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/cylinder/controller.ts[0m:[93m205[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'typeId' does not exist in type 'CylinderListQueryParams'.
+
+[7m205[0m         typeId: params.typeId as string,
+[7m   [0m [91m        ~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m705[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'fromDate' does not exist in type 'CylinderMovementListQueryParams'.
+
+[7m705[0m         fromDate: params.fromDate
+[7m   [0m [91m        ~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m761[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 3-6 arguments, but got 7.
+
+[7m761[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m813[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 3-6 arguments, but got 7.
+
+[7m813[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+[96msrc/features/cylinder/controller.ts[0m:[93m871[0m:[93m9[0m - [91merror[0m[90m TS2554: [0mExpected 5-9 arguments, but got 10.
+
+[7m871[0m         performedById
+[7m   [0m [91m        ~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:31:38.828Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/v1/index.ts[0m:[93m13[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../features/cylinder/routes' or its corresponding type declarations.
+
+[7m13[0m import cylinderRouter from "../../features/cylinder/routes"; // Add cylinder router import
+[7m  [0m [91m                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-15T09:32:05.738Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/associations.ts[0m:[93m13[0m:[93m26[0m - [91merror[0m[90m TS2307: [0mCannot find module './cylinder' or its corresponding type declarations.
+
+[7m13[0m import CylinderType from "./cylinder";
+[7m  [0m [91m                         ~~~~~~~~~~~~[0m
+[96msrc/features/associations.ts[0m:[93m15[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module './cylinder' or its corresponding type declarations.
+
+[7m15[0m import Cylinder from "./cylinder";
+[7m  [0m [91m                     ~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)

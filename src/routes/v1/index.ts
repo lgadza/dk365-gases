@@ -8,8 +8,8 @@ import addressRouter from "../../features/address/routes";
 import searchRouter from "../../features/search/routes";
 import rbacRouter from "../../features/rbac/routes/roles.route";
 import invoiceRouter from "../../features/invoice/routes";
-import cylinderRouter from "../../features/cylinder/routes";
 import fleetRouter from "../../features/fleet/routes";
+import roleRouter from "../../features/rbac/routes/roles.route";
 
 const router: Router = express.Router();
 
@@ -26,6 +26,7 @@ router.get("/", (req, res) => {
       invoices: "/invoices",
       cylinders: "/cylinders",
       fleet: "/fleet",
+      roles: "/roles",
       // List available endpoints as they are implemented
       // roles: '/rbac/roles',
       demo: "/demo",
@@ -49,7 +50,7 @@ router.use("/addresses", addressRouter);
 router.use("/search", searchRouter);
 router.use("/rbac/roles", rbacRouter);
 router.use("/invoices", invoiceRouter);
-router.use("/cylinders", cylinderRouter);
 router.use("/fleet", fleetRouter);
+router.use("/roles", roleRouter);
 
 export default router;

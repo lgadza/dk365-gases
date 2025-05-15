@@ -13948,3 +13948,727 @@
 2025-05-14T17:38:29.404Z info: RESPONSE 200 GET / [392.11ms]
 2025-05-14T17:38:29.428Z info: RESPONSE 200 GET /stats [377.01ms]
 2025-05-14T17:38:29.451Z info: RESPONSE 200 GET / [351.27ms]
+2025-05-15T06:29:01.256Z info: Database configuration:
+2025-05-15T06:29:04.224Z info: Connecting to Redis:
+2025-05-15T06:29:45.280Z info: Rate limiting is disabled
+2025-05-15T06:29:48.527Z info: Cache utility initialized
+2025-05-15T06:30:05.435Z info: Configuring CORS middleware
+2025-05-15T06:30:05.437Z info: Configuring compression middleware
+2025-05-15T06:30:05.445Z info: Rate limiting is disabled
+2025-05-15T06:30:05.445Z info: Rate limiting is disabled
+2025-05-15T06:30:05.448Z info: Checking database connection...
+2025-05-15T06:30:05.654Z info: Redis connected successfully
+2025-05-15T06:30:05.682Z info: Sequelize connection has been established successfully.
+2025-05-15T06:30:05.742Z info: Database connection successful
+2025-05-15T06:30:05.742Z info: Setting up model associations...
+2025-05-15T06:30:05.743Z info: Setting up model associations...
+2025-05-15T06:30:05.754Z info: Loading all model associations...
+2025-05-15T06:30:34.749Z info: Applied 13 of 13 model associations
+2025-05-15T06:30:34.750Z info: Model associations loaded
+2025-05-15T06:30:34.750Z info: Model associations set up successfully
+2025-05-15T06:30:34.751Z info: Checking Redis connection...
+2025-05-15T06:30:34.758Z info: Redis client is ready
+2025-05-15T06:30:34.926Z info: Redis ping successful
+2025-05-15T06:30:34.927Z info: Redis connection successful
+2025-05-15T06:30:34.927Z info: Syncing database models...
+2025-05-15T06:30:34.928Z info: Setting up model associations before sync...
+2025-05-15T06:30:34.928Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-15T06:30:34.929Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-15T06:30:34.929Z info: Syncing model: Role
+2025-05-15T06:30:35.229Z info: Successfully synced model: Role
+2025-05-15T06:30:35.230Z info: Syncing model: Permission
+2025-05-15T06:30:35.354Z info: Successfully synced model: Permission
+2025-05-15T06:30:35.354Z info: Syncing model: User
+2025-05-15T06:30:35.515Z info: Successfully synced model: User
+2025-05-15T06:30:35.516Z info: Syncing model: Address
+2025-05-15T06:30:35.555Z info: Successfully synced model: Address
+2025-05-15T06:30:35.555Z info: Syncing model: RolePermission
+2025-05-15T06:30:35.611Z info: Successfully synced model: RolePermission
+2025-05-15T06:30:35.611Z info: Syncing model: UserRole
+2025-05-15T06:30:35.665Z info: Successfully synced model: UserRole
+2025-05-15T06:30:35.665Z info: Syncing model: AddressLink
+2025-05-15T06:30:35.773Z info: Successfully synced model: AddressLink
+2025-05-15T06:30:35.773Z info: Syncing model: Cylinder
+2025-05-15T06:30:35.983Z info: Successfully synced model: Cylinder
+2025-05-15T06:30:35.983Z info: Syncing model: Invoice
+2025-05-15T06:30:36.085Z info: Successfully synced model: Invoice
+2025-05-15T06:30:36.085Z info: Syncing model: Cylinder
+2025-05-15T06:30:36.246Z info: Successfully synced model: Cylinder
+2025-05-15T06:30:36.246Z info: All models synced successfully
+2025-05-15T06:30:36.247Z info: Database synced successfully
+2025-05-15T06:30:36.247Z info: Verifying database tables before seeding...
+2025-05-15T06:30:36.250Z info: Found database tables: , , , , , , , , , 
+2025-05-15T06:30:36.250Z info: Running seeders...
+2025-05-15T06:30:36.251Z info: Starting database seeding...
+2025-05-15T06:30:37.252Z info: Starting RBAC seeding...
+2025-05-15T06:30:37.258Z info: Checking existing roles...
+2025-05-15T06:30:37.313Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-15T06:30:37.444Z info: Found 10 tables for permission generation
+2025-05-15T06:30:37.471Z info: No new permissions to create
+2025-05-15T06:30:37.530Z info: Checking for new permissions to assign to super_admin
+2025-05-15T06:30:37.534Z info: Checking for new permissions to assign to admin
+2025-05-15T06:30:37.536Z info: Checking for new permissions to assign to manager
+2025-05-15T06:30:37.545Z info: Checking for new permissions for driver
+2025-05-15T06:30:37.557Z info: No new role-permission mappings needed
+2025-05-15T06:30:37.560Z info: RBAC seeding completed successfully
+2025-05-15T06:30:37.561Z info: Database seeding completed
+2025-05-15T06:30:37.561Z info: Seeding completed successfully
+2025-05-15T06:30:37.584Z info: API Routes (156 total routes):
+2025-05-15T06:30:38.159Z info: Server running on port 3001
+2025-05-15T06:30:46.336Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:30:46.377Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:30:46.388Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:30:46.440Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:30:46.449Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:30:46.453Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:30:46.467Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:30:46.481Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:30:46.487Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:30:46.499Z info: REQUEST GET /api/v1/cylinders
+2025-05-15T06:30:46.545Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-15T06:30:46.553Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-15T06:30:46.814Z info: RESPONSE 200 GET / [257.02ms]
+2025-05-15T06:30:46.886Z info: RESPONSE 200 GET /stats [341.27ms]
+2025-05-15T06:30:46.910Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:30:46.947Z info: RESPONSE 200 GET / [448.27ms]
+2025-05-15T06:30:46.965Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-15T06:30:46.974Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:30:47.003Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-15T06:30:47.057Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:30:47.077Z info: REQUEST GET /api/v1/cylinders
+2025-05-15T06:30:47.156Z info: RESPONSE 200 GET / [190.86ms]
+2025-05-15T06:30:47.232Z info: RESPONSE 200 GET /stats [228.59ms]
+2025-05-15T06:30:47.316Z info: RESPONSE 200 GET / [239.14ms]
+2025-05-15T06:31:17.601Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:31:17.606Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:31:17.999Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-15T06:31:18.069Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:31:18.072Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-15T06:31:18.276Z info: RESPONSE 200 POST /search [276.88ms]
+2025-05-15T06:31:18.280Z info: RESPONSE 200 POST /search [208.26ms]
+2025-05-15T06:31:29.155Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:31:29.158Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-15T06:31:29.439Z info: RESPONSE 200 POST /search [280.35ms]
+2025-05-15T06:31:29.864Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:31:29.866Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-15T06:31:30.064Z info: RESPONSE 200 GET / [198.40ms]
+2025-05-15T06:32:02.370Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:32:02.389Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-15T06:32:02.638Z info: RESPONSE 200 POST /search [249.24ms]
+2025-05-15T06:32:18.129Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:32:18.130Z info: REQUEST POST /api/v1/cylinders/types
+2025-05-15T06:32:18.375Z info: RESPONSE 201 POST / [244.43ms]
+2025-05-15T06:32:18.479Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:32:18.480Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-15T06:32:18.676Z info: RESPONSE 200 GET / [195.22ms]
+2025-05-15T06:32:24.122Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:32:24.123Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-15T06:32:24.298Z info: RESPONSE 200 GET / [174.75ms]
+2025-05-15T06:32:28.409Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:32:28.412Z info: REQUEST POST /api/v1/cylinders/types/search
+2025-05-15T06:32:28.590Z info: RESPONSE 200 POST /search [178.67ms]
+2025-05-15T06:32:38.994Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:32:38.995Z info: REQUEST POST /api/v1/cylinders
+2025-05-15T06:32:39.222Z info: RESPONSE 201 POST / [226.98ms]
+2025-05-15T06:33:04.527Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:33:04.529Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-15T06:33:04.533Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:33:04.538Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:33:04.540Z info: REQUEST GET /api/v1/cylinders
+2025-05-15T06:33:04.585Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-15T06:33:04.827Z info: RESPONSE 200 GET / [298.27ms]
+2025-05-15T06:33:04.875Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:33:04.890Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-15T06:33:04.899Z info: RESPONSE 200 GET /stats [314.62ms]
+2025-05-15T06:33:04.929Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:33:04.940Z info: RESPONSE 200 GET / [399.98ms]
+2025-05-15T06:33:04.946Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-15T06:33:04.973Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:33:04.983Z info: REQUEST GET /api/v1/cylinders
+2025-05-15T06:33:05.074Z info: RESPONSE 200 GET / [184.01ms]
+2025-05-15T06:33:05.167Z info: RESPONSE 200 GET /stats [220.44ms]
+2025-05-15T06:33:05.211Z info: RESPONSE 200 GET / [227.66ms]
+2025-05-15T06:51:53.507Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:51:53.514Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-15T06:51:53.520Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:51:53.521Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:51:53.523Z info: REQUEST GET /api/v1/cylinders
+2025-05-15T06:51:53.527Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-15T06:51:53.859Z info: RESPONSE 200 GET / [344.68ms]
+2025-05-15T06:51:53.863Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:51:53.869Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-15T06:51:53.894Z info: RESPONSE 200 GET /stats [366.19ms]
+2025-05-15T06:51:53.900Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:51:53.905Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-15T06:51:53.923Z info: RESPONSE 200 GET / [399.84ms]
+2025-05-15T06:51:53.927Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:51:53.929Z info: REQUEST GET /api/v1/cylinders
+2025-05-15T06:51:54.059Z info: RESPONSE 200 GET / [189.21ms]
+2025-05-15T06:51:54.110Z info: RESPONSE 200 GET /stats [205.23ms]
+2025-05-15T06:51:54.117Z info: RESPONSE 200 GET / [188.29ms]
+2025-05-15T06:52:22.646Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:52:22.649Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-15T06:52:22.661Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:52:22.666Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:52:22.668Z info: REQUEST GET /api/v1/cylinders
+2025-05-15T06:52:22.671Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-15T06:52:22.893Z info: RESPONSE 200 GET / [243.58ms]
+2025-05-15T06:52:22.901Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:52:22.909Z info: REQUEST GET /api/v1/cylinders/types
+2025-05-15T06:52:22.936Z info: RESPONSE 200 GET /stats [265.30ms]
+2025-05-15T06:52:22.939Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:52:22.941Z info: REQUEST GET /api/v1/cylinders/stats
+2025-05-15T06:52:22.972Z info: RESPONSE 200 GET / [304.03ms]
+2025-05-15T06:52:22.975Z info: CORS allowing origin in development mode: http://localhost:8080
+2025-05-15T06:52:22.977Z info: REQUEST GET /api/v1/cylinders
+2025-05-15T06:52:23.087Z info: RESPONSE 200 GET / [178.20ms]
+2025-05-15T06:52:23.137Z info: RESPONSE 200 GET /stats [196.06ms]
+2025-05-15T06:52:23.155Z info: RESPONSE 200 GET / [178.22ms]
+2025-05-15T07:33:42.455Z info: Database configuration:
+2025-05-15T07:33:42.603Z info: Connecting to Redis:
+2025-05-15T07:33:57.958Z info: Rate limiting is disabled
+2025-05-15T07:33:59.499Z info: Cache utility initialized
+2025-05-15T07:34:12.215Z info: Configuring CORS middleware
+2025-05-15T07:34:12.217Z info: Configuring compression middleware
+2025-05-15T07:34:12.224Z info: Rate limiting is disabled
+2025-05-15T07:34:12.224Z info: Rate limiting is disabled
+2025-05-15T07:34:12.226Z info: Checking database connection...
+2025-05-15T07:34:12.536Z info: Sequelize connection has been established successfully.
+2025-05-15T07:34:12.577Z info: Database connection successful
+2025-05-15T07:34:33.980Z info: Database configuration:
+2025-05-15T07:34:34.099Z info: Connecting to Redis:
+2025-05-15T07:34:36.837Z info: Rate limiting is disabled
+2025-05-15T07:34:37.644Z info: Cache utility initialized
+2025-05-15T07:34:42.853Z info: Configuring CORS middleware
+2025-05-15T07:34:42.854Z info: Configuring compression middleware
+2025-05-15T07:34:42.860Z info: Rate limiting is disabled
+2025-05-15T07:34:42.860Z info: Rate limiting is disabled
+2025-05-15T07:34:42.861Z info: Checking database connection...
+2025-05-15T07:34:42.923Z info: Redis connected successfully
+2025-05-15T07:34:43.002Z info: Sequelize connection has been established successfully.
+2025-05-15T07:34:43.051Z info: Database connection successful
+2025-05-15T07:34:43.052Z info: Setting up model associations...
+2025-05-15T07:34:43.053Z info: Setting up model associations...
+2025-05-15T07:34:43.062Z info: Loading all model associations...
+2025-05-15T07:34:59.501Z info: Applied 13 of 13 model associations
+2025-05-15T07:34:59.502Z info: Model associations loaded
+2025-05-15T07:34:59.502Z info: Model associations set up successfully
+2025-05-15T07:34:59.502Z info: Checking Redis connection...
+2025-05-15T07:34:59.513Z info: Redis client is ready
+2025-05-15T07:34:59.688Z info: Redis ping successful
+2025-05-15T07:34:59.689Z info: Redis connection successful
+2025-05-15T07:34:59.689Z info: Syncing database models...
+2025-05-15T07:34:59.689Z info: Setting up model associations before sync...
+2025-05-15T07:34:59.690Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-15T07:34:59.690Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-15T07:34:59.691Z info: Syncing model: Role
+2025-05-15T07:34:59.907Z info: Successfully synced model: Role
+2025-05-15T07:34:59.908Z info: Syncing model: Permission
+2025-05-15T07:35:00.006Z info: Successfully synced model: Permission
+2025-05-15T07:35:00.007Z info: Syncing model: User
+2025-05-15T07:35:00.162Z info: Successfully synced model: User
+2025-05-15T07:35:00.163Z info: Syncing model: Address
+2025-05-15T07:35:00.195Z info: Successfully synced model: Address
+2025-05-15T07:35:00.196Z info: Syncing model: RolePermission
+2025-05-15T07:35:00.239Z info: Successfully synced model: RolePermission
+2025-05-15T07:35:00.240Z info: Syncing model: UserRole
+2025-05-15T07:35:00.277Z info: Successfully synced model: UserRole
+2025-05-15T07:35:00.277Z info: Syncing model: AddressLink
+2025-05-15T07:35:00.355Z info: Successfully synced model: AddressLink
+2025-05-15T07:35:00.355Z info: Syncing model: Cylinder
+2025-05-15T07:35:00.506Z info: Successfully synced model: Cylinder
+2025-05-15T07:35:00.506Z info: Syncing model: Invoice
+2025-05-15T07:35:00.587Z info: Successfully synced model: Invoice
+2025-05-15T07:35:00.587Z info: Syncing model: Cylinder
+2025-05-15T07:35:00.729Z info: Successfully synced model: Cylinder
+2025-05-15T07:35:00.729Z info: All models synced successfully
+2025-05-15T07:35:00.729Z info: Database synced successfully
+2025-05-15T07:35:00.729Z info: Verifying database tables before seeding...
+2025-05-15T07:35:00.732Z info: Found database tables: , , , , , , , , , 
+2025-05-15T07:35:00.732Z info: Running seeders...
+2025-05-15T07:35:00.733Z info: Starting database seeding...
+2025-05-15T07:35:01.741Z info: Starting RBAC seeding...
+2025-05-15T07:35:01.746Z info: Checking existing roles...
+2025-05-15T07:35:01.791Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-15T07:35:01.835Z info: Found 10 tables for permission generation
+2025-05-15T07:35:01.836Z info: No new permissions to create
+2025-05-15T07:35:01.856Z info: Checking for new permissions to assign to super_admin
+2025-05-15T07:35:01.857Z info: Checking for new permissions to assign to admin
+2025-05-15T07:35:01.858Z info: Checking for new permissions to assign to manager
+2025-05-15T07:35:01.859Z info: Checking for new permissions for driver
+2025-05-15T07:35:01.859Z info: No new role-permission mappings needed
+2025-05-15T07:35:01.859Z info: RBAC seeding completed successfully
+2025-05-15T07:35:01.860Z info: Database seeding completed
+2025-05-15T07:35:01.860Z info: Seeding completed successfully
+2025-05-15T07:35:01.867Z info: API Routes (164 total routes):
+2025-05-15T07:35:02.118Z info: Server running on port 3001
+2025-05-15T07:37:48.544Z info: REQUEST GET /api/v1/roles
+2025-05-15T07:37:48.552Z error: API Error: Token has expired
+2025-05-15T07:37:48.553Z warn: RESPONSE 401 GET / [9.12ms]
+2025-05-15T07:37:55.114Z info: REQUEST GET /api/v1/roles
+2025-05-15T07:37:55.118Z error: API Error: Token has expired
+2025-05-15T07:37:55.119Z warn: RESPONSE 401 GET / [4.37ms]
+2025-05-15T07:38:04.463Z info: REQUEST POST /api/v1/auth/login
+2025-05-15T07:38:04.753Z info: RESPONSE 200 POST /login [289.83ms]
+2025-05-15T07:38:35.731Z info: REQUEST GET /api/v1/roles
+2025-05-15T07:38:35.975Z info: RESPONSE 200 GET / [243.93ms]
+2025-05-15T08:52:48.514Z error: Redis connection error:
+2025-05-15T08:52:48.539Z info: Retrying Redis connection in 50ms...
+2025-05-15T08:52:48.558Z warn: Redis connection closed
+2025-05-15T08:52:48.712Z error: Redis connection error:
+2025-05-15T08:52:48.719Z info: Retrying Redis connection in 100ms...
+2025-05-15T08:52:48.723Z warn: Redis connection closed
+2025-05-15T08:52:48.847Z error: Redis connection error:
+2025-05-15T08:52:48.847Z info: Retrying Redis connection in 150ms...
+2025-05-15T08:52:48.848Z warn: Redis connection closed
+2025-05-15T08:52:49.038Z error: Redis connection error:
+2025-05-15T08:52:49.095Z info: Retrying Redis connection in 200ms...
+2025-05-15T08:52:49.126Z warn: Redis connection closed
+2025-05-15T08:52:49.338Z error: Redis connection error:
+2025-05-15T08:52:49.340Z info: Retrying Redis connection in 250ms...
+2025-05-15T08:52:49.340Z warn: Redis connection closed
+2025-05-15T08:52:49.701Z error: Redis connection error:
+2025-05-15T08:52:49.718Z info: Retrying Redis connection in 300ms...
+2025-05-15T08:52:49.718Z warn: Redis connection closed
+2025-05-15T08:52:50.068Z error: Redis connection error:
+2025-05-15T08:52:50.070Z info: Retrying Redis connection in 350ms...
+2025-05-15T08:52:50.071Z warn: Redis connection closed
+2025-05-15T08:52:50.433Z error: Redis connection error:
+2025-05-15T08:52:50.435Z info: Retrying Redis connection in 400ms...
+2025-05-15T08:52:50.443Z warn: Redis connection closed
+2025-05-15T08:52:50.881Z error: Redis connection error:
+2025-05-15T08:52:50.890Z info: Retrying Redis connection in 450ms...
+2025-05-15T08:52:50.893Z warn: Redis connection closed
+2025-05-15T08:52:51.362Z error: Redis connection error:
+2025-05-15T08:52:51.363Z info: Retrying Redis connection in 500ms...
+2025-05-15T08:52:51.364Z warn: Redis connection closed
+2025-05-15T08:52:51.905Z error: Redis connection error:
+2025-05-15T08:52:51.920Z info: Retrying Redis connection in 550ms...
+2025-05-15T08:52:51.925Z warn: Redis connection closed
+2025-05-15T08:52:52.526Z error: Redis connection error:
+2025-05-15T08:52:52.533Z info: Retrying Redis connection in 600ms...
+2025-05-15T08:52:52.534Z warn: Redis connection closed
+2025-05-15T08:52:53.150Z error: Redis connection error:
+2025-05-15T08:52:53.150Z info: Retrying Redis connection in 650ms...
+2025-05-15T08:52:53.151Z warn: Redis connection closed
+2025-05-15T08:52:53.813Z error: Redis connection error:
+2025-05-15T08:52:53.814Z info: Retrying Redis connection in 700ms...
+2025-05-15T08:52:53.815Z warn: Redis connection closed
+2025-05-15T08:52:54.537Z error: Redis connection error:
+2025-05-15T08:52:54.546Z info: Retrying Redis connection in 750ms...
+2025-05-15T08:52:54.566Z warn: Redis connection closed
+2025-05-15T08:52:55.329Z error: Redis connection error:
+2025-05-15T08:52:55.330Z info: Retrying Redis connection in 800ms...
+2025-05-15T08:52:55.331Z warn: Redis connection closed
+2025-05-15T08:52:56.146Z error: Redis connection error:
+2025-05-15T08:52:56.146Z info: Retrying Redis connection in 850ms...
+2025-05-15T08:52:56.147Z warn: Redis connection closed
+2025-05-15T08:52:57.037Z error: Redis connection error:
+2025-05-15T08:52:57.046Z info: Retrying Redis connection in 900ms...
+2025-05-15T08:52:57.052Z warn: Redis connection closed
+2025-05-15T08:52:57.969Z error: Redis connection error:
+2025-05-15T08:52:57.970Z info: Retrying Redis connection in 950ms...
+2025-05-15T08:52:57.970Z warn: Redis connection closed
+2025-05-15T08:52:58.957Z error: Redis connection error:
+2025-05-15T08:52:58.959Z info: Retrying Redis connection in 1000ms...
+2025-05-15T08:52:58.960Z warn: Redis connection closed
+2025-05-15T08:52:59.990Z error: Redis connection error:
+2025-05-15T08:52:59.991Z info: Retrying Redis connection in 1050ms...
+2025-05-15T08:52:59.992Z warn: Redis connection closed
+2025-05-15T08:53:01.094Z error: Redis connection error:
+2025-05-15T08:53:01.098Z info: Retrying Redis connection in 1100ms...
+2025-05-15T08:53:01.099Z warn: Redis connection closed
+2025-05-15T08:53:02.224Z error: Redis connection error:
+2025-05-15T08:53:02.236Z info: Retrying Redis connection in 1150ms...
+2025-05-15T08:53:02.242Z warn: Redis connection closed
+2025-05-15T08:53:03.432Z error: Redis connection error:
+2025-05-15T08:53:03.436Z info: Retrying Redis connection in 1200ms...
+2025-05-15T08:53:03.451Z warn: Redis connection closed
+2025-05-15T08:53:04.686Z error: Redis connection error:
+2025-05-15T08:53:04.724Z info: Retrying Redis connection in 1250ms...
+2025-05-15T08:53:04.728Z warn: Redis connection closed
+2025-05-15T08:53:06.002Z error: Redis connection error:
+2025-05-15T08:53:06.003Z info: Retrying Redis connection in 1300ms...
+2025-05-15T08:53:06.020Z warn: Redis connection closed
+2025-05-15T08:53:07.336Z error: Redis connection error:
+2025-05-15T08:53:07.337Z info: Retrying Redis connection in 1350ms...
+2025-05-15T08:53:07.339Z warn: Redis connection closed
+2025-05-15T08:53:08.709Z error: Redis connection error:
+2025-05-15T08:53:08.711Z info: Retrying Redis connection in 1400ms...
+2025-05-15T08:53:08.716Z warn: Redis connection closed
+2025-05-15T08:53:10.120Z error: Redis connection error:
+2025-05-15T08:53:10.121Z info: Retrying Redis connection in 1450ms...
+2025-05-15T08:53:10.121Z warn: Redis connection closed
+2025-05-15T08:53:11.595Z error: Redis connection error:
+2025-05-15T08:53:11.596Z info: Retrying Redis connection in 1500ms...
+2025-05-15T08:53:11.596Z warn: Redis connection closed
+2025-05-15T08:53:13.131Z error: Redis connection error:
+2025-05-15T08:53:13.163Z info: Retrying Redis connection in 1550ms...
+2025-05-15T08:53:13.178Z warn: Redis connection closed
+2025-05-15T08:53:14.773Z error: Redis connection error:
+2025-05-15T08:53:14.774Z info: Retrying Redis connection in 1600ms...
+2025-05-15T08:53:14.775Z warn: Redis connection closed
+2025-05-15T08:53:16.385Z error: Redis connection error:
+2025-05-15T08:53:16.385Z info: Retrying Redis connection in 1650ms...
+2025-05-15T08:53:16.386Z warn: Redis connection closed
+2025-05-15T08:53:18.048Z error: Redis connection error:
+2025-05-15T08:53:18.049Z info: Retrying Redis connection in 1700ms...
+2025-05-15T08:53:18.050Z warn: Redis connection closed
+2025-05-15T08:53:19.770Z error: Redis connection error:
+2025-05-15T08:53:19.771Z info: Retrying Redis connection in 1750ms...
+2025-05-15T08:53:19.771Z warn: Redis connection closed
+2025-05-15T08:53:21.535Z error: Redis connection error:
+2025-05-15T08:53:21.535Z info: Retrying Redis connection in 1800ms...
+2025-05-15T08:53:21.536Z warn: Redis connection closed
+2025-05-15T08:53:23.344Z error: Redis connection error:
+2025-05-15T08:53:23.346Z info: Retrying Redis connection in 1850ms...
+2025-05-15T08:53:23.346Z warn: Redis connection closed
+2025-05-15T08:53:25.257Z error: Redis connection error:
+2025-05-15T08:53:25.263Z info: Retrying Redis connection in 1900ms...
+2025-05-15T08:53:25.312Z warn: Redis connection closed
+2025-05-15T08:53:27.221Z error: Redis connection error:
+2025-05-15T08:53:27.222Z info: Retrying Redis connection in 1950ms...
+2025-05-15T08:53:27.222Z warn: Redis connection closed
+2025-05-15T08:53:29.182Z error: Redis connection error:
+2025-05-15T08:53:29.183Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:29.183Z warn: Redis connection closed
+2025-05-15T08:53:31.209Z error: Redis connection error:
+2025-05-15T08:53:31.209Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:31.210Z warn: Redis connection closed
+2025-05-15T08:53:33.224Z error: Redis connection error:
+2025-05-15T08:53:33.225Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:33.225Z warn: Redis connection closed
+2025-05-15T08:53:35.242Z error: Redis connection error:
+2025-05-15T08:53:35.243Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:35.243Z warn: Redis connection closed
+2025-05-15T08:53:37.282Z error: Redis connection error:
+2025-05-15T08:53:37.292Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:37.312Z warn: Redis connection closed
+2025-05-15T08:53:39.323Z error: Redis connection error:
+2025-05-15T08:53:39.324Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:39.324Z warn: Redis connection closed
+2025-05-15T08:53:41.341Z error: Redis connection error:
+2025-05-15T08:53:41.341Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:41.342Z warn: Redis connection closed
+2025-05-15T08:53:43.366Z error: Redis connection error:
+2025-05-15T08:53:43.373Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:43.375Z warn: Redis connection closed
+2025-05-15T08:53:45.393Z error: Redis connection error:
+2025-05-15T08:53:45.408Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:45.416Z warn: Redis connection closed
+2025-05-15T08:53:47.428Z error: Redis connection error:
+2025-05-15T08:53:47.429Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:47.429Z warn: Redis connection closed
+2025-05-15T08:53:49.450Z error: Redis connection error:
+2025-05-15T08:53:49.451Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:49.465Z warn: Redis connection closed
+2025-05-15T08:53:51.480Z error: Redis connection error:
+2025-05-15T08:53:51.482Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:51.492Z warn: Redis connection closed
+2025-05-15T08:53:53.509Z error: Redis connection error:
+2025-05-15T08:53:53.510Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:53.514Z warn: Redis connection closed
+2025-05-15T08:53:55.522Z error: Redis connection error:
+2025-05-15T08:53:55.522Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:55.523Z warn: Redis connection closed
+2025-05-15T08:53:57.529Z error: Redis connection error:
+2025-05-15T08:53:57.530Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:57.530Z warn: Redis connection closed
+2025-05-15T08:53:59.539Z error: Redis connection error:
+2025-05-15T08:53:59.539Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:53:59.542Z warn: Redis connection closed
+2025-05-15T08:54:01.559Z error: Redis connection error:
+2025-05-15T08:54:01.560Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:01.592Z warn: Redis connection closed
+2025-05-15T08:54:03.613Z error: Redis connection error:
+2025-05-15T08:54:03.619Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:03.634Z warn: Redis connection closed
+2025-05-15T08:54:05.677Z error: Redis connection error:
+2025-05-15T08:54:05.706Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:05.741Z warn: Redis connection closed
+2025-05-15T08:54:07.783Z error: Redis connection error:
+2025-05-15T08:54:07.797Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:07.800Z warn: Redis connection closed
+2025-05-15T08:54:09.825Z error: Redis connection error:
+2025-05-15T08:54:09.837Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:09.844Z warn: Redis connection closed
+2025-05-15T08:54:11.866Z error: Redis connection error:
+2025-05-15T08:54:11.867Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:11.867Z warn: Redis connection closed
+2025-05-15T08:54:13.896Z error: Redis connection error:
+2025-05-15T08:54:13.897Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:13.897Z warn: Redis connection closed
+2025-05-15T08:54:15.909Z error: Redis connection error:
+2025-05-15T08:54:15.909Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:15.910Z warn: Redis connection closed
+2025-05-15T08:54:17.936Z error: Redis connection error:
+2025-05-15T08:54:17.938Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:17.938Z warn: Redis connection closed
+2025-05-15T08:54:19.943Z error: Redis connection error:
+2025-05-15T08:54:19.944Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:19.944Z warn: Redis connection closed
+2025-05-15T08:54:21.965Z error: Redis connection error:
+2025-05-15T08:54:21.966Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:21.966Z warn: Redis connection closed
+2025-05-15T08:54:23.981Z error: Redis connection error:
+2025-05-15T08:54:23.982Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:23.983Z warn: Redis connection closed
+2025-05-15T08:54:25.995Z error: Redis connection error:
+2025-05-15T08:54:25.996Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:25.996Z warn: Redis connection closed
+2025-05-15T08:54:28.016Z error: Redis connection error:
+2025-05-15T08:54:28.017Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:28.018Z warn: Redis connection closed
+2025-05-15T08:54:30.031Z error: Redis connection error:
+2025-05-15T08:54:30.032Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:30.032Z warn: Redis connection closed
+2025-05-15T08:54:32.045Z error: Redis connection error:
+2025-05-15T08:54:32.046Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:32.046Z warn: Redis connection closed
+2025-05-15T08:54:34.055Z error: Redis connection error:
+2025-05-15T08:54:34.056Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:34.056Z warn: Redis connection closed
+2025-05-15T08:54:36.074Z error: Redis connection error:
+2025-05-15T08:54:36.075Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:36.076Z warn: Redis connection closed
+2025-05-15T08:54:38.095Z error: Redis connection error:
+2025-05-15T08:54:38.100Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:38.101Z warn: Redis connection closed
+2025-05-15T08:54:40.138Z error: Redis connection error:
+2025-05-15T08:54:40.139Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:40.139Z warn: Redis connection closed
+2025-05-15T08:54:42.154Z error: Redis connection error:
+2025-05-15T08:54:42.155Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:42.156Z warn: Redis connection closed
+2025-05-15T08:54:44.178Z error: Redis connection error:
+2025-05-15T08:54:44.196Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:44.197Z warn: Redis connection closed
+2025-05-15T08:54:46.207Z error: Redis connection error:
+2025-05-15T08:54:46.207Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:46.208Z warn: Redis connection closed
+2025-05-15T08:54:48.223Z error: Redis connection error:
+2025-05-15T08:54:48.224Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:48.224Z warn: Redis connection closed
+2025-05-15T08:54:50.233Z error: Redis connection error:
+2025-05-15T08:54:50.235Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:54:50.235Z warn: Redis connection closed
+2025-05-15T08:54:59.511Z info: Redis connected successfully
+2025-05-15T08:55:06.453Z info: Redis client is ready
+2025-05-15T08:55:25.035Z error: Redis connection error:
+2025-05-15T08:55:25.071Z info: Retrying Redis connection in 50ms...
+2025-05-15T08:55:25.130Z warn: Redis connection closed
+2025-05-15T08:55:25.234Z error: Redis connection error:
+2025-05-15T08:55:25.257Z info: Retrying Redis connection in 100ms...
+2025-05-15T08:55:25.274Z warn: Redis connection closed
+2025-05-15T08:55:25.427Z error: Redis connection error:
+2025-05-15T08:55:25.439Z info: Retrying Redis connection in 150ms...
+2025-05-15T08:55:25.451Z warn: Redis connection closed
+2025-05-15T08:55:25.646Z error: Redis connection error:
+2025-05-15T08:55:25.654Z info: Retrying Redis connection in 200ms...
+2025-05-15T08:55:25.658Z warn: Redis connection closed
+2025-05-15T08:55:25.894Z error: Redis connection error:
+2025-05-15T08:55:25.895Z info: Retrying Redis connection in 250ms...
+2025-05-15T08:55:25.895Z warn: Redis connection closed
+2025-05-15T08:55:26.194Z error: Redis connection error:
+2025-05-15T08:55:26.231Z info: Retrying Redis connection in 300ms...
+2025-05-15T08:55:26.249Z warn: Redis connection closed
+2025-05-15T08:55:26.600Z error: Redis connection error:
+2025-05-15T08:55:26.610Z info: Retrying Redis connection in 350ms...
+2025-05-15T08:55:26.617Z warn: Redis connection closed
+2025-05-15T08:55:26.983Z error: Redis connection error:
+2025-05-15T08:55:26.984Z info: Retrying Redis connection in 400ms...
+2025-05-15T08:55:26.988Z warn: Redis connection closed
+2025-05-15T08:55:27.411Z error: Redis connection error:
+2025-05-15T08:55:27.413Z info: Retrying Redis connection in 450ms...
+2025-05-15T08:55:27.434Z warn: Redis connection closed
+2025-05-15T08:55:27.905Z error: Redis connection error:
+2025-05-15T08:55:27.908Z info: Retrying Redis connection in 500ms...
+2025-05-15T08:55:27.930Z warn: Redis connection closed
+2025-05-15T08:55:28.455Z error: Redis connection error:
+2025-05-15T08:55:28.456Z info: Retrying Redis connection in 550ms...
+2025-05-15T08:55:28.457Z warn: Redis connection closed
+2025-05-15T08:55:29.017Z error: Redis connection error:
+2025-05-15T08:55:29.018Z info: Retrying Redis connection in 600ms...
+2025-05-15T08:55:29.023Z warn: Redis connection closed
+2025-05-15T08:55:29.647Z error: Redis connection error:
+2025-05-15T08:55:29.648Z info: Retrying Redis connection in 650ms...
+2025-05-15T08:55:29.648Z warn: Redis connection closed
+2025-05-15T08:55:30.304Z error: Redis connection error:
+2025-05-15T08:55:30.308Z info: Retrying Redis connection in 700ms...
+2025-05-15T08:55:30.309Z warn: Redis connection closed
+2025-05-15T08:55:31.030Z error: Redis connection error:
+2025-05-15T08:55:31.034Z info: Retrying Redis connection in 750ms...
+2025-05-15T08:55:31.034Z warn: Redis connection closed
+2025-05-15T08:55:31.842Z error: Redis connection error:
+2025-05-15T08:55:31.844Z info: Retrying Redis connection in 800ms...
+2025-05-15T08:55:31.850Z warn: Redis connection closed
+2025-05-15T08:55:32.659Z error: Redis connection error:
+2025-05-15T08:55:32.660Z info: Retrying Redis connection in 850ms...
+2025-05-15T08:55:32.661Z warn: Redis connection closed
+2025-05-15T08:55:33.529Z error: Redis connection error:
+2025-05-15T08:55:33.533Z info: Retrying Redis connection in 900ms...
+2025-05-15T08:55:33.535Z warn: Redis connection closed
+2025-05-15T08:55:34.480Z error: Redis connection error:
+2025-05-15T08:55:34.481Z info: Retrying Redis connection in 950ms...
+2025-05-15T08:55:34.482Z warn: Redis connection closed
+2025-05-15T08:55:35.463Z error: Redis connection error:
+2025-05-15T08:55:35.478Z info: Retrying Redis connection in 1000ms...
+2025-05-15T08:55:35.501Z warn: Redis connection closed
+2025-05-15T08:55:36.517Z error: Redis connection error:
+2025-05-15T08:55:36.518Z info: Retrying Redis connection in 1050ms...
+2025-05-15T08:55:36.518Z warn: Redis connection closed
+2025-05-15T08:55:37.583Z error: Redis connection error:
+2025-05-15T08:55:37.583Z info: Retrying Redis connection in 1100ms...
+2025-05-15T08:55:37.584Z warn: Redis connection closed
+2025-05-15T08:55:38.689Z error: Redis connection error:
+2025-05-15T08:55:38.690Z info: Retrying Redis connection in 1150ms...
+2025-05-15T08:55:38.691Z warn: Redis connection closed
+2025-05-15T08:55:39.845Z error: Redis connection error:
+2025-05-15T08:55:39.846Z info: Retrying Redis connection in 1200ms...
+2025-05-15T08:55:39.846Z warn: Redis connection closed
+2025-05-15T08:55:41.064Z error: Redis connection error:
+2025-05-15T08:55:41.068Z info: Retrying Redis connection in 1250ms...
+2025-05-15T08:55:41.078Z warn: Redis connection closed
+2025-05-15T08:55:42.410Z error: Redis connection error:
+2025-05-15T08:55:42.434Z info: Retrying Redis connection in 1300ms...
+2025-05-15T08:55:42.451Z warn: Redis connection closed
+2025-05-15T08:55:43.808Z error: Redis connection error:
+2025-05-15T08:55:43.820Z info: Retrying Redis connection in 1350ms...
+2025-05-15T08:55:43.828Z warn: Redis connection closed
+2025-05-15T08:55:45.195Z error: Redis connection error:
+2025-05-15T08:55:45.199Z info: Retrying Redis connection in 1400ms...
+2025-05-15T08:55:45.201Z warn: Redis connection closed
+2025-05-15T08:55:46.612Z error: Redis connection error:
+2025-05-15T08:55:46.612Z info: Retrying Redis connection in 1450ms...
+2025-05-15T08:55:46.612Z warn: Redis connection closed
+2025-05-15T08:55:48.076Z error: Redis connection error:
+2025-05-15T08:55:48.076Z info: Retrying Redis connection in 1500ms...
+2025-05-15T08:55:48.077Z warn: Redis connection closed
+2025-05-15T08:55:49.592Z error: Redis connection error:
+2025-05-15T08:55:49.592Z info: Retrying Redis connection in 1550ms...
+2025-05-15T08:55:49.593Z warn: Redis connection closed
+2025-05-15T08:55:51.183Z error: Redis connection error:
+2025-05-15T08:55:51.199Z info: Retrying Redis connection in 1600ms...
+2025-05-15T08:55:51.202Z warn: Redis connection closed
+2025-05-15T08:55:52.827Z error: Redis connection error:
+2025-05-15T08:55:52.846Z info: Retrying Redis connection in 1650ms...
+2025-05-15T08:55:52.849Z warn: Redis connection closed
+2025-05-15T08:55:54.509Z error: Redis connection error:
+2025-05-15T08:55:54.510Z info: Retrying Redis connection in 1700ms...
+2025-05-15T08:55:54.510Z warn: Redis connection closed
+2025-05-15T08:55:56.232Z error: Redis connection error:
+2025-05-15T08:55:56.233Z info: Retrying Redis connection in 1750ms...
+2025-05-15T08:55:56.251Z warn: Redis connection closed
+2025-05-15T08:55:58.006Z error: Redis connection error:
+2025-05-15T08:55:58.006Z info: Retrying Redis connection in 1800ms...
+2025-05-15T08:55:58.006Z warn: Redis connection closed
+2025-05-15T08:55:59.924Z error: Redis connection error:
+2025-05-15T08:55:59.925Z info: Retrying Redis connection in 1850ms...
+2025-05-15T08:55:59.925Z warn: Redis connection closed
+2025-05-15T08:56:01.780Z error: Redis connection error:
+2025-05-15T08:56:01.780Z info: Retrying Redis connection in 1900ms...
+2025-05-15T08:56:01.780Z warn: Redis connection closed
+2025-05-15T08:56:13.695Z error: Redis connection error:
+2025-05-15T08:56:13.695Z info: Retrying Redis connection in 1950ms...
+2025-05-15T08:56:13.695Z warn: Redis connection closed
+2025-05-15T08:56:25.686Z error: Redis connection error:
+2025-05-15T08:56:25.687Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:56:25.688Z warn: Redis connection closed
+2025-05-15T08:56:37.720Z error: Redis connection error:
+2025-05-15T08:56:37.723Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:56:37.723Z warn: Redis connection closed
+2025-05-15T08:56:49.741Z error: Redis connection error:
+2025-05-15T08:56:49.742Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:56:49.742Z warn: Redis connection closed
+2025-05-15T08:57:01.752Z error: Redis connection error:
+2025-05-15T08:57:01.755Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:57:01.755Z warn: Redis connection closed
+2025-05-15T08:57:13.776Z error: Redis connection error:
+2025-05-15T08:57:13.778Z info: Retrying Redis connection in 2000ms...
+2025-05-15T08:57:13.779Z warn: Redis connection closed
+2025-05-15T08:57:15.823Z info: Redis connected successfully
+2025-05-15T08:57:16.269Z info: Redis client is ready
+2025-05-15T08:59:05.886Z info: Database configuration:
+2025-05-15T08:59:06.357Z info: Connecting to Redis:
+2025-05-15T08:59:14.583Z info: Rate limiting is disabled
+2025-05-15T08:59:16.134Z info: Cache utility initialized
+2025-05-15T08:59:28.069Z info: Configuring CORS middleware
+2025-05-15T08:59:28.071Z info: Configuring compression middleware
+2025-05-15T08:59:28.079Z info: Rate limiting is disabled
+2025-05-15T08:59:28.079Z info: Rate limiting is disabled
+2025-05-15T08:59:28.081Z info: Checking database connection...
+2025-05-15T08:59:28.176Z info: Redis connected successfully
+2025-05-15T08:59:28.315Z info: Sequelize connection has been established successfully.
+2025-05-15T08:59:28.382Z info: Database connection successful
+2025-05-15T08:59:28.382Z info: Setting up model associations...
+2025-05-15T08:59:28.383Z info: Setting up model associations...
+2025-05-15T08:59:28.395Z info: Loading all model associations...
+2025-05-15T09:00:01.101Z info: Applied 13 of 13 model associations
+2025-05-15T09:00:01.106Z info: Model associations loaded
+2025-05-15T09:00:01.106Z info: Model associations set up successfully
+2025-05-15T09:00:01.107Z info: Checking Redis connection...
+2025-05-15T09:00:01.117Z info: Redis client is ready
+2025-05-15T09:00:01.284Z info: Redis ping successful
+2025-05-15T09:00:01.285Z info: Redis connection successful
+2025-05-15T09:00:01.287Z info: Syncing database models...
+2025-05-15T09:00:01.288Z info: Setting up model associations before sync...
+2025-05-15T09:00:01.289Z warn: Associations already set up. Skipping duplicate setup.
+2025-05-15T09:00:01.290Z info: Starting sequential model sync with options: {"force":false,"alter":true}
+2025-05-15T09:00:01.291Z info: Syncing model: Role
+2025-05-15T09:00:01.573Z info: Successfully synced model: Role
+2025-05-15T09:00:01.574Z info: Syncing model: Permission
+2025-05-15T09:00:01.686Z info: Successfully synced model: Permission
+2025-05-15T09:00:01.687Z info: Syncing model: User
+2025-05-15T09:00:01.870Z info: Successfully synced model: User
+2025-05-15T09:00:01.878Z info: Syncing model: Address
+2025-05-15T09:00:01.927Z info: Successfully synced model: Address
+2025-05-15T09:00:01.936Z info: Syncing model: RolePermission
+2025-05-15T09:00:01.998Z info: Successfully synced model: RolePermission
+2025-05-15T09:00:01.998Z info: Syncing model: UserRole
+2025-05-15T09:00:02.059Z info: Successfully synced model: UserRole
+2025-05-15T09:00:02.060Z info: Syncing model: AddressLink
+2025-05-15T09:00:02.160Z info: Successfully synced model: AddressLink
+2025-05-15T09:00:02.161Z info: Syncing model: Cylinder
+2025-05-15T09:00:02.394Z info: Successfully synced model: Cylinder
+2025-05-15T09:00:02.399Z info: Syncing model: Invoice
+2025-05-15T09:00:02.527Z info: Successfully synced model: Invoice
+2025-05-15T09:00:02.528Z info: Syncing model: Cylinder
+2025-05-15T09:00:02.738Z info: Successfully synced model: Cylinder
+2025-05-15T09:00:02.739Z info: All models synced successfully
+2025-05-15T09:00:02.739Z info: Database synced successfully
+2025-05-15T09:00:02.740Z info: Verifying database tables before seeding...
+2025-05-15T09:00:02.743Z info: Found database tables: , , , , , , , , , 
+2025-05-15T09:00:02.743Z info: Running seeders...
+2025-05-15T09:00:02.743Z info: Starting database seeding...
+2025-05-15T09:00:03.746Z info: Starting RBAC seeding...
+2025-05-15T09:00:03.751Z info: Checking existing roles...
+2025-05-15T09:00:03.793Z info: Found 5 existing roles. Skipping role seeding.
+2025-05-15T09:00:03.847Z info: Found 10 tables for permission generation
+2025-05-15T09:00:03.848Z info: No new permissions to create
+2025-05-15T09:00:03.878Z info: Checking for new permissions to assign to super_admin
+2025-05-15T09:00:03.881Z info: Checking for new permissions to assign to admin
+2025-05-15T09:00:03.881Z info: Checking for new permissions to assign to manager
+2025-05-15T09:00:03.882Z info: Checking for new permissions for driver
+2025-05-15T09:00:03.883Z info: No new role-permission mappings needed
+2025-05-15T09:00:03.884Z info: RBAC seeding completed successfully
+2025-05-15T09:00:03.884Z info: Database seeding completed
+2025-05-15T09:00:03.886Z info: Seeding completed successfully
+2025-05-15T09:00:03.898Z info: API Routes (164 total routes):
+2025-05-15T09:00:04.129Z info: Server running on port 3001
+2025-05-15T09:04:43.775Z info: Database configuration:
+2025-05-15T09:06:12.145Z info: Database configuration:
+2025-05-15T09:08:25.727Z info: Database configuration:
+2025-05-15T09:13:58.658Z info: Database configuration:
+2025-05-15T09:18:26.581Z info: Database configuration:
+2025-05-15T09:18:48.680Z info: Database configuration:
+2025-05-15T09:21:39.584Z info: Database configuration:
+2025-05-15T09:21:53.484Z info: Database configuration:
+2025-05-15T09:22:29.354Z info: Database configuration:
+2025-05-15T09:23:48.339Z info: Database configuration:
+2025-05-15T09:26:05.130Z info: Database configuration:
+2025-05-15T09:26:24.742Z info: Database configuration:
+2025-05-15T09:27:10.468Z info: Database configuration:
+2025-05-15T09:29:04.895Z info: Database configuration:
+2025-05-15T09:30:55.708Z info: Database configuration:
+2025-05-15T09:31:37.407Z info: Database configuration:
+2025-05-15T09:31:58.306Z info: Database configuration:

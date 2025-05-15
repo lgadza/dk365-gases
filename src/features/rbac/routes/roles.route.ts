@@ -6,7 +6,7 @@ import AuthMiddleware from "@/shared/middleware/auth";
 import PermissionMiddleware from "@/shared/middleware/permission";
 import ErrorHandlerUtil from "@/common/utils/errors/errorUtils";
 
-const router = Router();
+const roleRouter = Router();
 
 // Wrap controller methods with asyncHandler to catch errors
 const asyncHandler = ErrorHandlerUtil.asyncHandler;
@@ -142,7 +142,12 @@ const canManageRoles = PermissionMiddleware.hasPermission("roles", "manage");
  *       500:
  *         description: Internal server error
  */
-router.get("/", auth, canManageRoles, asyncHandler(RoleController.getAllRoles));
+roleRouter.get(
+  "/",
+  auth,
+  canManageRoles,
+  asyncHandler(RoleController.getAllRoles)
+);
 
 /**
  * @swagger
@@ -188,7 +193,7 @@ router.get("/", auth, canManageRoles, asyncHandler(RoleController.getAllRoles));
  *       500:
  *         description: Internal server error
  */
-router.get(
+roleRouter.get(
   "/:id",
   auth,
   canManageRoles,
@@ -238,7 +243,7 @@ router.get(
  *       500:
  *         description: Internal server error
  */
-router.post(
+roleRouter.post(
   "/",
   auth,
   canManageRoles,
@@ -298,7 +303,7 @@ router.post(
  *       500:
  *         description: Internal server error
  */
-router.put(
+roleRouter.put(
   "/:id",
   auth,
   canManageRoles,
@@ -356,7 +361,7 @@ router.put(
  *       500:
  *         description: Internal server error
  */
-router.delete(
+roleRouter.delete(
   "/:id",
   auth,
   canManageRoles,
@@ -414,7 +419,7 @@ router.delete(
  *       500:
  *         description: Internal server error
  */
-router.get(
+roleRouter.get(
   "/:id/permissions",
   auth,
   canManageRoles,
@@ -478,7 +483,7 @@ router.get(
  *       500:
  *         description: Internal server error
  */
-router.post(
+roleRouter.post(
   "/:id/permissions",
   auth,
   canManageRoles,
@@ -542,7 +547,7 @@ router.post(
  *       500:
  *         description: Internal server error
  */
-router.delete(
+roleRouter.delete(
   "/:id/permissions",
   auth,
   canManageRoles,
@@ -550,4 +555,4 @@ router.delete(
   asyncHandler(RoleController.removePermissionsFromRole)
 );
 
-export default router;
+export default roleRouter;
