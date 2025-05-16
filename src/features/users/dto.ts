@@ -145,9 +145,13 @@ export class UserDTOMapper {
       avatar: user.avatar || null,
       phoneNumber: user.phoneNumber,
       gender: user.gender || null,
-      dateOfBirth: user.dateOfBirth
-        ? user.dateOfBirth.toISOString().split("T")[0]
-        : null,
+      // Fix dateOfBirth handling to safely deal with null or invalid dates
+      dateOfBirth:
+        user.dateOfBirth instanceof Date
+          ? user.dateOfBirth.toISOString().split("T")[0]
+          : user.dateOfBirth
+          ? new Date(user.dateOfBirth).toISOString().split("T")[0]
+          : null,
       isActive: user.isActive,
       lastLogin: user.lastLogin ? user.lastLogin.toISOString() : null,
     };

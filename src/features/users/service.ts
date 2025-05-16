@@ -57,6 +57,17 @@ export class UserService implements IUserService {
       const roles = user.roles || [];
       const permissions = user.permissions || [];
 
+      // Ensure dateOfBirth is properly handled before mapping to DTO
+      if (user.dateOfBirth && !(user.dateOfBirth instanceof Date)) {
+        // If dateOfBirth exists but is not a Date object, convert it
+        if (typeof user.dateOfBirth === "string") {
+          user.dateOfBirth = new Date(user.dateOfBirth);
+        } else {
+          // If conversion is not possible, set to null
+          user.dateOfBirth = null;
+        }
+      }
+
       // Map to DTO
       const userDTO = UserDTOMapper.toDetailDTO(
         user,

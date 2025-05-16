@@ -141,7 +141,7 @@ router.get(
 router.get(
   "/:id",
   AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("users", PermissionAction.READ, {
+  PermissionMiddleware.hasPermission("user", PermissionAction.READ, {
     ownershipCheck: true,
   }),
   ValidationUtil.validateRequest(userValidationSchemas.getUserById),
@@ -233,7 +233,7 @@ router.get(
 router.post(
   "/",
   AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("users", PermissionAction.CREATE),
+  PermissionMiddleware.hasPermission("user", PermissionAction.CREATE),
   ValidationUtil.validateRequest(userValidationSchemas.createUser),
   asyncHandler(userController.createUser)
 );
@@ -325,7 +325,7 @@ router.post(
 router.put(
   "/:id",
   AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("users", PermissionAction.UPDATE, {
+  PermissionMiddleware.hasPermission("user", PermissionAction.UPDATE, {
     ownershipCheck: true,
   }),
   ValidationUtil.validateRequest(userValidationSchemas.updateUser),
@@ -364,7 +364,7 @@ router.put(
 router.delete(
   "/:id",
   AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("users", PermissionAction.DELETE),
+  PermissionMiddleware.hasPermission("user", PermissionAction.DELETE),
   ValidationUtil.validateRequest(userValidationSchemas.deleteUser),
   asyncHandler(userController.deleteUser)
 );
@@ -477,7 +477,7 @@ router.put(
 router.put(
   "/:id/admin-password-reset",
   AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("users", PermissionAction.MANAGE),
+  PermissionMiddleware.hasPermission("user", PermissionAction.MANAGE),
   ValidationUtil.validateRequest(userValidationSchemas.adminUpdatePassword),
   asyncHandler(userController.adminUpdatePassword)
 );
@@ -535,7 +535,7 @@ router.put(
 router.put(
   "/:id/roles",
   AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("users", PermissionAction.MANAGE),
+  PermissionMiddleware.hasPermission("user", PermissionAction.MANAGE),
   ValidationUtil.validateRequest(userValidationSchemas.updateUserRoles),
   asyncHandler(userController.updateUserRoles)
 );
@@ -587,7 +587,7 @@ router.put(
 router.post(
   "/:id/avatar",
   AuthMiddleware.verifyToken,
-  PermissionMiddleware.hasPermission("users", PermissionAction.UPDATE, {
+  PermissionMiddleware.hasPermission("user", PermissionAction.UPDATE, {
     ownershipCheck: true,
   }),
   ValidationUtil.validateRequest(userValidationSchemas.uploadAvatar),

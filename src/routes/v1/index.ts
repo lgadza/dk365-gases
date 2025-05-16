@@ -10,6 +10,7 @@ import rbacRouter from "../../features/rbac/routes/roles.route";
 import invoiceRouter from "../../features/invoice/routes";
 import fleetRouter from "../../features/fleet/routes";
 import roleRouter from "../../features/rbac/routes/roles.route";
+// import cylinderRouter from "../../features/cylinder/routes";
 
 const router: Router = express.Router();
 
@@ -52,5 +53,6 @@ router.use("/rbac/roles", rbacRouter);
 router.use("/invoices", invoiceRouter);
 router.use("/fleet", fleetRouter);
 router.use("/roles", roleRouter);
+// router.use("/cylinders", cylinderRouter);
 
 export default router;

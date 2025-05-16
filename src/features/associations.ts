@@ -10,9 +10,8 @@ import User from "./users/model";
 import UserRole from "./users/user-role.model";
 import Address from "./address/model";
 import AddressLink from "./address/address-link.model";
-import CylinderType from "./cylinder";
+
 import Invoice from "./invoice";
-import Cylinder from "./cylinder";
 
 // Import the association loader
 import loadAllAssociations from "./association-loader";
@@ -29,9 +28,7 @@ const MODELS = [
   RolePermission,
   UserRole,
   AddressLink,
-  CylinderType,
   Invoice,
-  Cylinder,
 
   // Add other models in their dependency order
 ];
