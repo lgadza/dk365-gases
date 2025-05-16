@@ -4172,3 +4172,25 @@
     at Module.load (node:internal/modules/cjs/loader:1119:32)
     at Function.Module._load (node:internal/modules/cjs/loader:960:12)
     at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-16T12:41:00.959Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/v1/index.ts[0m:[93m13[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../features/cylinder/routes' or its corresponding type declarations.
+
+[7m13[0m import cylinderRouter from "../../features/cylinder/routes";
+[7m  [0m [91m                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-16T13:58:22.940Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.createTable (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:229:12)
+    at async Function.sync (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1353:7)

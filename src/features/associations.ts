@@ -10,6 +10,8 @@ import User from "./users/model";
 import UserRole from "./users/user-role.model";
 import Address from "./address/model";
 import AddressLink from "./address/address-link.model";
+import FleetVehicle from "./fleet";
+import MaintenanceRecord from "./fleet";
 
 import Invoice from "./invoice";
 
@@ -29,6 +31,8 @@ const MODELS = [
   UserRole,
   AddressLink,
   Invoice,
+  FleetVehicle,
+  MaintenanceRecord,
 
   // Add other models in their dependency order
 ];
