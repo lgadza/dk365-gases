@@ -50,7 +50,7 @@ export class ValidationUtil {
    */
   public static readonly SCHEMAS = {
     ID: Joi.string().uuid().required(),
-    EMAIL: Joi.string().email().required(),
+    EMAIL: Joi.string().email().allow(null),
     PASSWORD: Joi.string()
       .min(8)
       .pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{8,}$/)

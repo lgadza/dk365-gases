@@ -37,6 +37,7 @@ export interface UserListItemDTO {
   roles: string[];
   lastLogin: string | null;
   createdAt: string;
+  phoneNumber: string | null;
 }
 
 // DTO for user creation
@@ -194,6 +195,7 @@ export class UserDTOMapper {
       email: user.email,
       fullName: `${user.firstName} ${user.lastName}`,
       avatar: user.avatar || null,
+      phoneNumber: user.phoneNumber || "",
       isActive: user.isActive,
       roles: user.roles ? user.roles.map((role: any) => role.name) : [],
       lastLogin: user.lastLogin ? user.lastLogin.toISOString() : null,

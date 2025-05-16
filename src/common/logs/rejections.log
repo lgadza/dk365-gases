@@ -4144,3 +4144,31 @@
     at Module.load (node:internal/modules/cjs/loader:1119:32)
     at Function.Module._load (node:internal/modules/cjs/loader:960:12)
     at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-16T10:37:22.151Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/users/dto.ts[0m:[93m197[0m:[93m7[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'phoneNumber' does not exist in type 'UserListItemDTO'.
+
+[7m197[0m       phoneNumber.user.phoneNy
+[7m   [0m [91m      ~~~~~~~~~~~[0m
+[96msrc/features/users/dto.ts[0m:[93m197[0m:[93m7[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'phoneNumber'. Either declare one or provide an initializer.
+
+[7m197[0m       phoneNumber.user.phoneNy
+[7m   [0m [91m      ~~~~~~~~~~~[0m
+[96msrc/features/users/dto.ts[0m:[93m197[0m:[93m18[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m197[0m       phoneNumber.user.phoneNy
+[7m   [0m [91m                 ~[0m
+[96msrc/features/users/dto.ts[0m:[93m198[0m:[93m7[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m198[0m       isActive: user.isActive,
+[7m   [0m [91m      ~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
