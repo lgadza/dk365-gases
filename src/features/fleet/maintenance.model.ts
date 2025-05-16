@@ -14,6 +14,7 @@ class MaintenanceRecord
 {
   public id!: string;
   public vehicleId!: string;
+  public vehicleName?: string;
   public serviceDate!: Date;
   public serviceType!: string;
   public description!: string;
@@ -49,6 +50,11 @@ MaintenanceRecord.init(
         model: FleetVehicle,
         key: "id",
       },
+    },
+    vehicleName: {
+      type: DataTypes.STRING(100),
+      allowNull: true,
+      comment: "Name of the vehicle for reference",
     },
     serviceDate: {
       type: DataTypes.DATE,

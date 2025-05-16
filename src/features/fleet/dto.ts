@@ -141,6 +141,7 @@ export interface PaginatedFleetVehicleListDTO {
 export interface MaintenanceRecordBaseDTO {
   id: string;
   vehicleId: string;
+  vehicleName?: string;
   serviceDate: string;
   serviceType: string;
   description: string;
@@ -331,6 +332,7 @@ export class FleetDTOMapper {
     return {
       id: record.id,
       vehicleId: record.vehicleId,
+      vehicleName: record.vehicleName,
       serviceDate: record.serviceDate.toISOString().split("T")[0],
       serviceType: record.serviceType,
       description: record.description,

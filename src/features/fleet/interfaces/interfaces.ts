@@ -37,6 +37,7 @@ export interface FleetVehicleInterface {
 export interface MaintenanceRecordInterface {
   id: string;
   vehicleId: string;
+  vehicleName?: string;
   serviceDate: Date;
   serviceType: string;
   description: string;
