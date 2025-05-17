@@ -21716,3 +21716,938 @@
 2025-05-17T08:16:13.821Z error: API Error: Token has expired
 2025-05-17T08:16:18.449Z error: API Error: Validation failed
 2025-05-17T08:16:18.609Z error: API Error: Validation failed
+2025-05-17T08:44:24.720Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/orders/routes.ts[0m:[93m2[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module './controller' or its corresponding type declarations.
+
+[7m2[0m import orderController from "./controller";
+[7m [0m [91m                            ~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-17T08:45:10.249Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/orders/controller.ts[0m:[93m3[0m:[93m26[0m - [91merror[0m[90m TS2307: [0mCannot find module './service' or its corresponding type declarations.
+
+[7m3[0m import orderService from "./service";
+[7m [0m [91m                         ~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-17T08:46:01.086Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/orders/controller.ts[0m:[93m3[0m:[93m26[0m - [91merror[0m[90m TS2307: [0mCannot find module './service' or its corresponding type declarations.
+
+[7m3[0m import orderService from "./service";
+[7m [0m [91m                         ~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-17T08:46:29.544Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/orders/controller.ts[0m:[93m3[0m:[93m26[0m - [91merror[0m[90m TS2307: [0mCannot find module './service' or its corresponding type declarations.
+
+[7m3[0m import orderService from "./service";
+[7m [0m [91m                         ~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-17T08:47:34.099Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/orders/controller.ts[0m:[93m3[0m:[93m26[0m - [91merror[0m[90m TS2307: [0mCannot find module './service' or its corresponding type declarations.
+
+[7m3[0m import orderService from "./service";
+[7m [0m [91m                         ~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-17T08:48:54.139Z error: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/features/orders/controller.ts[0m:[93m3[0m:[93m26[0m - [91merror[0m[90m TS2307: [0mCannot find module './service' or its corresponding type declarations.
+
+[7m3[0m import orderService from "./service";
+[7m [0m [91m                         ~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+2025-05-17T08:51:55.599Z error: Error: Cannot find module './invoice/model-associations'
+Require stack:
+- C:\Users\siuol\Desktop\dk365-gases\src\features\association-loader.ts
+- C:\Users\siuol\Desktop\dk365-gases\src\features\associations.ts
+- C:\Users\siuol\Desktop\dk365-gases\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1077:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\siuol\Desktop\dk365-gases\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\siuol\Desktop\dk365-gases\node_modules\module-alias\index.js:49:29)
+    at Function.Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at Object.<anonymous> (C:\Users\siuol\Desktop\dk365-gases\src\features\association-loader.ts:84:1)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module.m._compile (C:\Users\siuol\Desktop\dk365-gases\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+2025-05-17T08:58:59.045Z error: API Error: Validation failed
+2025-05-17T08:58:59.184Z error: API Error: Validation failed
+2025-05-17T08:58:59.378Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T08:58:59.380Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T08:58:59.383Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T08:58:59.384Z error: RESPONSE 500 GET /vehicles/maintenance/required [434.24ms]
+2025-05-17T08:58:59.400Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T08:58:59.401Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T08:58:59.402Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T08:58:59.403Z error: RESPONSE 500 GET /summary [464.23ms]
+2025-05-17T08:58:59.545Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T08:58:59.549Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T08:58:59.551Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T08:58:59.552Z error: RESPONSE 500 GET /vehicles/maintenance/required [145.92ms]
+2025-05-17T08:58:59.601Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T08:58:59.604Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T08:58:59.616Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T08:58:59.620Z error: RESPONSE 500 GET /summary [192.59ms]
+2025-05-17T09:04:37.315Z error: API Error: Validation failed
+2025-05-17T09:04:37.341Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:04:37.343Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:04:37.343Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T09:04:37.344Z error: RESPONSE 500 GET /vehicles/maintenance/required [162.27ms]
+2025-05-17T09:04:37.413Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:04:37.415Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:04:37.416Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T09:04:37.417Z error: RESPONSE 500 GET /summary [243.41ms]
+2025-05-17T09:04:37.469Z error: API Error: Validation failed
+2025-05-17T09:04:37.533Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:04:37.534Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:04:37.535Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T09:04:37.535Z error: RESPONSE 500 GET /vehicles/maintenance/required [145.13ms]
+2025-05-17T09:04:37.657Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:04:37.658Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:04:37.659Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T09:04:37.659Z error: RESPONSE 500 GET /summary [168.70ms]
+2025-05-17T09:05:15.417Z error: API Error: Validation failed
+2025-05-17T09:07:13.476Z error: API Error: Validation failed
+2025-05-17T09:07:13.696Z error: API Error: Validation failed
+2025-05-17T09:17:36.616Z error: API Error: Validation failed
+2025-05-17T09:17:36.796Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:17:36.799Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:17:36.801Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T09:17:36.801Z error: RESPONSE 500 GET /vehicles/maintenance/required [316.15ms]
+2025-05-17T09:17:36.837Z error: API Error: Validation failed
+2025-05-17T09:17:36.906Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:17:36.923Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:17:36.940Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T09:17:36.941Z error: RESPONSE 500 GET /summary [488.63ms]
+2025-05-17T09:17:37.029Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:17:37.031Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:17:37.032Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T09:17:37.033Z error: RESPONSE 500 GET /vehicles/maintenance/required [143.41ms]
+2025-05-17T09:17:37.132Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:17:37.134Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:17:37.135Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T09:17:37.136Z error: RESPONSE 500 GET /summary [147.73ms]
+2025-05-17T09:27:03.941Z error: API Error: Validation failed
+2025-05-17T09:27:04.089Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:27:04.111Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:27:04.118Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T09:27:04.135Z error: RESPONSE 500 GET /vehicles/maintenance/required [383.14ms]
+2025-05-17T09:27:04.173Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:27:04.177Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:27:04.227Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T09:27:04.242Z error: RESPONSE 500 GET /summary [570.92ms]
+2025-05-17T09:28:53.832Z error: API Error: Validation failed
+2025-05-17T09:28:54.029Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:28:54.096Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:28:54.210Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T09:28:54.225Z error: RESPONSE 500 GET /vehicles/maintenance/required [510.95ms]
+2025-05-17T09:28:54.358Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:28:54.382Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:28:54.394Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T09:28:54.461Z error: RESPONSE 500 GET /summary [758.93ms]
+2025-05-17T09:28:56.175Z error: API Error: Validation failed
+2025-05-17T09:28:56.200Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:28:56.210Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:28:56.211Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T09:28:56.211Z error: RESPONSE 500 GET /vehicles/maintenance/required [157.25ms]
+2025-05-17T09:28:56.224Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:28:56.251Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:28:56.252Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T09:28:56.253Z error: RESPONSE 500 GET /summary [206.26ms]
+2025-05-17T09:29:27.494Z error: API Error: Validation failed
+2025-05-17T09:29:27.679Z error: API Error: Validation failed
+2025-05-17T09:29:27.708Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:29:27.712Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:29:27.725Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T09:29:27.728Z error: RESPONSE 500 GET /vehicles/maintenance/required [359.76ms]
+2025-05-17T09:29:27.828Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:29:27.896Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:29:27.905Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T09:29:27.972Z error: RESPONSE 500 GET /summary [612.91ms]
+2025-05-17T09:29:28.132Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:29:28.136Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:29:28.137Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T09:29:28.138Z error: RESPONSE 500 GET /vehicles/maintenance/required [139.36ms]
+2025-05-17T09:29:28.192Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:29:28.194Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:29:28.195Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T09:29:28.195Z error: RESPONSE 500 GET /summary [174.99ms]
+2025-05-17T09:30:33.306Z error: API Error: Validation failed
+2025-05-17T09:30:33.733Z error: API Error: Validation failed
+2025-05-17T09:30:34.036Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:30:34.041Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:30:34.048Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T09:30:34.057Z error: RESPONSE 500 GET /vehicles/maintenance/required [869.98ms]
+2025-05-17T09:30:34.136Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:30:34.153Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:30:34.160Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T09:30:34.186Z error: RESPONSE 500 GET /summary [1053.81ms]
+2025-05-17T09:30:34.551Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:30:34.565Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T09:30:34.569Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T09:30:34.572Z error: RESPONSE 500 GET /vehicles/maintenance/required [479.53ms]
+2025-05-17T09:30:34.719Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:30:34.752Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T09:30:34.755Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T09:30:34.756Z error: RESPONSE 500 GET /summary [349.33ms]
+2025-05-17T09:35:20.362Z error: API Error: Validation failed
+2025-05-17T09:35:20.550Z error: API Error: Validation failed
+2025-05-17T09:47:23.735Z error: API Error: Token has expired
+2025-05-17T09:48:01.161Z error: API Error: Token has expired
+2025-05-17T09:53:37.482Z error: API Error: Validation failed
+2025-05-17T09:53:37.676Z error: API Error: Validation failed
+2025-05-17T09:55:09.329Z error: API Error: Validation failed
+2025-05-17T09:55:10.947Z error: API Error: Validation failed
+2025-05-17T09:55:13.034Z error: API Error: Validation failed
+2025-05-17T09:55:13.264Z error: API Error: Validation failed
+2025-05-17T09:55:16.914Z error: API Error: Token has expired
+2025-05-17T09:55:16.921Z error: API Error: Token has expired
+2025-05-17T09:55:16.929Z error: API Error: Token has expired
+2025-05-17T09:55:16.934Z error: API Error: Token has expired
+2025-05-17T09:55:16.946Z error: API Error: Token has expired
+2025-05-17T09:55:16.976Z error: API Error: Token has expired
+2025-05-17T10:11:25.998Z error: API Error: Token has expired
+2025-05-17T10:11:26.012Z error: API Error: Token has expired
+2025-05-17T10:11:26.040Z error: API Error: Token has expired
+2025-05-17T10:11:26.055Z error: API Error: Token has expired
+2025-05-17T10:11:26.068Z error: API Error: Token has expired
+2025-05-17T10:11:26.087Z error: API Error: Token has expired
+2025-05-17T10:11:35.852Z error: API Error: Validation failed
+2025-05-17T10:11:36.102Z error: API Error: Validation failed
+2025-05-17T10:11:42.253Z error: API Error: Validation failed
+2025-05-17T10:11:42.550Z error: API Error: Validation failed
+2025-05-17T10:17:04.450Z error: API Error: Validation failed
+2025-05-17T10:17:04.750Z error: API Error: Validation failed
+2025-05-17T10:22:43.467Z error: API Error: Token has expired
+2025-05-17T10:22:43.485Z error: API Error: Token has expired
+2025-05-17T10:22:43.601Z error: API Error: Token has expired
+2025-05-17T10:22:43.644Z error: API Error: Token has expired
+2025-05-17T10:22:43.718Z error: API Error: Token has expired
+2025-05-17T10:22:43.760Z error: API Error: Token has expired
+2025-05-17T10:22:50.248Z error: API Error: Validation failed
+2025-05-17T10:22:50.398Z error: API Error: Validation failed
+2025-05-17T10:22:53.885Z error: API Error: Validation failed
+2025-05-17T10:22:54.016Z error: API Error: Validation failed
+2025-05-17T10:24:27.421Z error: API Error: Token has expired
+2025-05-17T10:24:27.430Z error: API Error: Token has expired
+2025-05-17T10:24:27.451Z error: API Error: Token has expired
+2025-05-17T10:24:27.459Z error: API Error: Token has expired
+2025-05-17T10:24:27.472Z error: API Error: Token has expired
+2025-05-17T10:24:27.486Z error: API Error: Token has expired
+2025-05-17T10:24:34.408Z error: API Error: Validation failed
+2025-05-17T10:24:37.121Z error: API Error: Validation failed
+2025-05-17T10:24:38.212Z error: API Error: Validation failed
+2025-05-17T10:24:40.110Z error: API Error: Validation failed
+2025-05-17T10:25:58.575Z error: API Error: Token has expired
+2025-05-17T10:25:58.598Z error: API Error: Token has expired
+2025-05-17T10:25:58.623Z error: API Error: Token has expired
+2025-05-17T10:25:58.635Z error: API Error: Token has expired
+2025-05-17T10:25:58.647Z error: API Error: Token has expired
+2025-05-17T10:25:58.655Z error: API Error: Token has expired
+2025-05-17T10:26:07.191Z error: API Error: Validation failed
+2025-05-17T10:26:09.780Z error: API Error: Validation failed
+2025-05-17T10:26:10.088Z error: API Error: Validation failed
+2025-05-17T10:26:10.237Z error: API Error: Validation failed
+2025-05-17T10:26:55.967Z error: API Error: Token has expired
+2025-05-17T10:26:55.991Z error: API Error: Token has expired
+2025-05-17T10:26:56.019Z error: API Error: Token has expired
+2025-05-17T10:26:56.029Z error: API Error: Token has expired
+2025-05-17T10:26:56.038Z error: API Error: Token has expired
+2025-05-17T10:26:56.071Z error: API Error: Token has expired
+2025-05-17T10:27:03.096Z error: API Error: Validation failed
+2025-05-17T10:27:03.417Z error: API Error: Validation failed
+2025-05-17T10:27:07.470Z error: API Error: Validation failed
+2025-05-17T10:27:07.631Z error: API Error: Validation failed
+2025-05-17T10:27:18.016Z error: API Error: Token has expired
+2025-05-17T10:27:18.039Z error: API Error: Token has expired
+2025-05-17T10:27:18.057Z error: API Error: Token has expired
+2025-05-17T10:27:18.074Z error: API Error: Token has expired
+2025-05-17T10:27:18.109Z error: API Error: Token has expired
+2025-05-17T10:27:18.135Z error: API Error: Token has expired
+2025-05-17T10:27:26.395Z error: API Error: Validation failed
+2025-05-17T10:27:26.530Z error: API Error: Validation failed
+2025-05-17T10:27:28.127Z error: API Error: Validation failed
+2025-05-17T10:27:28.530Z error: API Error: Validation failed
+2025-05-17T10:27:40.690Z error: API Error: Token has expired
+2025-05-17T10:27:40.721Z error: API Error: Token has expired
+2025-05-17T10:27:40.754Z error: API Error: Token has expired
+2025-05-17T10:27:40.782Z error: API Error: Token has expired
+2025-05-17T10:27:40.814Z error: API Error: Token has expired
+2025-05-17T10:27:40.854Z error: API Error: Token has expired
+2025-05-17T10:27:48.812Z error: API Error: Validation failed
+2025-05-17T10:27:49.652Z error: API Error: Validation failed
+2025-05-17T10:27:54.627Z error: API Error: Validation failed
+2025-05-17T10:27:54.755Z error: API Error: Validation failed
+2025-05-17T10:28:17.711Z error: API Error: Validation failed
+2025-05-17T10:28:18.689Z error: API Error: Validation failed
+2025-05-17T10:35:43.790Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T10:35:43.795Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T10:35:43.797Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T10:35:43.798Z error: RESPONSE 500 GET /vehicles/maintenance/required [509.26ms]
+2025-05-17T10:35:44.169Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T10:35:44.185Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T10:35:44.195Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T10:35:44.204Z error: RESPONSE 500 GET /summary [901.82ms]
+2025-05-17T10:35:44.602Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T10:35:44.623Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T10:35:44.641Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T10:35:44.682Z error: RESPONSE 500 GET /vehicles/maintenance/required [829.17ms]
+2025-05-17T10:35:44.810Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T10:35:44.822Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T10:35:44.865Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T10:35:44.880Z error: RESPONSE 500 GET /summary [306.01ms]
+2025-05-17T10:41:46.831Z error: API Error: Validation failed
+2025-05-17T10:41:47.009Z error: API Error: Validation failed
+2025-05-17T10:41:47.016Z error: API Error: Token has expired
+2025-05-17T10:41:47.030Z error: API Error: Token has expired
+2025-05-17T10:41:47.108Z error: API Error: Token has expired
+2025-05-17T10:41:47.118Z error: API Error: Token has expired
+2025-05-17T10:41:47.125Z error: API Error: Token has expired
+2025-05-17T10:41:47.148Z error: API Error: Token has expired
+2025-05-17T10:43:11.549Z error: API Error: Validation failed
+2025-05-17T11:13:53.754Z error: API Error: Validation failed
+2025-05-17T11:13:53.996Z error: API Error: Validation failed
+2025-05-17T11:13:55.437Z error: API Error: Token has expired
+2025-05-17T11:13:55.456Z error: API Error: Token has expired
+2025-05-17T11:13:55.469Z error: API Error: Token has expired
+2025-05-17T11:13:55.476Z error: API Error: Token has expired
+2025-05-17T11:13:55.484Z error: API Error: Token has expired
+2025-05-17T11:13:55.492Z error: API Error: Token has expired
+2025-05-17T11:14:42.689Z error: API Error: Token has expired
+2025-05-17T11:14:42.702Z error: API Error: Token has expired
+2025-05-17T11:14:42.719Z error: API Error: Token has expired
+2025-05-17T11:14:42.736Z error: API Error: Token has expired
+2025-05-17T11:14:42.746Z error: API Error: Token has expired
+2025-05-17T11:14:42.761Z error: API Error: Token has expired
+2025-05-17T11:14:44.851Z error: API Error: Validation failed
+2025-05-17T11:14:46.180Z error: API Error: Validation failed
+2025-05-17T11:14:58.688Z error: API Error: Token has expired
+2025-05-17T11:14:58.706Z error: API Error: Token has expired
+2025-05-17T11:14:58.720Z error: API Error: Token has expired
+2025-05-17T11:14:58.736Z error: API Error: Token has expired
+2025-05-17T11:14:58.791Z error: API Error: Token has expired
+2025-05-17T11:14:58.804Z error: API Error: Token has expired
+2025-05-17T11:15:02.304Z error: API Error: Validation failed
+2025-05-17T11:15:03.508Z error: API Error: Validation failed
+2025-05-17T11:16:09.844Z error: API Error: Validation failed
+2025-05-17T11:16:11.745Z error: API Error: Validation failed
+2025-05-17T11:16:13.668Z error: API Error: Token has expired
+2025-05-17T11:16:13.678Z error: API Error: Token has expired
+2025-05-17T11:16:13.689Z error: API Error: Token has expired
+2025-05-17T11:16:13.697Z error: API Error: Token has expired
+2025-05-17T11:16:13.714Z error: API Error: Token has expired
+2025-05-17T11:16:13.725Z error: API Error: Token has expired
+2025-05-17T11:18:12.678Z error: API Error: Validation failed
+2025-05-17T11:18:14.242Z error: API Error: Token has expired
+2025-05-17T11:18:14.254Z error: API Error: Token has expired
+2025-05-17T11:18:14.264Z error: API Error: Token has expired
+2025-05-17T11:18:14.280Z error: API Error: Token has expired
+2025-05-17T11:18:14.286Z error: API Error: Token has expired
+2025-05-17T11:18:14.307Z error: API Error: Token has expired
+2025-05-17T11:18:14.517Z error: API Error: Validation failed
+2025-05-17T11:18:57.238Z error: API Error: Token has expired
+2025-05-17T11:18:57.464Z error: API Error: Validation failed
+2025-05-17T11:27:35.606Z error: API Error: Token has expired
+2025-05-17T11:27:35.624Z error: API Error: Token has expired
+2025-05-17T11:27:35.633Z error: API Error: Token has expired
+2025-05-17T11:27:35.654Z error: API Error: Token has expired
+2025-05-17T11:27:35.662Z error: API Error: Token has expired
+2025-05-17T11:27:35.677Z error: API Error: Token has expired
+2025-05-17T11:27:35.962Z error: API Error: Validation failed
+2025-05-17T11:27:36.147Z error: API Error: Validation failed
+2025-05-17T11:36:38.803Z error: API Error: Validation failed
+2025-05-17T11:36:40.351Z error: API Error: Token has expired
+2025-05-17T11:37:40.503Z error: API Error: Validation failed
+2025-05-17T11:38:37.159Z error: API Error: Token has expired
+2025-05-17T11:38:37.176Z error: API Error: Token has expired
+2025-05-17T11:38:37.192Z error: API Error: Token has expired
+2025-05-17T11:38:37.198Z error: API Error: Token has expired
+2025-05-17T11:38:37.207Z error: API Error: Token has expired
+2025-05-17T11:38:37.216Z error: API Error: Token has expired
+2025-05-17T11:38:40.783Z error: API Error: Validation failed
+2025-05-17T11:38:43.166Z error: API Error: Validation failed
+2025-05-17T11:46:12.606Z error: API Error: Validation failed
+2025-05-17T11:46:32.739Z error: API Error: Validation failed
+2025-05-17T11:46:34.155Z error: API Error: Token has expired
+2025-05-17T11:46:55.863Z error: API Error: Validation failed
+2025-05-17T11:46:56.476Z error: API Error: Validation failed
+2025-05-17T11:47:08.122Z error: API Error: Validation failed
+2025-05-17T11:47:08.349Z error: API Error: Validation failed
+2025-05-17T12:22:01.451Z error: API Error: Token has expired
+2025-05-17T12:22:01.484Z error: API Error: Token has expired
+2025-05-17T12:22:01.794Z error: API Error: Token has expired
+2025-05-17T12:22:01.810Z error: API Error: Token has expired
+2025-05-17T12:22:01.872Z error: API Error: Token has expired
+2025-05-17T12:22:01.906Z error: API Error: Token has expired
+2025-05-17T12:22:02.491Z error: API Error: Validation failed
+2025-05-17T12:22:02.786Z error: API Error: Validation failed
+2025-05-17T12:22:03.318Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T12:22:03.421Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T12:22:03.443Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T12:22:03.445Z error: RESPONSE 500 GET /vehicles/maintenance/required [1270.36ms]
+2025-05-17T12:22:03.652Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T12:22:03.665Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T12:22:03.668Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T12:22:03.670Z error: RESPONSE 500 GET /summary [1528.22ms]
+2025-05-17T12:22:04.089Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T12:22:04.118Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T12:22:04.119Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T12:22:04.120Z error: RESPONSE 500 GET /vehicles/maintenance/required [409.70ms]
+2025-05-17T12:22:04.161Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T12:22:04.164Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T12:22:04.166Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T12:22:04.170Z error: RESPONSE 500 GET /summary [295.58ms]
+2025-05-17T12:22:05.595Z error: API Error: Validation failed
+2025-05-17T12:22:05.886Z error: API Error: Validation failed
+2025-05-17T12:22:25.913Z error: API Error: Validation failed
+2025-05-17T12:22:26.041Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T12:22:26.043Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T12:22:26.044Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T12:22:26.045Z error: RESPONSE 500 GET /vehicles/maintenance/required [253.70ms]
+2025-05-17T12:22:26.062Z error: API Error: Validation failed
+2025-05-17T12:22:26.075Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T12:22:26.087Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T12:22:26.089Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T12:22:26.090Z error: RESPONSE 500 GET /summary [311.65ms]
+2025-05-17T12:22:26.248Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:1824:21)
+    at async FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:356:14)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T12:22:26.249Z error: DatabaseError: Database error while getting vehicles requiring maintenance
+    at FleetRepository.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:367:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:374:24)
+    at async FleetController.getVehiclesRequiringMaintenance (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:143:22)
+2025-05-17T12:22:26.250Z error: API Error: Database error while getting vehicles requiring maintenance
+2025-05-17T12:22:26.251Z error: RESPONSE 500 GET /vehicles/maintenance/required [149.15ms]
+2025-05-17T12:22:26.304Z error: Error
+    at Query.run (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\dialects\abstract\query-interface.js:1043:18)
+    at async Function.aggregate (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2067:19)
+    at async Function.count (C:\Users\siuol\Desktop\dk365-gases\node_modules\sequelize\src\model.js:2124:20)
+    at async FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:402:32)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T12:22:26.306Z error: DatabaseError: Database error while getting vehicle status summary
+    at FleetRepository.getVehicleStatusSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\repository.ts:441:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FleetService.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\service.ts:401:26)
+    at async FleetController.getFleetSummary (C:\Users\siuol\Desktop\dk365-gases\src\features\fleet\controller.ts:178:22)
+2025-05-17T12:22:26.307Z error: API Error: Database error while getting vehicle status summary
+2025-05-17T12:22:26.307Z error: RESPONSE 500 GET /summary [169.16ms]
+2025-05-17T12:22:27.601Z error: API Error: Validation failed
+2025-05-17T12:22:27.760Z error: API Error: Validation failed

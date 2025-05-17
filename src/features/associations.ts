@@ -14,8 +14,9 @@ import FleetVehicle from "./fleet";
 import { MaintenanceRecord } from "./fleet";
 import CylinderCategory from "./cylinder/models/cylinder-category.model";
 import CylinderMovement from "./cylinder/models/cylinder-movement.model";
-
 import Invoice from "./invoice";
+import Order from "./orders/model";
+import OrderDetail from "./orders/order-detail.model";
 
 // Import the association loader
 import loadAllAssociations from "./association-loader";
@@ -37,6 +38,9 @@ const MODELS = [
   MaintenanceRecord,
   CylinderCategory,
   CylinderMovement,
+  // Order models
+  Order,
+  OrderDetail,
 
   // Add other models in their dependency order
 ];

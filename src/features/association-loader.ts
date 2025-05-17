@@ -81,6 +81,8 @@ const requireAllAssociationFiles = () => {
 import "./address/model-associations";
 import "./fleet/model-associations";
 import "./cylinder/model-associations";
+// import "./invoice/model-associations"; // COMMENTED OUT: This file doesn't exist yet
+import "./orders/model-associations";
 // Import other model-associations as they are created
 
 export default loadAllAssociations;

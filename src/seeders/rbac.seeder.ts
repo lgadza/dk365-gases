@@ -12,10 +12,11 @@ import { PermissionAction } from "../features/rbac/interfaces/roles.interface";
 // Default roles to seed
 const defaultRoles = [
   { name: "admin", description: "Administrator with full access" },
-  { name: "manager", description: "School manager with elevated privileges" },
+  { name: "manager", description: "Manager with elevated privileges" },
   { name: "user", description: "User access with minimal permissions" },
   { name: "super_admin", description: "Super administrator with all access" },
   { name: "driver", description: "Driver access with minimal permissions" },
+  { name: "customer", description: "Customer access with minimal permissions" },
 ];
 
 // Expanded granular permission actions

@@ -11,6 +11,7 @@ import invoiceRouter from "../../features/invoice/routes";
 import fleetRouter from "../../features/fleet/routes";
 import roleRouter from "../../features/rbac/routes/roles.route";
 import cylinderRouter from "../../features/cylinder/routes";
+import orderRouter from "../../features/orders/routes";
 
 const router: Router = express.Router();
 
@@ -28,6 +29,7 @@ router.get("/", (req, res) => {
       cylinders: "/cylinders",
       fleet: "/fleet",
       roles: "/roles",
+      orders: "/orders",
       // List available endpoints as they are implemented
       // roles: '/rbac/roles',
       demo: "/demo",
@@ -54,5 +56,6 @@ router.use("/invoices", invoiceRouter);
 router.use("/fleet", fleetRouter);
 router.use("/roles", roleRouter);
 router.use("/cylinders", cylinderRouter);
+router.use("/orders", orderRouter);
 
 export default router;
