@@ -12,6 +12,8 @@ import Address from "./address/model";
 import AddressLink from "./address/address-link.model";
 import FleetVehicle from "./fleet";
 import { MaintenanceRecord } from "./fleet";
+import CylinderCategory from "./cylinder/models/cylinder-category.model";
+import CylinderMovement from "./cylinder/models/cylinder-movement.model";
 
 import Invoice from "./invoice";
 
@@ -33,6 +35,8 @@ const MODELS = [
   Invoice,
   FleetVehicle,
   MaintenanceRecord,
+  CylinderCategory,
+  CylinderMovement,
 
   // Add other models in their dependency order
 ];

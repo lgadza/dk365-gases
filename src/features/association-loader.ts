@@ -77,4 +77,10 @@ const requireAllAssociationFiles = () => {
   processDirectory(featuresDir);
 };
 
+// Import model-associations
+import "./address/model-associations";
+import "./fleet/model-associations";
+import "./cylinder/model-associations";
+// Import other model-associations as they are created
+
 export default loadAllAssociations;
